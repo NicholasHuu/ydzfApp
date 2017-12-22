@@ -1,0 +1,15 @@
+<div class="verticalNavigationContrain">
+    <div class="navigationContrain" ng-click="menuClick()">
+        <div ng-repeat="navigatorMenuItem in menuAry track by $index"
+             data-menuState="{{navigatorMenuItem.uiState}}" ng-class="{true:'bgWhite'}[$index==0]" style="position: relative">
+            {{navigatorMenuItem.menuName}}
+            <div class="nav-zh" ng-if="navigatorMenuItem.hasZH"></div>
+        </div>
+    </div>
+    <div class="navigationContentContrain"  id="navigationRightContent">
+        <div class="uiViemContrain" ui-view style="height: 100%;"></div>
+        <div class="footerBtnContrain">
+            <div class="ngCludeContrain" ng-transclude></div>
+        </div>
+    </div>
+</div>

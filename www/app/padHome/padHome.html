@@ -1,0 +1,25 @@
+<!--pad首页页面-->
+<ion-view view-title="首页" hide-back-button=true>
+
+	<ion-content class="common_content" scroll="false">
+		<div class="navContentContrain">
+		<!--pad首页图标容器-->
+		<section class="padbanner banner">
+			<ul>
+				<li><a ui-sref="registrationItems"><img ng-src="img/home-icon/icon-01" alt=""><span>物品登记</span></a></li>
+				<li><a href=""><img ng-src="img/home-icon/icon-05" alt=""><span>实地核查</span></a></li>
+				<li><a href=""><img ng-src="img/home-icon/icon-06" alt=""><span>喷码识别</span></a></li>
+			</ul>
+		</section>
+		<!--页面底部-->
+        <div class="padFoot">
+        	<div>{{storeData1}}</div>
+        	<div>
+        		<span>登录工号：</span>
+        		<span></span>
+        		<span>注销</span>
+        	</div>
+        </div>
+	</div>
+	</ion-content>
+</ion-view>

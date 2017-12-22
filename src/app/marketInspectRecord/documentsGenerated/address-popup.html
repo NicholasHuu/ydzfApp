@@ -1,0 +1,7 @@
+<!-- 请选择地址 -->
+<ul class="basicInfo essential" ng-repeat="k in modelAddress" ng-click="signClick()">
+	<li class="articlesLeft" style="padding: 0px;height: 30px;line-height: 30px" ng-bind="k"></li>
+</ul>
+<ul class="basicInfo essential" ng-show="hidenText">
+	<li class="list-item"><input type="text" placeholder="请输入地址" ng-model="$parent.modelAddress1"></li>
+</ul>

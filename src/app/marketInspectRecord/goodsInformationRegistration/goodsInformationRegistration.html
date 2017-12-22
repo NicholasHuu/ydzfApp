@@ -1,0 +1,213 @@
+<div class="navContentContrain">
+    <div>
+        <div class="goodsInformationRegistration">
+            <div class="goodsHead">
+                <p><span class="Htab0" ng-click="Htab0();">登记</span><span class="Htab1" ng-click="Htab1();">汇总</span><span ng-click="scsnGoods()" ng-show="scanFresh">扫封箱码</span></p>
+            </div>
+            <div class="goodsBody">
+                <div class="checkIn registrationItems">
+                    <div class="bodyOne">
+                        <p><span>封箱序号</span><span ng-bind="sealBoxNumber"></span></p>
+                        <p><span>封箱编码</span><span ng-bind="sealBoxCode"></span></p>
+                        <p><span>卷烟性质</span><span ng-click="showPopup_0()">{{fakeProducts}}&nbsp;&gt;</span></p>
+                    </div>
+                    <ul class="essential regisItems essential2">
+                        <li class="listItem mobilTotal">
+                            <span>经营户当前设备</span>
+                            <span style="width:70%">
+                                <i class="totalStyle">合计</i>
+                                <i class="totalStyle" ng-bind="regCount" style="width:32px;height:20px;"></i>
+                                <i class="totalStyle">(条)</i>
+                                <i class="totalStyle">总价</i>
+                                <i class="totalStyle" ng-bind="regPrice" style="width:72px;height:20px;"></i>(元)
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="essential regisItems essential2" style="margin-top: 5px;margin-bottom: 10px">
+                        <li class="listItem mobilTotal">
+                            <span>本箱当前设备</span>
+                            <span style="width:70%">
+                                <i class="totalStyle">合计</i>
+                                <i class="totalStyle" ng-bind="boxCount" style="width:32px;height:20px;"></i>
+                                <i class="totalStyle">(条)</i>
+                                <i class="totalStyle">总价</i>
+                                <i class="totalStyle" ng-bind="boxPrice" style="width:72px;height:20px;"></i>(元)
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="bodyTwo">
+                        <div class="Hsearch">
+                            <input type="text" name="" ng-model="searchGoodsbarcode">
+                            <span ng-click="searchGoods()">搜索</span>
+                        </div>
+                        <div class="Hkeep" ng-click="keepGoods()">扫码/保存</div>
+                    </div>
+                    <!-- 搜索到的数据插入页面部分开始-->
+                    <div class="bodyThree">
+                        <form>
+                            <div class="Hpart" >
+                                <div>
+                                    <p><span>条码/包码</span>
+                                        <input type="text" ng-model="base_goods_barcode" ng-disabled='dis'>
+                                    </p>
+                                    <p><span>性质</span>
+                                        <input type="text"  ng-model='fakeProducts' disabled>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p><span>品名规格</span>
+                                        <input type="text"  ng-model="base_goods_name" ng-disabled='dis'>
+                                    </p>                                   
+                                    <p><span>类型</span>
+                                        <input type="text"  ng-model="goodstypename" ng-readonly="true" id="choiceType" ng-click="showPopup_1()">
+                                    </p>
+                                </div>
+                                <div>
+                                    <p><span>单价(元)</span>
+                                        <input type="text"  ng-model="base_goods_price" ng-disabled="judge">
+                                    </p>
+                                    <p><span>数量(条)</span>
+                                        <input type="text"  ng-model="handNum">
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- 搜索到的数据插入页面部分结束-->
+                    <p id="Hclick">记录未必保存,请点击保存</p>
+                    <!-- 点击扫码、保存动态创建的内容开始 class="Hpart"的 div-->
+                    <div class="bodyFour">
+                        <div class="Hpart" ng-repeat="x in bThree_cont">
+                            <div>
+                                <p><span>条码/包码</span>
+                                    <input type="text" name="" ng-model="x.GOODS_BARCODE" ng-disabled="true">
+                                </p>
+                               
+                                <p><span>性质</span>
+                                    <input type="text" name="" ng-model="x.GOODSKINDNAME" ng-disabled="true">
+                                </p>
+                            </div>
+                            <div>
+                                <p><span>品名规格</span>
+                                    <input type="text" name="" ng-model="x.GOODS_NAME" ng-disabled="true">
+                                </p>
+                                <p><span>单价(元)</span>
+                                    <input type="text" name="" ng-model="x.GOODSPRICE" ng-disabled="true">
+                                </p>                                
+                            </div>
+                            <div>
+                                <p><span>数量(条)</span>
+                                    <input type="text" name="" ng-model="x.GOODSCOUNT" ng-disabled="true">
+                                </p>
+                                <p><span>总价(元)</span>
+                                    <input type="text" name="" ng-model="x.TOTAL_PRICE" ng-disabled="true">
+                                </p>
+                                <p ng-click="deleteRecord()" data-ca55Id="{{x.CA55_ID}}">删除此条记录</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 点击扫码、保存动态创建的内容开始结束-->
+                <div class="Htotal" style="display: none;">
+                    <div class="Htab">
+                        <div ng-click="focus(0)" id="Lshou">
+                        经营户合计
+                        </div>
+                        <!-- 根据返回的页签动态创建页签 -->
+                        <div>
+                            <div ng-click="focus(1)" id="Manybox">
+                                <span ng-repeat="x in Ca54List" data-ca54id={{x.CA54_ID}}>箱{{x.SERIALNO}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Hsum" style="margin-top: 10px;margin-bottom: 10px">
+                        <div>
+                            <span>合计</span><span>{{sumNum}}条</span>
+                            <span>总价</span><span>{{sumCash}}元</span>
+                        </div>
+                    </div>
+                    <!-- 汇总和详情页面展示-->
+                    <div class="retail">
+                        <div class="contain_1">
+                            <!-- 汇总信息 -->
+                            <div class="Hpart" ng-repeat="X in SumList">
+                                <div>
+                                    <p><span>条码/包码</span>
+                                        <input type="text" disabled ng-value="X.GOODS_BARCODE">
+                                    </p>                                   
+                                    <p><span>性质</span>
+                                        <input type="text" disabled ng-value="X.GOODSKINDNAME">
+                                    </p>
+                                </div>
+                                <div>
+                                    <p><span>品名规格</span>
+                                        <input type="text" disabled ng-value="X.GOODS_NAME">
+                                    </p>                                    
+                                    <p><span>类型</span>
+                                        <input type="text" disabled ng-value="X.GOODSTYPENAME">
+                                    </p>
+                                </div>
+                                <div>
+                                     <p><span>单价(元)</span>
+                                        <input type="text" disabled ng-value="X.GOODSPRICE">
+                                    </p>
+                                    <p><span>数量(条)</span>
+                                        <input type="text" disabled ng-value="X.GOODSCOUNT">
+                                    </p>
+                                    <p><span>总价(元)</span>
+                                        <input type="text" disabled ng-value="X.TOTALPRICE">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contain_2">
+                            <!-- 详细信息 -->
+                            <div class="Hpart" ng-repeat="x in GoodsList">            
+                                <div>
+                                    <p><span>封箱编码</span>
+                                        <input type="text" disabled ng-value="x.BOX_SQ">
+                                    </p>
+                                    <p><span>操作员工号</span>
+                                        <input type="text" disabled ng-value="x.REALNAME">
+                                    </p>                                    
+                                </div>
+                                <div>
+                                   <p><span>条码/包码</span>
+                                        <input type="text" disabled ng-value="x.GOODS_BARCODE">
+                                    </p>
+                                     <p><span>性质</span>
+                                        <input type="text" disabled ng-value="x.GOODSKINDNAME">
+                                    </p> 
+                                </div>
+                                <div>
+                                    <p><span>品牌规格</span>
+                                        <input type="text" disabled ng-value="x.GOODS_NAME">
+                                    </p>
+                                   
+                                    <p><span>单价(元)</span>
+                                        <input type="text" disabled ng-value="x.GOODSPRICE">
+                                    </p>
+                                </div>
+                                <div>
+                                    <p><span>数量(条)</span>
+                                        <input type="text" disabled ng-value="x.GOODSCOUNT">
+                                    </p>
+                                    <p><span>总价(元)</span>
+                                        <input type="text" disabled ng-value="x.TOTAL_PRICE">
+                                    </p>
+                                    <p data-ca55Id={{x.CA55_ID}} data-ca54Id={{delC54id}} ng-click="delInfo()" data-DealTitle={{dealTitle}}>删除此条记录</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 详细信息结束-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+    <div class="marketRecord" ng-click="saveGoodsInfo()">
+        <div> 完成,下一项</div>
+    </div>
+    </div>
+</div>

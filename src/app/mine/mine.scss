@@ -1,0 +1,67 @@
+/*我的页面表格样式 start*/
+.mineTable .tableTh{
+	height:40px;
+	background-color: #D2F4FD;
+	line-height: 40px;
+	margin-bottom:0px;
+	clear:both;
+	span{
+		display: block;
+		float:left;
+	}
+	span.checkLabel2{
+		width:19%;
+		text-align: center;
+	}
+}
+//我的底部按钮样式
+.mineFoot{
+	width:100%;
+	text-align: center;
+	color:#fff;
+	.mineInset{
+		background-color: #88CC27;
+		font-size: $font16;
+	}
+}
+//我的页面——多选框样式
+.checkbox-icon{
+	float:left;
+	margin-left: 86%;
+}
+span.checkLabel{
+	display: block;
+	float:left;
+	text-align: center;
+	width:27%;
+	color:#30302E;
+}
+span.checkLabel1{
+	display: block;
+	float:left;
+	text-align: center;
+	width:54%;
+	color:#30302E;
+}
+.mineTable>label.item{
+	padding:0px;
+	height:40px;
+	line-height: 40px;
+}
+.mineTable>label>div:nth-child(1){
+	right: 0px!important;
+	left: 0px!important;
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+}
+
+//自定义ionic选中样式
+.checkbox input:checked+.checkbox-icon:before, .checkbox input:checked:before {
+	background: #88CC27 !important;
+	border-color: #88CC27 !important;
+}
+.checkbox-square .checkbox-icon:before, .checkbox-square input:before, .platform-android .checkbox-platform .checkbox-icon:before, .platform-android .checkbox-platform input:before{
+	border-radius: 50%;
+	margin-top: 7%;
+}
+/*我的页面表格样式 end*/

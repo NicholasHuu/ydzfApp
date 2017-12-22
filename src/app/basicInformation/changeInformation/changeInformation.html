@@ -1,0 +1,14 @@
+<!-- 基础档案查询下的变更信息页面开始 -->
+<ul class="list bgEven changeInfo">
+    <li class="item">
+        <span>申请类型</span>
+        <span>申请日期</span>
+        <span>生效日期</span>
+    </li>
+    <li class="item basInfo_listItme" ng-repeat="storeItem in storeData">
+        <span ng-bind-html="storeItem.APPLYTYPE"></span>
+        <span ng-bind="storeItem.APPLYDATE"></span>
+        <span ng-bind="storeItem.USEDATE"></span>
+    </li>
+</ul>
+<!-- 基础档案查询下的变更信息页面结束 -->

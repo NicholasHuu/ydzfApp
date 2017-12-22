@@ -1,0 +1,634 @@
+//物品信息登记页面的样式
+.goodsInformationRegistration {
+	position:relative;
+    .goodsHead {
+        background: #F2F2F2;
+        padding: 8px 0px;
+        p {
+            width: 90%;
+            margin: 0 auto;
+            overflow: hidden;
+            span {
+                display: block;
+                width: 30%;
+                float: left;
+                text-align: center;
+                color: #FFF;
+                padding: 2px 0px;
+            }
+            span:nth-child(1) {
+                background: #2EA9E5;
+                font-size:16px;
+                padding: 3px 0px;                
+            }
+            span:nth-child(2) {
+                background: #D4CBC6;
+                font-size:16px;
+                padding: 3px 0px;
+            }
+            span:nth-child(3) {
+                background: #2EA9E5;
+                color:#FFF;
+                font-size:12px;
+                float: right;
+            }
+        }
+    }
+    .goodsBody {
+        .checkIn {
+            .bodyOne {
+                background: #FFF;
+                margin-bottom: 10px;
+                p {
+                    margin: 0 auto;
+                    border-bottom: 1px solid #CCC;
+                    overflow: hidden;
+                    padding: 5px 0px;
+                    span {
+                        display: block;
+                        width: 45%;
+                    }
+                    span:nth-child(1) {
+                        text-align: left;
+                        float: left;
+                        margin-left: 5%;
+                    }
+                    span:nth-child(2) {
+                        text-align: right;
+                        float: left;
+                        color:#8D8E8B;
+                        margin-right: 5%;
+                    }
+                }
+            }
+            .bodyTwo {
+                background: #FFF;
+                overflow: hidden;
+                padding: 5px 0px;
+                margin-bottom: 10px;
+                .Hsearch {
+                    width: 70%;
+                    float: left;
+                    overflow: hidden;
+                    margin-top:6px;
+                    input {
+                        display: block;
+                        width: 70%;
+                        height: 20px;
+                        background: #F2F2F2;
+                        float: left;
+                        padding: 0px;
+                        margin-left: 5%;
+                    }
+                    span {
+                        display: block;
+                        width: 25%;
+                        background: #2EA9E5;
+                        float: left;
+                        text-align: center;
+                        color:#FFF;
+                        font-size:12px;
+                    }
+                }
+                .Hkeep {
+                    width: 22%;
+                    float: right;
+                    margin-right: 3px;
+                    padding:6px 3px;
+                    background: #D03201;
+                    color:#FFF;
+                    font-size:12px;
+                    text-align:center;
+                }
+            }
+            .bodyThree {
+                form {
+                    background:#FFF;
+                    .Hpart {
+                        width: 99%;
+                        margin: 0px auto;
+                        margin-top: 8px; 
+                        border-radius: 5px;
+                        border: 1px solid blue;                       
+                        div {
+                            overflow: hidden;
+                            margin-top: 4px;
+                            p {
+                                float: left;
+                                overflow: hidden;
+                                padding-top:10px;
+                                input {
+                                    display: block;
+                                    height: 20px;
+                                    background: #F2F2F2;                   
+                                    float: left;
+                                    padding: 0px;
+                                }
+                                span {
+                                    display: block;
+                                    float: left;
+                                    text-align: left;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                        div:nth-child(1) {
+                        	border-bottom:1px solid #CCC;
+                            p:nth-child(1) {
+                                width: 60%;
+                                input {
+                                    width: 60%;
+                                }
+                                span {
+                                    width: 40%;
+                                }
+                            }
+                            p:nth-child(2) {
+                                width: 40%;
+                                input {
+                                    width: 55%;
+                                }
+                                span {
+                                    width: 45%;
+                                    text-align:center;                               
+                                }
+                            }
+                        }
+                        div:nth-child(2) {
+                            border-bottom:1px solid #CCC;
+                            p:nth-child(1) {
+                                width: 60%;
+                                input {
+                                    width: 60%;
+                                }
+                                span {
+                                    width: 40%;
+                                }
+                            }
+                            p:nth-child(2) {
+                                width: 40%;
+                                input {
+                                    width: 55%;
+                                }
+                                span {
+                                    width: 45%;
+                                    text-align:center; 
+                                }
+                            }
+                        }
+                        div:nth-child(3) {
+                            width:80%;
+                            margin:0px auto;
+                            p:nth-child(1) {
+                                width: 50%;
+                                input {
+                                    width: 55%;
+                                }
+                                span {
+                                    width: 45%;
+                                    text-align:center
+                                }
+                            }
+                            p:nth-child(2) {
+                                width: 50%;
+                                input {
+                                    width: 55%;
+                                }
+                                span {
+                                    width: 45%;
+                                    text-align:center
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .bodyFour {
+                .Hpart {                   
+                    background: #FFFDF6;
+                    width: 99%;
+                    margin: 0px auto;
+                    margin-top: 8px; 
+                    border-radius: 5px;
+                    border: 1px solid #B5B91A;
+                    div {
+                        overflow: hidden;
+                        margin-top: 4px;
+                        p {
+                            float: left;
+                            overflow: hidden;
+                            padding-top:10px;
+                            input {
+                                display: block;
+                                height: 20px;
+                                background: #F2F2F2;
+                                float: left;
+                                padding: 0px;
+                            }
+                            span {
+                                display: block;
+                                float: left;
+                                text-align: left;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    div:nth-child(1) {
+                    	border-bottom:1px solid #CCC;
+                        p:nth-child(1) {
+                            width: 60%;
+                            input {
+                                width: 60%;
+                            }
+                            span {
+                                width: 40%;
+                            }
+                        }
+                        p:nth-child(2) {
+                            width: 40%;
+                            input {
+                                width: 55%;
+                            }
+                            span {
+                                width: 45%;
+                                text-align:center;
+                            }
+                        }
+                    }
+                    div:nth-child(2) {
+                        border-bottom:1px solid #CCC;
+                        p:nth-child(1) {
+                            width: 60%;
+                            input {
+                                width: 60%;
+                            }
+                            span {
+                                width: 40%;
+                            }
+                        }
+                        p:nth-child(2) {
+                            width: 40%;
+                            input {
+                                width: 55%;
+                            }
+                            span {
+                                width: 45%;
+                                text-align:center;
+                            }
+                        }                        
+                    }
+                     div:nth-child(3) {
+                        border-bottom:1px solid #CCC;
+                        p:nth-child(1) {
+                            width: 34%;
+                            input {
+                                width: 50%;
+                            }
+                            span {
+                                width: 50%;
+                            }
+                        }
+                        p:nth-child(2) {
+                            width: 33%;
+                            input {
+                                width: 50%;
+                            }
+                            span {
+                                width: 50%;
+                            }
+                        }
+                        p:nth-child(3) {
+                            width: 33%;
+                            font-size: 12px;
+                            text-decoration:underline;
+                            color:red;
+                        }
+                    }
+                }
+            }
+        }
+        .Htotal{
+        	margin-bottom:80px;
+        	.Htab{
+				overflow:hidden;
+				margin:0px auto;
+				text-align:center;
+                div:nth-child(1){
+                    width:30%;
+                    height:30px;
+                    line-height:30px;
+                    float:left;
+                    color:white;
+                }
+                div:nth-child(2){
+                    width:70%;
+                    float:left;
+                    overflow-x:scroll;
+                    div{
+                        width:400px;
+                        display:flex;
+                        span{
+                        display:block;
+                        width:100px;
+                        height:30px;
+                        line-height:30px;                        
+                        float:left;
+                        border-left:1px solid #FFF;
+                        color:white;
+                        background:#CCC;
+                    }
+                }
+                    
+                }
+        	}
+        	.contain_1{
+				padding:2px 0px;
+                background:#FFF;
+				.Hpart {
+                    width: 99%;
+                    margin: 0px auto;
+                    margin-top: 8px;
+                    border-radius: 5px;
+                    border: 1px solid green;
+                    background: #FFFDF6;
+                    div {
+                        overflow: hidden;
+                        margin-top: 4px;
+                        p {
+                            float: left;
+                            overflow: hidden;
+                            padding-top:10px;
+                            input {
+                                display: block;
+                                height: 20px;
+                                background: #F2F2F2;
+                                float: left;
+                                padding: 0px;
+                            }
+                            span {
+                                display: block;
+                                float: left;
+                                text-align: left;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    div:nth-child(1) {
+                    	border-bottom:1px solid #CCC;
+                        p:nth-child(1) {
+                            width: 65%;
+                            input {
+                                width: 70%;
+                            }
+                            span {
+                                width: 30%;
+                            }
+                        }
+                        p:nth-child(2) {
+                            width: 35%;
+                            input {
+                                width: 60%;
+                            }
+                            span {
+                                width: 40%;
+                                text-align:center;
+                            }
+                        }
+                    }
+                    div:nth-child(2) {
+                        border-bottom:1px solid #CCC;
+                        p:nth-child(1) {
+                            width: 65%;
+                            input {
+                                width: 70%;
+                            }
+                            span {
+                                width: 30%;
+                            }
+                        }
+                        p:nth-child(2) {
+                            width: 35%;
+                            input {
+                                width: 60%;
+                            }
+                            span {
+                                width: 40%;
+                                text-align:center;
+                            }
+                        }
+                    }
+                    div:nth-child(3) {
+                        p:nth-child(1) {
+                            width: 33%;
+                            input {
+                                width: 50%;
+                            }
+                            span {
+                                width: 50%;
+                            }
+                        }
+                        p:nth-child(2) {
+                            width: 33%;
+                            input {
+                                width: 50%;
+                            }
+                            span {
+                                width: 50%;
+                            }
+                        }
+                        p:nth-child(3) {
+                            width: 33%;
+                            input {
+                                width: 50%;
+                            }
+                            span {
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+        	}
+        	.contain_2{
+        		padding:2px 0px;
+                background:#FFF;
+				.Hpart {
+                    width: 99%;
+                    margin: 0px auto;
+                    margin-top: 8px;
+                    border-radius: 5px;
+                    border: 1px solid #B5B91A;
+                    div {
+                        overflow: hidden;
+                        margin-top: 4px;
+                        p {
+                            float: left;
+                            overflow: hidden;
+                            padding-top:10px;
+                            input {
+                                display: block;
+                                height: 20px;
+                                background: #F2F2F2;
+                                float: left;
+                                padding: 0px;
+                            }
+                            span {
+                                display: block;
+                                float: left;
+                                text-align: left;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    div:nth-child(1) {
+                    	border-bottom:1px solid #CCC;
+                        p:nth-child(1) {
+                            width: 50%;
+                            input {
+                                width: 60%;
+                            }
+                            span {
+                                width: 40%;
+                            }
+                        }
+                        p:nth-child(2) {
+                            width: 50%;
+                            input {
+                                width: 50%;
+                            }
+                            span {
+                                width: 50%;
+                                text-align:center;
+                            }
+                        }
+                    }
+                    div:nth-child(2) {
+                    	border-bottom:1px solid #CCC;
+                        p:nth-child(1) {
+                            width: 50%;
+                            input {
+                                width: 60%;
+                            }
+                            span {
+                                width: 40%;
+                            }
+                        }
+                        p:nth-child(2) {
+                            width: 50%;
+                            input {
+                                width: 60%;
+                            }
+                            span {
+                                width: 40%;
+                                text-align:center;
+                            }
+                        }               
+                    }
+                    div:nth-child(3) {
+                        border-bottom:1px solid #CCC;
+                        p:nth-child(1) {
+                            width: 50%;
+                            input {
+                                width: 60%;
+                            }
+                            span {
+                                width: 40%;
+                            }
+                        }
+                        p:nth-child(2) {
+                            width: 50%;
+                            input {
+                                width: 60%;
+                            }
+                            span {
+                                width: 40%;
+                                text-align:center;
+                            }
+                        }                  
+                    }
+                     div:nth-child(4) {
+                        p:nth-child(1) {
+                            width: 33%;
+                            input {
+                                width: 50%;
+                            }
+                            span {
+                                width: 50%;
+                            }
+                        }
+                        p:nth-child(2) {
+                            width: 33%;
+                            input {
+                                width: 50%;
+                            }
+                            span {
+                                width: 50%;
+                            }
+                        }
+                        p:nth-child(3) {
+                            width: 34%;
+                            color:red;
+                            text-decoration:underline; 
+                            font-size:12px;
+                            text-align:center;                           
+                        }                        
+                    }
+                }
+        	}
+        }
+    }
+}
+.Hsum{
+	width:100%;
+	background:#FFF;
+	overflow:hidden;
+	div{
+		width:90%;
+        margin:0 auto;
+		overflow:hidden;
+		span{
+			display:block;
+			float:left;
+		}
+        span:nth-child(1),span:nth-child(3){
+            width:12%;
+            text-align:center;
+        }
+        span:nth-child(2),span:nth-child(4){
+            width:38%;
+            padding-right:5px;
+            text-align:right;
+        }
+	}
+}
+#Hclick{
+    text-align:center;
+    color:red;
+    font-size:10px;
+    padding:0px;
+}
+// 修改弹出框样式
+.popup .popup-head{
+    background-color: #D15300;
+}
+.popup .popup-body{
+    padding:0;
+}
+.popup .popup-body .popCont>div{
+   height:40px;
+   line-height:40px;
+   font-size:16px;
+   text-align:center;
+   border-bottom:1px solid #CCC;
+}
+.popup .popup-body .popCont>div:last-child(1){
+   border-bottom:none;
+}
+.popup .popup-buttons{
+    color:#fff;
+    button{
+        background-color:#CE7849;
+    }
+    .button.button-positive{
+        background-color:#CE7849;
+    }
+}

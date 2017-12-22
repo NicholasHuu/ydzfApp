@@ -1,0 +1,48 @@
+<!-- 检查情况记录-基础信息登记页面开始 -->
+<div class="navContentContrain">
+	<div>
+		<ul class="basicInfo essential basicInfo1">
+			<li class="basInfo_listItme"><span>检查形式</span><span ng-bind="examtypeName"></span></li>
+		</ul>
+		<ul class="basicInfo essential essential2">
+			<li class="listItem2 basInfo_listItme">
+                <span>许可证号:</span>
+                <span ng-bind="dataRegielicence.REGIELICENCENO"></span>
+            </li>
+			<li class="basInfo_listItme">
+                <span>许可证地址:</span>
+                <span ng-bind="dataRegielicence.CUSTOMERPLACE"></span>
+            </li>
+			<li class="basInfo_listItme">
+                <span>经营户名称:</span>
+                <span ng-bind="dataRegielicence.CUSTOMERNAME"></span>
+            </li>
+			<li class="basInfo_listItme">
+                <span>经营者名称:</span>
+                <span ng-bind="dataRegielicence.MASTERNAME"></span>
+            </li>
+			<li class="basInfo_listItme">
+                <span>营业面积:</span>
+                <span ng-bind="dataRegielicence.SELLSACREAGE"></span>
+            </li>
+			<li class="basInfo_listItme">
+                <span>营业时间:</span>
+                <span ng-bind="businessTime"></span>
+            </li>
+			<li class="basInfo_listItme">
+                <span>加盟情况:</span>
+                <span ng-bind="dataRegielicence.ALLIANCEBUSINESSNAME"></span>
+            </li>
+			<li class="basInfo_listItme" class="listItem">
+                <span>消费人群流动性:</span>
+                <span ng-bind="mobility"></span>
+            </li>
+		</ul>
+		<div class="remark">备注:
+			<textarea ng-model="basicInfoRegistRemark" ng-change="textAreaChange()" cols="33" rows="5" placeholder="点击填写备注"></textarea>
+		</div>
+	</div>
+	<!-- 点击发送给后台数据 post_bacisRegis_parms函数-->
+	<div class="marketRecord" ng-click="post_bacisRegis_parms()">完成,下一项</div>
+</div>
+<!-- 检查情况记录-基础信息登记页面结束 -->

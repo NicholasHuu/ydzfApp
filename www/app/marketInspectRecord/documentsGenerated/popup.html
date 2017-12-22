@@ -1,0 +1,21 @@
+<ul class="basicInfo essential">
+	<li class="basInfo_listItme">
+		<span>车辆牌照</span>
+		<span><input type="text" ng-model="$parent.addlicense" placeholder="请输入车辆牌照"></span>
+	</li>
+	<li class="basInfo_listItme">
+		<span>车辆类型</span>
+		<span>
+			<select ng-model="$parent.carType" style="margin-left: 0px" ng-options="o.CODE as o.NAME for o in typeList">
+
+			</select>
+		</span>
+	</li>
+	<li style="height:50px;" class="basInfo_listItme">
+		<span>车辆照片</span>
+		<img src="{{positivePhotoId}}" width="100px" height="50px" ng-click="talkPhoto('positivePhotoId')" style="margin-top: 5px;margin-bottom: 5px" ng-model="$parent.positivePhotoId">
+		<img src="{{sidePhotoId}}" width="100px" height="50px" ng-click="talkPhoto('sidePhotoId')" style="margin-top: 5px;margin-bottom: 5px" ng-model="$parent.sidePhotoId">
+	</li>
+</ul>
+
+

@@ -1,0 +1,40 @@
+#documentPreview {
+    height: 100%;
+    .part_1 {
+        height: 84%;
+        overflow-y:scroll;
+    }
+    .part_2 {
+        height: 6%;
+        span {
+            display: inline-block;
+            width: 25%;
+            height: 100%;
+            line-height: 400%;
+            border-right:1px solid white;
+            color: #FFF;
+            font-size: 10px;
+            text-align: center;
+            background: #D4CBC6;
+        }
+        span:nth-child(1){
+            background: #EDB82A;
+        }
+    }
+    .part_3 {
+        height: 10%;
+        line-height: 400%;
+        font-size: 16px;
+        color: #FFF;
+        text-align: center;
+        background: #1883D7
+    }
+    .H_borderBottom{
+        display:inline-block;
+        width:30px;
+        border-bottom: solid black .5px;
+    }
+}
+.Hactive{
+    display:block;
+}

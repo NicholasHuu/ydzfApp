@@ -1,0 +1,84 @@
+.cigaretteManagement {
+    ul {
+        li {
+            .li_content {
+                overflow:hidden;
+                span{
+                	display: block;
+                	width: 90%;
+                    margin: 0 auto;
+                    margin-top:16px;
+                    padding:2px 0px;
+                    background: #DFDBD8;
+                    text-align:center;
+                    border-radius:5%;
+                    color:#FFF;
+                }
+                .recNot {
+                    width: 90%;
+                    margin: 0 auto;
+                    margin-top:16px;
+                    overflow:hidden;
+                    span {
+                        display: block;
+                        width: 48%;  
+                        background: #DFDBD8;                      
+                        // background: #EDB82A;
+                        font-size:14px;
+                        color:#FFF;
+                        border-radius:5%;
+                        text-align:center;
+                    }
+                    span:nth-child(1){
+ 						float: left;
+                    }
+                    span:nth-child(2){
+ 						float: right;
+                    }
+                }
+                p{
+                	width: 90%;
+                    margin: 0 auto;
+                    margin-top:16px;
+                    padding:2px 0px;
+                    input{
+                    	width:180px;
+                    	display:inline;
+                    	height:20px;
+                    	border:1px solid #CCC;
+                    	line-height:20px;
+                    }
+                }
+            }
+        }
+    }
+}
+.item-toggle .toggle{
+	top:2px !important;
+}
+#Hsituation{
+	input{		
+	border:1px solid #CCC;
+	height:60px;
+	}
+}
+.track{
+	text-align: left;
+	line-height: 200%;
+	font-size:14px;
+	color:white;
+	span{
+		display:block;
+		width:90%;
+		margin:0px auto;
+		text-align:right;
+	}
+}
+.toggle .track{
+	width:75px;
+	border: solid 2px #88CC27;
+    background-color: #88CC27;
+}
+.toggle input:checked+.track .handle{
+	transform: translate3d(45px,0,0);
+}

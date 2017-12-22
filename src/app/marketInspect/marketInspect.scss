@@ -1,0 +1,37 @@
+/*市场检查样式 start*/
+/*计划内-页面底部时间控件*/
+div.insidePlan_datePlugin{
+  display: inline-block;
+  background-color: #6BBDD3;
+  flex-grow: 1;
+  text-align: center;
+  color: white;
+  height: 40px;
+  width: 50%;
+  button{
+    height: 40px;
+    line-height: 40px;
+    width: 20%;
+  }
+  span{
+    height: 40px;
+    line-height: 40px;
+  }
+}
+/*计划内-页面底部扫描按钮*/
+div.insidePlan_scannerBtn{
+  width: 50%;
+  flex-grow: 1;
+  height: 40px;
+  line-height: 40px;
+  background-color: #88CC27;
+  text-align: center;
+}
+
+.checkColor{
+  color: green !important;
+}
+.singInColor{
+  color: red !important;
+}
+/*市场检查样式 end*/

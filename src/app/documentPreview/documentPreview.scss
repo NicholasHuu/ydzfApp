@@ -1,0 +1,207 @@
+.common_content div.documentPreview,.register,.rectificationNotice,.inquiryNotice{
+  font-size: 14px;
+  background:#FFF;
+  padding:0 5px;
+  padding-top:10px;
+}
+//先行登记保存通知书样式
+div.documentPreview{	
+	p{
+		font-size:$font14;
+		color:#555;
+		line-height:20px;
+		span{
+		text-decoration:underline;
+		color:#444;
+		}
+	}
+	.dpTitle{
+		font-size:$font16;
+		color:#444;
+		text-align:center;
+	}
+	.dpTitle1{
+		text-align:center;
+	}
+}
+div.documentPreview .doucumentPreviewCont{
+	.dpcIndent{
+		text-indent:2em;
+	}
+	.dpcRight{
+		text-align:right;
+	}
+	table{
+		border:1px solid #333;
+		width:100%;
+		color:#444;
+		margin-bottom:10px;
+		tr{
+			border-bottom:1px solid #333;
+			width:100%;
+			th{
+				border-right:1px solid #333;
+			}
+			.th1{
+				width:15%;
+			}
+			.th2{
+				width:45%;
+			}
+			.th3{
+				width:20%;
+			}
+			td{
+				border-right:1px solid #333;
+				text-align:center;
+			}
+		}
+	}
+}
+//检查（勘验）笔录表格样式
+div.documentPreview .doucumentPreviewCont2{
+	table{
+		border:1px solid #333;
+		width:100%;
+		color:#444;
+		margin-bottom:10px;
+		tr{
+			border-bottom:1px solid #333;
+			td{
+				border-right:1px solid #333;
+				text-align:center;
+				vertical-align: middle;
+				.table1{
+					border:0px;
+					margin-bottom:0px;
+					tr{
+						border:0px;
+						td:last-child{
+							border-right:0px;
+						}
+					}
+				}
+				p{
+					text-align:left;
+					text-indent:2em;
+				}
+			}
+			.td1{
+				vertical-align: middle;
+			}
+		}
+	}	
+}
+
+// 询问通知书样式开始 hr
+.inquiryNotice{
+    color:rgb(100,100,100);
+}
+.inquiryNotice .H2 {
+    text-align: center;
+    font-size:16px;
+}
+.inquiryNotice .H3{
+    text-align: center;
+    font-size:14px;
+}
+.inquiryNotice span{
+	font-size:12px;
+}
+.inquiryNotice .brings {
+    text-indent: 2rem;
+}
+.inquiryNotice .datum .list {
+    list-style: none;
+}
+.inquiryNotice .datum .list li {
+   text-indent: 4rem;
+   font-size:12px;
+   padding-top:1px;
+   overflow:hidden;
+}
+.inquiryNotice .datum .list li input{
+	display:inline-block;
+	// margin-top:14px;
+}
+.inquiryNotice .borderBottom {
+    border-bottom: solid black .5px;
+    font-size: 12px;
+}
+
+.inquiryNotice .end p {
+    text-align: right;
+}
+// 先行登记保存物品处理通知书 HR
+.register{
+    color:rgb(100,100,100);
+}
+.register .H2 {
+    text-align: center;
+    font-size:16px;
+}
+.register .H3{
+    text-align: center;
+    font-size:14px;
+}
+.register span{
+	font-size:12px;
+}
+.register .datum .list {
+    list-style: none;
+}
+.register .datum .list li {
+   text-indent: 4rem;
+   font-size:12px;
+}
+.register .borderBottom {
+    border-bottom: solid black .5px;
+    font-size: 12px;
+}
+
+.register .end p {
+    text-align: right;
+}
+// 整改通知书样式 HR
+.rectificationNotice{
+    color:rgb(100,100,100);
+}
+.rectificationNotice .H2 {
+    text-align: center;
+    font-size:16px;
+}
+.rectificationNotice .H3{
+    text-align: center;
+    font-size:14px;
+}
+.rectificationNotice .brings {
+    text-indent: 2rem;
+}
+.rectificationNotice span{
+	font-size:12px;
+}
+.rectificationNotice span input{
+}
+.rectificationNotice .Hreason ul li {
+   list-style: none;
+   text-indent: 2rem;
+   font-size:12px;
+}
+.rectificationNotice .Hcause{
+	text-indent: 2rem;
+}
+.rectificationNotice .borderBottom {
+    border-bottom: solid black .5px;
+    font-size: 12px;
+}
+
+.rectificationNotice .end p {
+    text-align: right;
+}
+.rectificationNotice .Hcenter{
+	text-align: center;
+	font-size:10px;
+}
+.rectificationNotice .Hright{
+	text-align:right;
+}

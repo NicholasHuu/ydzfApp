@@ -1,0 +1,154 @@
+<div class="navContentContrain">
+	<div>
+		<ul class="basicInfo essential">
+			<li ng-model="mydatetime" mobiscroll-datetime="settings" mobiscroll-instance="caseTime" class="basInfo_listItme">
+				<span>案发时间</span>
+				<span>
+					<span ng-bind="caseTime"></span>
+					<span class="selectColor"><i class="icon ion-chevron-right"></i></span>
+				</span>
+			</li>
+			<li class="listItem basInfo_listItme" style="border-bottom: 1px solid #e6e6e6">
+				<span>案发地点</span>
+				<span class="selectColor">
+					<input type="text" placeholder="请填写案发地点" ng-model="caseAddress">
+				</span>
+			</li>
+			<li class="basInfo_listItme" ng-click="openModal(true)">
+				<span>主要案件性质</span>
+				<span ng-class="{true:'selectColor'}[mainTrangress =='请选择']">
+					<i ng-bind="mainTrangress"></i>
+					<i class="icon ion-chevron-right"></i>
+				</span>
+			</li>
+			<li class="listItem basInfo_listItme" ng-click="openModal(false)">
+				<span>其他案件性质</span>
+				<span ng-class="{true:'selectColor'}[subTrangress =='请选择']" >
+					<i ng-bind="subTrangress">请选择</i>
+					<i class="icon ion-chevron-right"></i>
+				</span>
+			</li>
+		</ul>
+		<ul class="basicInfo essential essential2">
+			<li class="listItem2 basInfo_listItme"><span>经营户名称</span><span>{{examInfoList.CUSTOMERNAME}}</span></li>
+			<li class="basInfo_listItme"><span>许可证号</span><span>{{examInfoList.REGIELICENCENO}}</span></li>
+			<li class="listItem basInfo_listItme"><span>法定代表人（负责人）</span><span>{{examInfoList.MASTERNAME}}</span></li>
+		</ul>
+		<ul class="basicInfo essential">
+			<li class="basInfo_listItme">
+				<span>嫌疑人</span>
+				<span>{{suspectByReg.SUSPECTOBJNAME}}</span>
+			</li>
+			<li class="basInfo_listItme">
+				<span>证件号码</span>
+				<span>{{suspectByReg.CARDID}}</span>
+			</li>
+			<li class="listItem basInfo_listItme" style="border-bottom: 1px solid #e6e6e6">
+				<span>年龄</span>
+				<span class="selectColor">
+					<input type="text" placeholder="请填写年龄" ng-model="age">
+				</span>
+			</li>
+			<li class="basInfo_listItme"  ng-click="showAddress(3)">
+				<span>性别</span>
+				<span ng-class="{true:'selectColor'}[concatSex =='请选择性别']">
+					<i ng-bind="concatSex"></i>
+					<i class="icon ion-chevron-right"></i>
+				</span>
+			</li>
+			<li class="basInfo_listItme">
+				<span>联系电话</span>
+				<span class="selectColor">
+					<input type="text" placeholder="请填写年龄" ng-model="suspectByReg.PHONE">
+				</span>
+			</li>
+			<li class="basInfo_listItme">
+				<span>联系地址</span>
+				<span class="selectColor">
+					<input type="text" placeholder="请填写联系地址" ng-model="suspectByReg.CONTACTADDRESS">
+				</span>
+			</li>
+			<li class="basInfo_listItme">
+				<span>身份证正面照</span>
+				<span><img src="{{cardPhoto}}" style="width: 100px;height: 50px;border: 1px solid #ccc" ng-click="talkPhoto('cardPhoto')"></span>
+			</li>
+			<li class="basInfo_listItme"><span>相关人员</span><span>
+				<i style="color:#CE7849;text-decoration: underline;margin-right:5px" ng-repeat="item in itpList" ng-bind='item.NAME' data-itpId="{{item.ITP_ID}}" ng-click="showUserPopup(item.ITP_ID)"></i>
+				<i style="color:#2EAFE8;text-decoration: underline;padding-left: 2px;" ng-click="showUserPopup()">添加人员姓名</i></span>
+			</li>
+			<li class="listItem basInfo_listItme"><span>相关车辆</span><span>
+			<i style="color:#CE7849;text-decoration: underline;margin-right:5px" ng-repeat="item in itcList" ng-bind='item.LICENSE' data-itcId="{{item.ITC_ID}}" ng-click="showPopup(item.ITC_ID)"></i>
+			<i style="color:#2EAFE8;text-decoration: underline;padding-left:2px;" ng-click="showPopup()">添加车辆号牌</i></span>
+			</li>
+		</ul>
+		<ul class="basicInfo essential">
+			<li class="basInfo_listItme"  ng-click="showAddress(2)">
+				<span>物品保存地点</span>
+				<span ng-class="{true:'selectColor'}[liStorage =='请选择地点']">
+					<i ng-bind="liStorage"></i>
+					<i class="icon ion-chevron-right"></i>
+				</span>
+			</li>
+			<li class="listItem basInfo_listItme"><span>特别事项备注</span><span class="selectColor"><input type="text" placeholder="请填写注意事项" ng-model="remark"></span></li>
+		</ul>
+		<ul class="basicInfo essential">
+			<li ng-click="showAddress(1)" class="basInfo_listItme">
+				<span>本局地址</span>
+				<span ng-class="{true:'selectColor'}[liDept =='请选择地址']">
+					<i ng-bind="liDept"></i>
+					<i class="icon ion-chevron-right"></i>
+				</span>
+			</li>
+			<li ng-model="mydatetime" mobiscroll-datetime="settings1" mobiscroll-instance="inquiryTime" class="basInfo_listItme">
+				<span>询问时间</span>
+				<span>
+					<span ng-bind="inquiryTime" ng-class="{true:'selectColor'}[inquiryTime == '请选择时间']"></span><span ng-show="inquiryTime != '请选择时间'">时</span>
+					<span class="selectColor"><i class="icon ion-chevron-right"></i></span>
+				</span>
+			</li>
+			<li class="basInfo_listItme" ng-click="showAddress(0)">
+				<span>询问地点</span>
+				<span ng-class="{true:'selectColor'}[liAsk =='请选择地点']">
+					<i ng-bind="liAsk"></i>
+					<i class="icon ion-chevron-right"></i>
+				</span>
+			</li>
+			<li ng-click="showDocumentsData()" class="basInfo_listItme">
+				<span>当事人需携带证明材料</span>
+				<span ng-class="{true:'selectColor'}[carryMetailText =='携带材料种类']">
+					<i ng-bind="carryMetailText"></i>
+					<i class="icon ion-chevron-right"></i>
+				</span>
+			</li>
+			<li ng-click="showContactPerson(0)" class="basInfo_listItme">
+				<span>联系人</span>
+				<span ng-class="{true:'selectColor'}[liName =='请选择联系人']">
+					<i ng-bind="liName"></i>
+					<i class="icon ion-chevron-right"></i>
+				</span>
+			</li>
+			<li class="listItem basInfo_listItme"  ng-click="showContactPerson(1)">
+				<span>联系人电话</span>
+				<span ng-class="{true:'selectColor'}[liPhone =='请选择联系电话']">
+					<i ng-bind="liPhone">请选择联系电话</i>
+					<i class="icon ion-chevron-right"></i></span>
+			</li>
+		</ul>
+		<ul class="basicInfo essential">
+			<li class="basInfo_listItme"><span>现场检查情况</span><span class="selectColor">请选择情况<i class="icon ion-chevron-right"></i></span></li>
+			<li class="listItem basInfo_listItme"><span>检查勘验备注</span><span class="selectColor"><input type="text" placeholder="请填写备注" ng-model="proveUpRemark"></span></li>
+		</ul>
+		<ul class="basicInfo essential">
+			<li ng-click="showArticlesPopup()" class="basInfo_listItme">
+				<span>物品处理办法</span>
+				<span ng-class="{true:'selectColor'}[processMethodText == '请选择办法']">
+					<i ng-bind="processMethodText"></i>
+					<i class="icon ion-chevron-right"></i>
+				</span>
+			</li>
+		</ul>
+	</div>
+	<div class="marketRecord">
+		<div ng-click="savaDocument()">生成文书</div>
+	</div>
+</div>

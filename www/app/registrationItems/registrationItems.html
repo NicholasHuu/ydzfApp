@@ -1,0 +1,80 @@
+<!--物品登记页面-->
+<ion-view view-title="物品登记" >
+    <ion-content class="common_content" scroll="false">
+        <div class="navContentContrain">
+            <div class="registrationItems">
+                <ul class="essential regisItems">
+                    <li class="basInfo_listItme"><span>经营户名称</span><span>与pad相关联，显示pad的经营户名称</span></li>
+                    <li >
+                        <span>封箱编码</span>
+                        <input type="text" ng-change="inputChange(inputValue)" ng-model="inputValue" placeholder="点我后,按扫描按钮" style="display: inline-block;float: none;margin-top: 0px;margin-left: 70px">
+                        第<span>{{sealBoxNumber}}</span>箱
+                    </li>
+                </ul>
+                <ul class="essential regisItems essential2">
+                    <li class="listItem mobilTotal"><span>经营户合计&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20000(条)</span><span>总价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000000(元)</span></li>
+                </ul>
+                <ul class="essential regisItems essential2" id="mobil_type">
+                    <li class="listItem" ng-click="showPopup_0()"><span>卷烟性质</span><span><i ng-bind="goodkind"></i><i class="icon ion-chevron-right"></i></span></li>
+                </ul>
+                <ul class="essential regisItems essential2">
+                    <li class="listItem"><input type="text" ng-change="inputChange1(inputValue1)" ng-model="inputValue1" placeholder="单击扫码查询或双击手工查询"><span class="ItemsSearch">搜索</span><span class="regisItemsSearch">继续登记</span></li>
+                </ul>
+                <ul class="essential regisItems essential2 addRegis0" style="display:block">
+                    <li class="basInfo_listItme">
+                        <span>条码/包码</span>
+                        <input type="text" ng-model="sweepData.BASE_GOODS_BARCODE" ng-disabled='dis' style="background-color: #fff;text-align: right">
+                    </li>
+                    <li class="basInfo_listItme">
+                        <span>品名规格</span>
+                        <input type="text" ng-model="sweepData.BASE_GOODS_NAME" ng-disabled='dis' style="background-color: #fff;text-align: right">
+                    </li>
+                    <li class="basInfo_listItme">
+                        <span>性质</span>
+                        <input type="text" ng-model="goodkind" ng-disabled='dis' style="background-color: #fff;text-align: right">
+                    </li>
+                    <li class="basInfo_listItme">
+                        <span>类型</span>
+                        <input type="text" ng-model="sweepData.GOODSTYPENAME" ng-disabled='dis' style="background-color: #fff;text-align: right">
+                    </li>
+                    <li class="basInfo_listItme">
+                        <span>单价（元）</span>
+                        <input type="text" ng-model="sweepData.BASE_GOODS_PRICE" ng-disabled='judge' style="background-color: #fff;text-align: right">
+                    </li>
+                    <li class="basInfo_listItme">
+                        <span>数量（条）</span>
+                        <input type="text" ng-model="sweepData.GOODSCOUNT" style="background-color: #fff;text-align: right">
+                    </li>
+                    <li class="listItem" id="mobil_keep"><span class="regisItemsSearch1" ng-click="showConfirm()">信息不符，清空</span><span class="regisItemsSearch1" ng-click="savaRegis()">保存</span></li>
+                </ul>
+                <ul class="essential regisItems essential2 addRegis" style="display: none">
+                    <li class="basInfo_listItme">
+                        <span><i class="addRegis1 addRegis2" ng-click="addRegisItem()">条码</i><i class="addRegis1" ng-click="addRegisItem()">包码</i></span>
+                        <input type="text" ng-model="" style="background-color: #fff;text-align: right">
+                    </li>
+                    <li class="basInfo_listItme">
+                        <span>品名规格</span>
+                        <input type="text" ng-model="" style="background-color: #fff;text-align: right">
+                    </li>
+                    <li class="basInfo_listItme">
+                        <span>性质</span>
+                        <input type="text" ng-model="" style="background-color: #fff;text-align: right">
+                    </li>
+                    <li class="basInfo_listItme">
+                        <span>类型</span>
+                        <input type="text" ng-model="" style="background-color: #fff;text-align: right">
+                    </li>
+                    <li class="basInfo_listItme">
+                        <span>单价（元）</span>
+                        <input type="text" ng-model="" style="background-color: #fff;text-align: right">
+                    </li>
+                    <li class="basInfo_listItme">
+                        <span>数量（条）</span>
+                        <input type="text" style="background-color: #fff;text-align: right">
+                    </li>
+                    <li class="listItem" id="mobil_keep"><span class="regisItemsSearch1" ng-click="clearClick()">放弃</span><span class="regisItemsSearch1">保存</span></li>
+                </ul>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

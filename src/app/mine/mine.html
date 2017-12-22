@@ -1,0 +1,27 @@
+<!--我的页面-->
+<ion-view view-title="我的" hide-back-button=true>
+	<!--页面左侧返回首页按钮-->
+    <ion-nav-buttons side="right">
+        <button class="button button-clear" ng-click="exitApp()">注销</button>
+    </ion-nav-buttons>
+    <ion-content class="common_content" style="background-color: #F2F2F2">
+    <div class="navContentContrain">
+		<!--检查人员列表-->
+        <div class="mineTable">
+        	<div class="tableTh">
+                <span class="checkLabel">姓名</span>
+                <span class="checkLabel1">主要岗位</span>
+                <span class="checkLabel2" ng-click="paramsAgainAll()">全选</span>
+            </div>
+            <ion-checkbox ng-repeat="storeItem in storeData track by $index" ng-model="storeItem.checked" ng-checked="storeItem.checked">
+                <span ng-bind="storeItem.user" class="checkLabel"></span>
+                <span ng-bind="storeItem.gangwei" class="checkLabel1"></span>
+            </ion-checkbox>
+        </div>
+		<!--页面底部确定按钮-->
+        <div class="mineFoot marketRecord" ng-click="homeButton()">
+        	<div class="mineInset">确定</div>
+        </div>
+    </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,1898 @@
+@charset "UTF-8";
+.common_content {
+  background-color: #FFF5EE !important; }
+
+/*使ion-content充满屏幕*/
+ion-content > div.scroll {
+  height: 100%; }
+
+/*白色背景*/
+.bgWhite {
+  background-color: white; }
+
+/*更多按钮样式*/
+.morebutton {
+  font-size: 30px !important;
+  margin-right: 10px; }
+
+/*列表样式*/
+.item {
+  padding: 7px;
+  font-size: 14px;
+  color: #8E8E8D;
+  border-color: #E5E5E5;
+  padding-right: 0px; }
+
+/*模态窗口样式修改*/
+.modal-backdrop, .modal-backdrop-bg {
+  height: 100%; }
+
+.modal {
+  background-color: transparent;
+  top: 0; }
+
+.list-inset {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  margin: 0px;
+  background-color: #CCC; }
+
+.list-inset > .item {
+  width: 60%;
+  margin: 0px auto;
+  text-align: center; }
+
+/*navBar样式自定义*/
+.bar.bar-selfStyle .title {
+  color: #fff; }
+
+.bar.bar-selfStyle {
+  border-color: #D05201;
+  background-color: #D05201;
+  background-image: linear-gradient(0deg, #D05201, #D05201 50%, transparent 50%);
+  color: #fff; }
+
+.bar-selfStyle .button.button-clear {
+  border-color: transparent;
+  background: 0 0;
+  box-shadow: none;
+  color: #fff; }
+
+.bar-selfStyle .button {
+  border-color: #D05201;
+  background-color: #D05201;
+  color: #fff; }
+
+/*页面底部扫描按钮*/
+.marketRecord {
+  width: 100%;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  border-top: 0px solid #bbb;
+  text-align: center;
+  background-color: #88CC27;
+  color: white; }
+
+.item-toggle {
+  pointer-events: auto !important; }
+
+.chooseSpan {
+  background: #EDB82A !important; }
+
+.navContentContrain {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between; }
+
+.floatScannBtn {
+  position: absolute;
+  width: 80% !important;
+  bottom: 0;
+  right: 0;
+  z-index: 99; }
+
+/*时间控件样式自定义*/
+.mbsc-material .mbsc-sc-whl-gr {
+  padding: 0.5em 0.25em !important; }
+
+.mbsc-material .mbsc-fr-hdr {
+  color: white !important;
+  background-color: #D15300 !important;
+  font-size: 18px !important;
+  padding: 0px !important; }
+
+.mbsc-material .mbsc-fr-btn-w {
+  display: block !important;
+  float: none !important;
+  margin: 0 !important;
+  text-align: center !important;
+  margin-top: 5px !important; }
+
+.mbsc-material .mbsc-fr-btn-cont {
+  display: block !important;
+  overflow: hidden;
+  padding: 0 .5em .5em;
+  background-color: #D15300;
+  color: white;
+  font-size: 20px; }
+
+.errorAlert {
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+  font-size: 50px;
+  color: red; }
+
+.errorAlertCont {
+  color: red;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 5px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5px; }
+
+.errorAlertHead {
+  color: white;
+  font-size: 20px;
+  padding: 10px 10px; }
+
+.popup-head {
+  padding: 0px !important; }
+
+.popupHead {
+  padding: 7px; }
+
+/*外部样式引入*/
+/*headPopover样式 start*/
+.headPopover {
+  width: 100px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  font-size: 16px;
+  background-color: #D05201;
+  color: #fff; }
+  .headPopover div:nth-child(2) {
+    border: 1px solid #cccccc; }
+  .headPopover div:nth-child(1), .headPopover div:nth-child(3) {
+    height: 40px;
+    line-height: 40px; }
+
+/*headPopover样式 end*/
+/*垂直导航自定义指令样式 start*/
+.verticalNavigationContrain {
+  width: 100%;
+  height: 100%;
+  /*background-color: #FFF5EE;*/ }
+  .verticalNavigationContrain div.navigationContrain {
+    float: left;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid #cccccc;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: #666666; }
+    .verticalNavigationContrain div.navigationContrain div {
+      height: 50px;
+      font-size: 15px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 5px;
+      padding-right: 5px;
+      position: relative; }
+      .verticalNavigationContrain div.navigationContrain div div.nav-zh {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #ccc;
+        opacity: 0.5;
+        left: 0;
+        top: 0;
+        z-index: 99; }
+  .verticalNavigationContrain .navigationContentContrain {
+    float: left;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; }
+    .verticalNavigationContrain .navigationContentContrain div.uiViemContrain {
+      flex-grow: 1;
+      overflow-x: hidden; }
+    .verticalNavigationContrain .navigationContentContrain div.footerBtnContrain {
+      flex-basis: 40px; }
+      .verticalNavigationContrain .navigationContentContrain div.footerBtnContrain div.ngCludeContrain {
+        display: flex;
+        flex-direction: row; }
+
+/*垂直导航自定义指令样式 end*/
+/*首页样式 start*/
+.common_content div .banner {
+  height: 400px; }
+  .common_content div .banner ul {
+    width: 95%;
+    margin: 0 auto;
+    height: 100%; }
+    .common_content div .banner ul li {
+      float: left;
+      width: 25%;
+      margin-top: 5%;
+      height: 22%; }
+      .common_content div .banner ul li a {
+        display: block;
+        height: 100%;
+        color: #000;
+        text-decoration: none;
+        text-align: center;
+        font-size: 14px;
+        color: #555; }
+        .common_content div .banner ul li a img {
+          display: block;
+          width: 73px;
+          height: 73px;
+          margin: 0 auto; }
+        .common_content div .banner ul li a span {
+          display: block;
+          height: 20%; }
+
+.common_content div .foot .fTitle {
+  height: 40px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #696969;
+  width: 96%;
+  margin: 0 auto; }
+  .common_content div .foot .fTitle .fTitleL {
+    float: left;
+    padding-top: 4%;
+    font-weight: bold;
+    font-size: 16px;
+    color: #666; }
+  .common_content div .foot .fTitle .fTitleR {
+    float: right;
+    color: #666;
+    padding-top: 4%;
+    font-size: 16px; }
+
+.common_content div .foot .tables {
+  width: 96%;
+  margin: 0 auto; }
+  .common_content div .foot .tables p {
+    padding-bottom: 2%;
+    font-size: 16px;
+    color: #666;
+    float: left;
+    margin-top: 1.5%; }
+    .common_content div .foot .tables p span {
+      display: block;
+      float: left; }
+  .common_content div .foot .tables p.tbRight {
+    width: 76%; }
+  .common_content div .foot .tables p.tbLeft {
+    width: 24%; }
+
+/*首页样式 end*/
+/*市场检查样式 start*/
+/*计划内-页面底部时间控件*/
+div.insidePlan_datePlugin {
+  display: inline-block;
+  background-color: #6BBDD3;
+  flex-grow: 1;
+  text-align: center;
+  color: white;
+  height: 40px;
+  width: 50%; }
+  div.insidePlan_datePlugin button {
+    height: 40px;
+    line-height: 40px;
+    width: 20%; }
+  div.insidePlan_datePlugin span {
+    height: 40px;
+    line-height: 40px; }
+
+/*计划内-页面底部扫描按钮*/
+div.insidePlan_scannerBtn {
+  width: 50%;
+  flex-grow: 1;
+  height: 40px;
+  line-height: 40px;
+  background-color: #88CC27;
+  text-align: center; }
+
+.checkColor {
+  color: green !important; }
+
+.singInColor {
+  color: red !important; }
+
+/*市场检查样式 end*/
+.nearCustomPlace {
+  padding-top: 5px; }
+  .nearCustomPlace span {
+    display: inline-block; }
+  .nearCustomPlace span:nth-child(1) {
+    width: 80%;
+    white-space: pre-wrap; }
+  .nearCustomPlace span:nth-child(2) {
+    width: 13%;
+    text-align: right; }
+
+.insidePlan_address {
+  white-space: normal;
+  word-break: break-all;
+  word-wrap: break-word; }
+
+.bgEven > li:nth-child(1) {
+  background: #D2F4FD;
+  border-bottom: none; }
+
+.changeInfo {
+  background: #FFFFFF;
+  border-radius: 7px; }
+  .changeInfo li.item {
+    color: #303030 !important;
+    white-space: normal; }
+  .changeInfo,
+  .changeInfo li {
+    width: 100%;
+    border-bottom: 1px solid #E6E6E6; }
+    .changeInfo span,
+    .changeInfo li span {
+      font-size: 14px;
+      text-align: center; }
+  .changeInfo li {
+    overflow: hidden; }
+    .changeInfo li span {
+      display: block;
+      width: 34%;
+      float: left; }
+    .changeInfo li span:nth-child(1) {
+      width: 33%; }
+    .changeInfo li span:nth-child(2) {
+      width: 33%; }
+
+/*基本档案查询样式 start*/
+/*页脚按钮样式*/
+div.basicInfomation_scannerBtn {
+  height: 40px;
+  background-color: #88CC27;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  width: 100%; }
+
+/*基本档案查询样式 end*/
+/*基础档案查询-----基本信息样式开始*/
+.essential {
+  background: #fff;
+  border-radius: 7px;
+  color: #303030; }
+  .essential li {
+    display: block;
+    border-bottom: 1px solid #E6E6E6;
+    color: #303030;
+    font: 14px;
+    position: relative;
+    padding: 5px; }
+  .essential .listItem {
+    border-bottom: 0px; }
+
+.essential2 {
+  margin-top: 3%; }
+
+.basInfo_listItme {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important; }
+
+.basInfo_listItme > span:nth-child(2) {
+  display: block; }
+
+/*基础档案查询----基本信息样式结束*/
+.manageInfo {
+  background: linear-gradient(to bottom, #fff, #fff); }
+
+.contain_head {
+  overflow: hidden;
+  margin-top: 3px;
+  background: #FFFFFF;
+  color: #303030; }
+  .contain_head ul {
+    margin-left: 0px; }
+    .contain_head ul li {
+      height: 30px;
+      line-height: 30px;
+      overflow: hidden;
+      margin-top: 6px;
+      color: #303030;
+      border-bottom: 1px solid #E6E6E6; }
+      .contain_head ul li span:nth-child(2) {
+        text-align: right; }
+      .contain_head ul li span:nth-child(1) {
+        text-indent: 5px; }
+      .contain_head ul li span {
+        display: block;
+        width: 48%;
+        float: left; }
+    .contain_head ul li:last-child {
+      border-bottom: none; }
+
+.contain_body {
+  background: #FFFFFF;
+  border-radius: 7px;
+  margin-top: 20px;
+  color: #303030; }
+  .contain_body table {
+    width: 100%; }
+    .contain_body table tbody {
+      width: 100%; }
+      .contain_body table tbody tr {
+        height: 36px;
+        line-height: 36px;
+        border-bottom: 1px solid #E6E6E6;
+        color: #303030; }
+        .contain_body table tbody tr td:nth-child(1) {
+          text-align: center; }
+      .contain_body table tbody tr:nth-child(1) {
+        background: #D2F4FD;
+        border-bottom: none; }
+
+.marketInspectionRecord {
+  padding-top: 0px;
+  border-radius: 7px;
+  z-index: 666; }
+  .marketInspectionRecord li.item {
+    white-space: normal;
+    color: #303030 !important; }
+  .marketInspectionRecord li {
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #E6E6E6; }
+    .marketInspectionRecord li span {
+      display: block;
+      float: left;
+      font-size: 14px;
+      text-align: center; }
+    .marketInspectionRecord li span:nth-child(1) {
+      width: 30%; }
+    .marketInspectionRecord li span:nth-child(2) {
+      width: 70%;
+      display: block; }
+  .marketInspectionRecord li:nth-child(1) {
+    height: 40px;
+    line-height: 40px; }
+
+.violationRecord {
+  background: linear-gradient(to bottom, #eee, #ddd);
+  color: #303030; }
+  .violationRecord li {
+    width: 100%;
+    border-bottom: 1px solid #E6E6E6;
+    color: #303030; }
+    .violationRecord li span {
+      display: block;
+      float: left;
+      font-size: 14px;
+      text-align: center;
+      color: #303030; }
+  .violationRecord li:nth-child(1) {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: none; }
+  .violationRecord li.item {
+    white-space: normal;
+    padding-left: 0px; }
+
+.violationRecord > li > span:nth-child(1) {
+  width: 45%; }
+
+.violationRecord > li > span:nth-child(2) {
+  width: 55%; }
+
+.illegalRecord > li > div:first-child {
+  background: #F32728;
+  width: 100%;
+  color: #303030;
+  border-bottom: none; }
+
+.illegalRecord li {
+  width: 96%;
+  margin: 0px auto;
+  border: 1px solid #bbb;
+  padding: 0px;
+  color: #303030;
+  border-radius: 7%;
+  background: white; }
+  .illegalRecord li div:nth-child(1) {
+    height: 30px;
+    padding: 0px;
+    line-height: 30px;
+    padding-left: 7px;
+    color: #fff; }
+  .illegalRecord li div {
+    width: 96%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin: 0px auto;
+    border-bottom: 1px solid #E6E6E6; }
+    .illegalRecord li div span {
+      display: block;
+      float: left;
+      font-size: 14px;
+      color: #303030; }
+  .illegalRecord li div:last-child {
+    border-bottom: none; }
+
+.illegalRecord li:first-child {
+  margin-top: 10px; }
+
+.illegalRecord li.item {
+  white-space: normal; }
+
+.illegalRecord > li > div > span:nth-child(1) {
+  width: 25%;
+  text-align: left; }
+
+.illegalRecord > li > div > span:nth-child(2) {
+  width: 75%; }
+
+.complaintReport li {
+  width: 100%;
+  color: #303030; }
+  .complaintReport li span {
+    font-size: 12px;
+    text-align: center;
+    float: left;
+    color: #303030;
+    display: block; }
+  .complaintReport li span:nth-child(1) {
+    width: 25%; }
+  .complaintReport li span:nth-child(2) {
+    width: 35%; }
+  .complaintReport li span:nth-child(3) {
+    width: 20%; }
+    .complaintReport li span:nth-child(3) .button {
+      padding: 0px;
+      margin: 0px;
+      min-height: 20px;
+      min-width: 50px;
+      line-height: 20px;
+      font-size: 12px !important; }
+    .complaintReport li span:nth-child(3) .checkBtn {
+      background-color: #AFAFAF;
+      border-radius: 5px;
+      color: #fff; }
+  .complaintReport li span:nth-child(4) {
+    width: 20%; }
+
+.complaintReport li.item {
+  white-space: normal; }
+
+.complaintReport li:nth-child(1) {
+  padding: 0px;
+  height: 40px; }
+  .complaintReport li:nth-child(1) span:nth-child(1) {
+    line-height: 40px; }
+  .complaintReport li:nth-child(1) span:nth-child(2) {
+    line-height: 40px; }
+
+.sign-popup .popup {
+  font-size: 14px;
+  width: 55%; }
+
+.popup-container .popup-buttons {
+  padding: 0;
+  min-height: 0px;
+  height: 40%; }
+  .popup-container .popup-buttons button {
+    width: 50%;
+    margin-right: 0px;
+    border-radius: 0px;
+    border: 0px;
+    padding: 0px;
+    min-height: 30px; }
+
+.sign-popup .popup-head {
+  padding: 0px; }
+
+.sign-popup .popup-buttons button:nth-child(1) {
+  background-color: #F0F2EF;
+  color: #666; }
+
+.sign-popup .popup-buttons button:nth-child(2) {
+  background-color: #CBAD29;
+  color: #fff; }
+
+.sign-popup .popup-body {
+  color: #303030;
+  text-align: center; }
+
+.basicInfo {
+  border-radius: 0;
+  margin-top: 7px; }
+  .basicInfo li {
+    background-color: #fff; }
+
+.basicInfo1 {
+  background-color: #fff; }
+  .basicInfo1 li {
+    border: 0;
+    margin-bottom: 7px;
+    color: #303030; }
+    .basicInfo1 li span i {
+      color: #999; }
+
+.list-inset div.modalItem {
+  text-align: center; }
+
+.itemButton {
+  margin-top: 5%;
+  width: 100%; }
+
+.buttonStyle {
+  line-height: 0;
+  background-color: #fff;
+  border: 0px;
+  min-height: 0;
+  padding-top: 4%;
+  font-weight: bold;
+  width: 100%; }
+
+.modalItem > .modelLeftBtn {
+  float: left;
+  margin-left: 10px;
+  width: 30%; }
+
+.modalItem > .modelRightBtn {
+  float: right;
+  margin-right: 10px;
+  width: 30%; }
+
+.checkbox input:before, .checkbox-icon:before {
+  border: 0px !important; }
+
+.remark {
+  margin-top: 4%;
+  padding-left: 5px;
+  background-color: #fff;
+  height: 23%;
+  padding-top: 4%;
+  color: #303030; }
+  .remark textarea {
+    /*float:right;
+		margin-right:7px;*/
+    border: 1px solid #ccc; }
+
+.licence ul li .specialP p {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 16px;
+  padding: 2px 0px;
+  background: #DFDBD8;
+  text-align: center;
+  border-radius: 5%;
+  color: #FFF; }
+
+.licence ul li .li_content {
+  overflow: hidden; }
+  .licence ul li .li_content span {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 16px;
+    padding: 2px 0px;
+    background: #DFDBD8;
+    text-align: center;
+    border-radius: 5%;
+    color: #FFF; }
+  .licence ul li .li_content .recNot {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 16px;
+    overflow: hidden; }
+    .licence ul li .li_content .recNot span {
+      display: block;
+      width: 48%;
+      background: #DFDBD8;
+      font-size: 14px;
+      color: #FFF;
+      border-radius: 5%;
+      text-align: center; }
+    .licence ul li .li_content .recNot span:nth-child(1) {
+      display: inline-block; }
+    .licence ul li .li_content .recNot span:nth-child(2) {
+      display: inline-block; }
+  .licence ul li .li_content p {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 16px;
+    padding: 2px 0px; }
+    .licence ul li .li_content p input {
+      width: 180px;
+      display: inline;
+      height: 20px;
+      border: 1px solid #CCC;
+      line-height: 20px; }
+
+.item-toggle .toggle {
+  top: 2px !important; }
+
+#Hsituation input {
+  border: 1px solid #CCC;
+  height: 60px; }
+
+.track {
+  text-align: left;
+  line-height: 200%;
+  font-size: 14px;
+  color: white; }
+  .track span {
+    display: block;
+    width: 90%;
+    margin: 0px auto; }
+
+.toggle .track {
+  width: 75px;
+  border: solid 2px #88CC27;
+  background-color: #88CC27; }
+
+.toggle input:checked + .track .handle {
+  transform: translate3d(45px, 0, 0); }
+
+.menu-disabled-true {
+  text-align: left !important; }
+
+.menu-disabled-false {
+  text-align: right !important; }
+
+.popup-body {
+  text-align: center; }
+
+.redBorder {
+  border: 1px solid red !important; }
+
+#orderRectification {
+  padding-bottom: 40px; }
+  #orderRectification .order {
+    padding: 5px 0px; }
+    #orderRectification .order .bgTitle {
+      background: #FFF;
+      text-indent: 1rem;
+      overflow: hidden;
+      padding: 3px 0px;
+      margin: 0px; }
+      #orderRectification .order .bgTitle span {
+        display: block;
+        float: left; }
+      #orderRectification .order .bgTitle span:nth-child(1) {
+        width: 40%; }
+      #orderRectification .order .bgTitle span:nth-child(2) {
+        width: 60%; }
+        #orderRectification .order .bgTitle span:nth-child(2) input {
+          padding: 0px;
+          height: 20px; }
+    #orderRectification .order .bg {
+      padding: 5px 0px; }
+      #orderRectification .order .bg p {
+        width: 90%;
+        margin-left: 10%;
+        overflow: hidden; }
+        #orderRectification .order .bg p span {
+          float: left;
+          font-size: 12px; }
+        #orderRectification .order .bg p .choice {
+          display: block;
+          float: left;
+          width: 18px;
+          height: 18px;
+          border: 1px solid #CCC;
+          background: white;
+          margin-right: 8px;
+          margin-top: 2px; }
+        #orderRectification .order .bg p span:nth-child(2) {
+          width: 70%; }
+    #orderRectification .order .bg_0 {
+      background: #E8E8E6; }
+    #orderRectification .order .bg_1 {
+      background: #FFFDF6; }
+  #orderRectification .part2 {
+    overflow-y: scroll; }
+  #orderRectification .H_borderBottom {
+    display: inline-block;
+    width: 30px;
+    border-bottom: solid black .5px; }
+
+.marketRecord div {
+  /* width: 100%;
+    overflow: hidden;*/ }
+
+.marketRecord div span:nth-child(1) {
+  display: block;
+  font-size: 14px;
+  width: 40%;
+  float: left;
+  background: #2EAFE8; }
+
+.marketRecord div span:nth-child(2) {
+  display: block;
+  font-size: 14px;
+  width: 60%;
+  float: left;
+  background: #88CC27; }
+
+.goodsInformationRegistration {
+  position: relative; }
+  .goodsInformationRegistration .goodsHead {
+    background: #F2F2F2;
+    padding: 8px 0px; }
+    .goodsInformationRegistration .goodsHead p {
+      width: 90%;
+      margin: 0 auto;
+      overflow: hidden; }
+      .goodsInformationRegistration .goodsHead p span {
+        display: block;
+        width: 30%;
+        float: left;
+        text-align: center;
+        color: #FFF;
+        padding: 2px 0px; }
+      .goodsInformationRegistration .goodsHead p span:nth-child(1) {
+        background: #2EA9E5;
+        font-size: 16px;
+        padding: 3px 0px; }
+      .goodsInformationRegistration .goodsHead p span:nth-child(2) {
+        background: #D4CBC6;
+        font-size: 16px;
+        padding: 3px 0px; }
+      .goodsInformationRegistration .goodsHead p span:nth-child(3) {
+        background: #2EA9E5;
+        color: #FFF;
+        font-size: 12px;
+        float: right; }
+  .goodsInformationRegistration .goodsBody .checkIn .bodyOne {
+    background: #FFF;
+    margin-bottom: 10px; }
+    .goodsInformationRegistration .goodsBody .checkIn .bodyOne p {
+      margin: 0 auto;
+      border-bottom: 1px solid #CCC;
+      overflow: hidden;
+      padding: 5px 0px; }
+      .goodsInformationRegistration .goodsBody .checkIn .bodyOne p span {
+        display: block;
+        width: 45%; }
+      .goodsInformationRegistration .goodsBody .checkIn .bodyOne p span:nth-child(1) {
+        text-align: left;
+        float: left;
+        margin-left: 5%; }
+      .goodsInformationRegistration .goodsBody .checkIn .bodyOne p span:nth-child(2) {
+        text-align: right;
+        float: left;
+        color: #8D8E8B;
+        margin-right: 5%; }
+  .goodsInformationRegistration .goodsBody .checkIn .bodyTwo {
+    background: #FFF;
+    overflow: hidden;
+    padding: 5px 0px;
+    margin-bottom: 10px; }
+    .goodsInformationRegistration .goodsBody .checkIn .bodyTwo .Hsearch {
+      width: 70%;
+      float: left;
+      overflow: hidden;
+      margin-top: 6px; }
+      .goodsInformationRegistration .goodsBody .checkIn .bodyTwo .Hsearch input {
+        display: block;
+        width: 70%;
+        height: 20px;
+        background: #F2F2F2;
+        float: left;
+        padding: 0px;
+        margin-left: 5%; }
+      .goodsInformationRegistration .goodsBody .checkIn .bodyTwo .Hsearch span {
+        display: block;
+        width: 25%;
+        background: #2EA9E5;
+        float: left;
+        text-align: center;
+        color: #FFF;
+        font-size: 12px; }
+    .goodsInformationRegistration .goodsBody .checkIn .bodyTwo .Hkeep {
+      width: 22%;
+      float: right;
+      margin-right: 3px;
+      padding: 6px 3px;
+      background: #D03201;
+      color: #FFF;
+      font-size: 12px;
+      text-align: center; }
+  .goodsInformationRegistration .goodsBody .checkIn .bodyThree form {
+    background: #FFF; }
+    .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart {
+      width: 99%;
+      margin: 0px auto;
+      margin-top: 8px;
+      border-radius: 5px;
+      border: 1px solid blue; }
+      .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div {
+        overflow: hidden;
+        margin-top: 4px; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div p {
+          float: left;
+          overflow: hidden;
+          padding-top: 10px; }
+          .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div p input {
+            display: block;
+            height: 20px;
+            background: #F2F2F2;
+            float: left;
+            padding: 0px; }
+          .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div p span {
+            display: block;
+            float: left;
+            text-align: left;
+            font-size: 12px; }
+      .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(1) {
+        border-bottom: 1px solid #CCC; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(1) p:nth-child(1) {
+          width: 60%; }
+          .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(1) p:nth-child(1) input {
+            width: 60%; }
+          .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(1) p:nth-child(1) span {
+            width: 40%; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(1) p:nth-child(2) {
+          width: 40%; }
+          .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(1) p:nth-child(2) input {
+            width: 55%; }
+          .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(1) p:nth-child(2) span {
+            width: 45%;
+            text-align: center; }
+      .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(2) {
+        border-bottom: 1px solid #CCC; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(2) p:nth-child(1) {
+          width: 60%; }
+          .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(2) p:nth-child(1) input {
+            width: 60%; }
+          .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(2) p:nth-child(1) span {
+            width: 40%; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(2) p:nth-child(2) {
+          width: 40%; }
+          .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(2) p:nth-child(2) input {
+            width: 55%; }
+          .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(2) p:nth-child(2) span {
+            width: 45%;
+            text-align: center; }
+      .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(3) {
+        width: 80%;
+        margin: 0px auto; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(3) p:nth-child(1) {
+          width: 50%; }
+          .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(3) p:nth-child(1) input {
+            width: 55%; }
+          .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(3) p:nth-child(1) span {
+            width: 45%;
+            text-align: center; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(3) p:nth-child(2) {
+          width: 50%; }
+          .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(3) p:nth-child(2) input {
+            width: 55%; }
+          .goodsInformationRegistration .goodsBody .checkIn .bodyThree form .Hpart div:nth-child(3) p:nth-child(2) span {
+            width: 45%;
+            text-align: center; }
+  .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart {
+    background: #FFFDF6;
+    width: 99%;
+    margin: 0px auto;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 1px solid #B5B91A; }
+    .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div {
+      overflow: hidden;
+      margin-top: 4px; }
+      .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div p {
+        float: left;
+        overflow: hidden;
+        padding-top: 10px; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div p input {
+          display: block;
+          height: 20px;
+          background: #F2F2F2;
+          float: left;
+          padding: 0px; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div p span {
+          display: block;
+          float: left;
+          text-align: left;
+          font-size: 12px; }
+    .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(1) {
+      border-bottom: 1px solid #CCC; }
+      .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(1) p:nth-child(1) {
+        width: 60%; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(1) p:nth-child(1) input {
+          width: 60%; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(1) p:nth-child(1) span {
+          width: 40%; }
+      .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(1) p:nth-child(2) {
+        width: 40%; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(1) p:nth-child(2) input {
+          width: 55%; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(1) p:nth-child(2) span {
+          width: 45%;
+          text-align: center; }
+    .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(2) {
+      border-bottom: 1px solid #CCC; }
+      .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(2) p:nth-child(1) {
+        width: 60%; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(2) p:nth-child(1) input {
+          width: 60%; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(2) p:nth-child(1) span {
+          width: 40%; }
+      .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(2) p:nth-child(2) {
+        width: 40%; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(2) p:nth-child(2) input {
+          width: 55%; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(2) p:nth-child(2) span {
+          width: 45%;
+          text-align: center; }
+    .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(3) {
+      border-bottom: 1px solid #CCC; }
+      .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(3) p:nth-child(1) {
+        width: 34%; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(3) p:nth-child(1) input {
+          width: 50%; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(3) p:nth-child(1) span {
+          width: 50%; }
+      .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(3) p:nth-child(2) {
+        width: 33%; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(3) p:nth-child(2) input {
+          width: 50%; }
+        .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(3) p:nth-child(2) span {
+          width: 50%; }
+      .goodsInformationRegistration .goodsBody .checkIn .bodyFour .Hpart div:nth-child(3) p:nth-child(3) {
+        width: 33%;
+        font-size: 12px;
+        text-decoration: underline;
+        color: red; }
+  .goodsInformationRegistration .goodsBody .Htotal {
+    margin-bottom: 80px; }
+    .goodsInformationRegistration .goodsBody .Htotal .Htab {
+      overflow: hidden;
+      margin: 0px auto;
+      text-align: center; }
+      .goodsInformationRegistration .goodsBody .Htotal .Htab div:nth-child(1) {
+        width: 30%;
+        height: 30px;
+        line-height: 30px;
+        float: left;
+        color: white; }
+      .goodsInformationRegistration .goodsBody .Htotal .Htab div:nth-child(2) {
+        width: 70%;
+        float: left;
+        overflow-x: scroll; }
+        .goodsInformationRegistration .goodsBody .Htotal .Htab div:nth-child(2) div {
+          width: 400px;
+          display: flex; }
+          .goodsInformationRegistration .goodsBody .Htotal .Htab div:nth-child(2) div span {
+            display: block;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            float: left;
+            border-left: 1px solid #FFF;
+            color: white;
+            background: #CCC; }
+    .goodsInformationRegistration .goodsBody .Htotal .contain_1 {
+      padding: 2px 0px;
+      background: #FFF; }
+      .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart {
+        width: 99%;
+        margin: 0px auto;
+        margin-top: 8px;
+        border-radius: 5px;
+        border: 1px solid green;
+        background: #FFFDF6; }
+        .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div {
+          overflow: hidden;
+          margin-top: 4px; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div p {
+            float: left;
+            overflow: hidden;
+            padding-top: 10px; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div p input {
+              display: block;
+              height: 20px;
+              background: #F2F2F2;
+              float: left;
+              padding: 0px; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div p span {
+              display: block;
+              float: left;
+              text-align: left;
+              font-size: 12px; }
+        .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(1) {
+          border-bottom: 1px solid #CCC; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(1) p:nth-child(1) {
+            width: 65%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(1) p:nth-child(1) input {
+              width: 70%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(1) p:nth-child(1) span {
+              width: 30%; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(1) p:nth-child(2) {
+            width: 35%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(1) p:nth-child(2) input {
+              width: 60%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(1) p:nth-child(2) span {
+              width: 40%;
+              text-align: center; }
+        .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(2) {
+          border-bottom: 1px solid #CCC; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(2) p:nth-child(1) {
+            width: 65%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(2) p:nth-child(1) input {
+              width: 70%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(2) p:nth-child(1) span {
+              width: 30%; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(2) p:nth-child(2) {
+            width: 35%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(2) p:nth-child(2) input {
+              width: 60%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(2) p:nth-child(2) span {
+              width: 40%;
+              text-align: center; }
+        .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(3) p:nth-child(1) {
+          width: 33%; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(3) p:nth-child(1) input {
+            width: 50%; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(3) p:nth-child(1) span {
+            width: 50%; }
+        .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(3) p:nth-child(2) {
+          width: 33%; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(3) p:nth-child(2) input {
+            width: 50%; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(3) p:nth-child(2) span {
+            width: 50%; }
+        .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(3) p:nth-child(3) {
+          width: 33%; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(3) p:nth-child(3) input {
+            width: 50%; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_1 .Hpart div:nth-child(3) p:nth-child(3) span {
+            width: 50%; }
+    .goodsInformationRegistration .goodsBody .Htotal .contain_2 {
+      padding: 2px 0px;
+      background: #FFF; }
+      .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart {
+        width: 99%;
+        margin: 0px auto;
+        margin-top: 8px;
+        border-radius: 5px;
+        border: 1px solid #B5B91A; }
+        .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div {
+          overflow: hidden;
+          margin-top: 4px; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div p {
+            float: left;
+            overflow: hidden;
+            padding-top: 10px; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div p input {
+              display: block;
+              height: 20px;
+              background: #F2F2F2;
+              float: left;
+              padding: 0px; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div p span {
+              display: block;
+              float: left;
+              text-align: left;
+              font-size: 12px; }
+        .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(1) {
+          border-bottom: 1px solid #CCC; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(1) p:nth-child(1) {
+            width: 50%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(1) p:nth-child(1) input {
+              width: 60%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(1) p:nth-child(1) span {
+              width: 40%; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(1) p:nth-child(2) {
+            width: 50%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(1) p:nth-child(2) input {
+              width: 50%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(1) p:nth-child(2) span {
+              width: 50%;
+              text-align: center; }
+        .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(2) {
+          border-bottom: 1px solid #CCC; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(2) p:nth-child(1) {
+            width: 50%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(2) p:nth-child(1) input {
+              width: 60%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(2) p:nth-child(1) span {
+              width: 40%; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(2) p:nth-child(2) {
+            width: 50%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(2) p:nth-child(2) input {
+              width: 60%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(2) p:nth-child(2) span {
+              width: 40%;
+              text-align: center; }
+        .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(3) {
+          border-bottom: 1px solid #CCC; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(3) p:nth-child(1) {
+            width: 50%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(3) p:nth-child(1) input {
+              width: 60%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(3) p:nth-child(1) span {
+              width: 40%; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(3) p:nth-child(2) {
+            width: 50%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(3) p:nth-child(2) input {
+              width: 60%; }
+            .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(3) p:nth-child(2) span {
+              width: 40%;
+              text-align: center; }
+        .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(4) p:nth-child(1) {
+          width: 33%; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(4) p:nth-child(1) input {
+            width: 50%; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(4) p:nth-child(1) span {
+            width: 50%; }
+        .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(4) p:nth-child(2) {
+          width: 33%; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(4) p:nth-child(2) input {
+            width: 50%; }
+          .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(4) p:nth-child(2) span {
+            width: 50%; }
+        .goodsInformationRegistration .goodsBody .Htotal .contain_2 .Hpart div:nth-child(4) p:nth-child(3) {
+          width: 34%;
+          color: red;
+          text-decoration: underline;
+          font-size: 12px;
+          text-align: center; }
+
+.Hsum {
+  width: 100%;
+  background: #FFF;
+  overflow: hidden; }
+  .Hsum div {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden; }
+    .Hsum div span {
+      display: block;
+      float: left; }
+    .Hsum div span:nth-child(1), .Hsum div span:nth-child(3) {
+      width: 12%;
+      text-align: center; }
+    .Hsum div span:nth-child(2), .Hsum div span:nth-child(4) {
+      width: 38%;
+      padding-right: 5px;
+      text-align: right; }
+
+#Hclick {
+  text-align: center;
+  color: red;
+  font-size: 10px;
+  padding: 0px; }
+
+.popup .popup-head {
+  background-color: #D15300; }
+
+.popup .popup-body {
+  padding: 0; }
+
+.popup .popup-body .popCont > div {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  border-bottom: 1px solid #CCC; }
+
+.popup .popup-body .popCont > div:last-child(1) {
+  border-bottom: none; }
+
+.popup .popup-buttons {
+  color: #fff; }
+  .popup .popup-buttons button {
+    background-color: #CE7849; }
+  .popup .popup-buttons .button.button-positive {
+    background-color: #CE7849; }
+
+.cigaretteManagement ul li .li_content {
+  overflow: hidden; }
+  .cigaretteManagement ul li .li_content span {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 16px;
+    padding: 2px 0px;
+    background: #DFDBD8;
+    text-align: center;
+    border-radius: 5%;
+    color: #FFF; }
+  .cigaretteManagement ul li .li_content .recNot {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 16px;
+    overflow: hidden; }
+    .cigaretteManagement ul li .li_content .recNot span {
+      display: block;
+      width: 48%;
+      background: #DFDBD8;
+      font-size: 14px;
+      color: #FFF;
+      border-radius: 5%;
+      text-align: center; }
+    .cigaretteManagement ul li .li_content .recNot span:nth-child(1) {
+      float: left; }
+    .cigaretteManagement ul li .li_content .recNot span:nth-child(2) {
+      float: right; }
+  .cigaretteManagement ul li .li_content p {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 16px;
+    padding: 2px 0px; }
+    .cigaretteManagement ul li .li_content p input {
+      width: 180px;
+      display: inline;
+      height: 20px;
+      border: 1px solid #CCC;
+      line-height: 20px; }
+
+.item-toggle .toggle {
+  top: 2px !important; }
+
+#Hsituation input {
+  border: 1px solid #CCC;
+  height: 60px; }
+
+.track {
+  text-align: left;
+  line-height: 200%;
+  font-size: 14px;
+  color: white; }
+  .track span {
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    text-align: right; }
+
+.toggle .track {
+  width: 75px;
+  border: solid 2px #88CC27;
+  background-color: #88CC27; }
+
+.toggle input:checked + .track .handle {
+  transform: translate3d(45px, 0, 0); }
+
+.basicInfo li span input {
+  height: 20px;
+  float: left;
+  text-align: right;
+  padding: 0px; }
+
+.basicInfo li span.selectColor {
+  color: #A7A8A3; }
+
+.basicInfo li .ion-chevron-right {
+  color: #A7A8A3; }
+
+.basicInfo li .modelChecked {
+  float: right; }
+
+.alert-popup .popup {
+  width: 70%; }
+
+.alert-popup .popup-head {
+  background-color: #D15300;
+  padding: 7px; }
+  .alert-popup .popup-head h3 {
+    color: #fff; }
+
+.alert-popup .popup-body {
+  padding: 0; }
+  .alert-popup .popup-body ul {
+    margin-top: 0px; }
+    .alert-popup .popup-body ul li {
+      text-align: left; }
+      .alert-popup .popup-body ul li span {
+        width: 70%;
+        float: left; }
+        .alert-popup .popup-body ul li span select {
+          margin-left: 31%; }
+
+.alert-popup .popup-buttons {
+  color: #fff;
+  height: 35px; }
+  .alert-popup .popup-buttons button:nth-child(1) {
+    background-color: #B5B5B5; }
+  .alert-popup .popup-buttons button:nth-child(2) {
+    background-color: #88CC27; }
+
+.articles-popup .popup-head {
+  background-color: #D15300;
+  padding: 7px; }
+  .articles-popup .popup-head h3 {
+    color: #fff; }
+
+.articles-popup .popup-body {
+  padding: 0; }
+  .articles-popup .popup-body ul {
+    margin-top: 0; }
+    .articles-popup .popup-body ul li {
+      text-align: center; }
+    .articles-popup .popup-body ul li.elect {
+      background-color: #EDB82B;
+      color: #fff; }
+    .articles-popup .popup-body ul li.articlesLeft {
+      text-align: center; }
+
+.articles-popup .popup-buttons {
+  color: #fff;
+  height: 35px; }
+  .articles-popup .popup-buttons button {
+    background-color: #CE7849; }
+  .articles-popup .popup-buttons .button.button-positive {
+    background-color: #CE7849; }
+
+.natureOfTheCase {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10; }
+  .natureOfTheCase .natureOfTheCase-bg {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    z-index: 5; }
+
+.mainTheCase {
+  position: absolute;
+  z-index: 11; }
+  .mainTheCase ul.mainNav {
+    height: 85px;
+    background-color: #F2F2F2;
+    padding-left: 3px; }
+    .mainTheCase ul.mainNav span {
+      font-size: 12px;
+      padding: 3px 8px;
+      background-color: #E0DCD9;
+      color: #303030;
+      margin: 0 3px;
+      border-radius: 3px;
+      float: left;
+      margin-top: 9px;
+      display: block; }
+    .mainTheCase ul.mainNav .tab {
+      background-color: #EDB82C; }
+    .mainTheCase ul.mainNav li {
+      width: 99%;
+      margin: 0 auto; }
+
+#documentPreview {
+  height: 100%; }
+  #documentPreview .part_1 {
+    height: 84%;
+    overflow-y: scroll; }
+  #documentPreview .part_2 {
+    height: 6%; }
+    #documentPreview .part_2 span {
+      display: inline-block;
+      width: 25%;
+      height: 100%;
+      line-height: 400%;
+      border-right: 1px solid white;
+      color: #FFF;
+      font-size: 10px;
+      text-align: center;
+      background: #D4CBC6; }
+    #documentPreview .part_2 span:nth-child(1) {
+      background: #EDB82A; }
+  #documentPreview .part_3 {
+    height: 10%;
+    line-height: 400%;
+    font-size: 16px;
+    color: #FFF;
+    text-align: center;
+    background: #1883D7; }
+  #documentPreview .H_borderBottom {
+    display: inline-block;
+    width: 30px;
+    border-bottom: solid black .5px; }
+
+.Hactive {
+  display: block; }
+
+.common_content div.documentPreview, .register, .rectificationNotice, .inquiryNotice {
+  font-size: 14px;
+  background: #FFF;
+  padding: 0 5px;
+  padding-top: 10px; }
+
+div.documentPreview p {
+  font-size: 14px;
+  color: #555;
+  line-height: 20px; }
+  div.documentPreview p span {
+    text-decoration: underline;
+    color: #444; }
+
+div.documentPreview .dpTitle {
+  font-size: 16px;
+  color: #444;
+  text-align: center; }
+
+div.documentPreview .dpTitle1 {
+  text-align: center; }
+
+div.documentPreview .doucumentPreviewCont .dpcIndent {
+  text-indent: 2em; }
+
+div.documentPreview .doucumentPreviewCont .dpcRight {
+  text-align: right; }
+
+div.documentPreview .doucumentPreviewCont table {
+  border: 1px solid #333;
+  width: 100%;
+  color: #444;
+  margin-bottom: 10px; }
+  div.documentPreview .doucumentPreviewCont table tr {
+    border-bottom: 1px solid #333;
+    width: 100%; }
+    div.documentPreview .doucumentPreviewCont table tr th {
+      border-right: 1px solid #333; }
+    div.documentPreview .doucumentPreviewCont table tr .th1 {
+      width: 15%; }
+    div.documentPreview .doucumentPreviewCont table tr .th2 {
+      width: 45%; }
+    div.documentPreview .doucumentPreviewCont table tr .th3 {
+      width: 20%; }
+    div.documentPreview .doucumentPreviewCont table tr td {
+      border-right: 1px solid #333;
+      text-align: center; }
+
+div.documentPreview .doucumentPreviewCont2 table {
+  border: 1px solid #333;
+  width: 100%;
+  color: #444;
+  margin-bottom: 10px; }
+  div.documentPreview .doucumentPreviewCont2 table tr {
+    border-bottom: 1px solid #333; }
+    div.documentPreview .doucumentPreviewCont2 table tr td {
+      border-right: 1px solid #333;
+      text-align: center;
+      vertical-align: middle; }
+      div.documentPreview .doucumentPreviewCont2 table tr td .table1 {
+        border: 0px;
+        margin-bottom: 0px; }
+        div.documentPreview .doucumentPreviewCont2 table tr td .table1 tr {
+          border: 0px; }
+          div.documentPreview .doucumentPreviewCont2 table tr td .table1 tr td:last-child {
+            border-right: 0px; }
+      div.documentPreview .doucumentPreviewCont2 table tr td p {
+        text-align: left;
+        text-indent: 2em; }
+    div.documentPreview .doucumentPreviewCont2 table tr .td1 {
+      vertical-align: middle; }
+
+.inquiryNotice {
+  color: #646464; }
+
+.inquiryNotice .H2 {
+  text-align: center;
+  font-size: 16px; }
+
+.inquiryNotice .H3 {
+  text-align: center;
+  font-size: 14px; }
+
+.inquiryNotice span {
+  font-size: 12px; }
+
+.inquiryNotice .brings {
+  text-indent: 2rem; }
+
+.inquiryNotice .datum .list {
+  list-style: none; }
+
+.inquiryNotice .datum .list li {
+  text-indent: 4rem;
+  font-size: 12px;
+  padding-top: 1px;
+  overflow: hidden; }
+
+.inquiryNotice .datum .list li input {
+  display: inline-block; }
+
+.inquiryNotice .borderBottom {
+  border-bottom: solid black .5px;
+  font-size: 12px; }
+
+.inquiryNotice .end p {
+  text-align: right; }
+
+.register {
+  color: #646464; }
+
+.register .H2 {
+  text-align: center;
+  font-size: 16px; }
+
+.register .H3 {
+  text-align: center;
+  font-size: 14px; }
+
+.register span {
+  font-size: 12px; }
+
+.register .datum .list {
+  list-style: none; }
+
+.register .datum .list li {
+  text-indent: 4rem;
+  font-size: 12px; }
+
+.register .borderBottom {
+  border-bottom: solid black .5px;
+  font-size: 12px; }
+
+.register .end p {
+  text-align: right; }
+
+.rectificationNotice {
+  color: #646464; }
+
+.rectificationNotice .H2 {
+  text-align: center;
+  font-size: 16px; }
+
+.rectificationNotice .H3 {
+  text-align: center;
+  font-size: 14px; }
+
+.rectificationNotice .brings {
+  text-indent: 2rem; }
+
+.rectificationNotice span {
+  font-size: 12px; }
+
+.rectificationNotice .Hreason ul li {
+  list-style: none;
+  text-indent: 2rem;
+  font-size: 12px; }
+
+.rectificationNotice .Hcause {
+  text-indent: 2rem; }
+
+.rectificationNotice .borderBottom {
+  border-bottom: solid black .5px;
+  font-size: 12px; }
+
+.rectificationNotice .end p {
+  text-align: right; }
+
+.rectificationNotice .Hcenter {
+  text-align: center;
+  font-size: 10px; }
+
+.rectificationNotice .Hright {
+  text-align: right; }
+
+/*我的页面表格样式 start*/
+.mineTable .tableTh {
+  height: 40px;
+  background-color: #D2F4FD;
+  line-height: 40px;
+  margin-bottom: 0px;
+  clear: both; }
+  .mineTable .tableTh span {
+    display: block;
+    float: left; }
+  .mineTable .tableTh span.checkLabel2 {
+    width: 19%;
+    text-align: center; }
+
+.mineFoot {
+  width: 100%;
+  text-align: center;
+  color: #fff; }
+  .mineFoot .mineInset {
+    background-color: #88CC27;
+    font-size: 16px; }
+
+.checkbox-icon {
+  float: left;
+  margin-left: 86%; }
+
+span.checkLabel {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 27%;
+  color: #30302E; }
+
+span.checkLabel1 {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 54%;
+  color: #30302E; }
+
+.mineTable > label.item {
+  padding: 0px;
+  height: 40px;
+  line-height: 40px; }
+
+.mineTable > label > div:nth-child(1) {
+  right: 0px !important;
+  left: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
+
+.checkbox input:checked + .checkbox-icon:before, .checkbox input:checked:before {
+  background: #88CC27 !important;
+  border-color: #88CC27 !important; }
+
+.checkbox-square .checkbox-icon:before, .checkbox-square input:before, .platform-android .checkbox-platform .checkbox-icon:before, .platform-android .checkbox-platform input:before {
+  border-radius: 50%;
+  margin-top: 7%; }
+
+/*我的页面表格样式 end*/
+ul.imageInfo {
+  width: 95%;
+  margin: 0 auto; }
+  ul.imageInfo li {
+    float: left;
+    width: 48%;
+    margin-right: 10px; }
+    ul.imageInfo li div {
+      width: 100%;
+      height: 85%; }
+      ul.imageInfo li div img {
+        display: block;
+        float: left;
+        width: 48%;
+        margin-right: 2px;
+        height: 60px;
+        background-color: #ccc;
+        margin-bottom: 2px; }
+      ul.imageInfo li div img.imageRight1 {
+        margin-right: 0; }
+    ul.imageInfo li span {
+      height: 15%;
+      display: block;
+      font-size: 14px;
+      color: #000; }
+  ul.imageInfo li.imageRight {
+    margin-right: 0px; }
+
+/* pad首页样式开始 */
+.padbanner ul li {
+  width: 33% !important; }
+
+.padFoot {
+  height: 100px;
+  width: 70%;
+  margin: 0 auto; }
+  .padFoot div:nth-child(1) {
+    margin-top: 5px; }
+  .padFoot div:nth-child(2) {
+    margin-top: 10px;
+    height: 26px; }
+    .padFoot div:nth-child(2) span {
+      display: block;
+      float: left; }
+    .padFoot div:nth-child(2) span:nth-child(1) {
+      margin-top: 10px;
+      width: 30%; }
+    .padFoot div:nth-child(2) span:nth-child(2) {
+      height: 25px;
+      border-bottom: 1px solid #000;
+      width: 50%; }
+    .padFoot div:nth-child(2) span:nth-child(3) {
+      background-color: #ccc;
+      width: 19%;
+      height: 26px;
+      line-height: 26px;
+      text-align: center;
+      margin-left: 2px; }
+
+/* pad首页样式结束 */
+/* 小pad上的物品登记页面样式开始 */
+.registrationItems .regisItems li {
+  margin: 0 1px;
+  overflow: hidden; }
+  .registrationItems .regisItems li input {
+    display: block;
+    width: 50%;
+    float: left;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 6px;
+    background-color: #CCC;
+    height: 28px; }
+  .registrationItems .regisItems li span.regisItemsSearch {
+    padding: 10px 20px;
+    background-color: #D05201;
+    color: #fff;
+    margin-left: 4px;
+    float: right; }
+  .registrationItems .regisItems li span.ItemsSearch {
+    padding: 4px 16px;
+    color: #fff;
+    margin-top: 6px;
+    background-color: #2baae1;
+    float: left; }
+
+.registrationItems .regisItems .scanBox {
+  overflow: hidden; }
+  .registrationItems .regisItems .scanBox span:nth-child() {
+    float: left; }
+  .registrationItems .regisItems .scanBox span:nth-child(2) {
+    float: right; }
+
+.registrationItems .regisItems .mobilTotal {
+  overflow: hidden; }
+  .registrationItems .regisItems .mobilTotal span:nth-child() {
+    float: left;
+    width: 50%; }
+  .registrationItems .regisItems .mobilTotal span:nth-child(2) {
+    float: right;
+    width: 50%; }
+
+#mobil_type {
+  overflow: hidden; }
+  #mobil_type li {
+    overflow: hidden; }
+    #mobil_type li span:nth-child(1) {
+      float: left; }
+    #mobil_type li span:nth-child(2) {
+      float: right; }
+
+#mobil_keep {
+  margin-top: 20px;
+  padding: 0px; }
+  #mobil_keep span {
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    padding: 16px 0px;
+    text-align: center;
+    background-color: #88CC27;
+    color: #fff; }
+  #mobil_keep span:nth-child(1) {
+    background-color: gray;
+    color: black; }
+
+.registrationItems .addRegis li span .addRegis1 {
+  display: block;
+  padding: 5px 10px;
+  background-color: #F4F4F4;
+  color: #A8A9A3;
+  float: left;
+  margin-right: 15px; }
+
+.registrationItems .addRegis li span i.addRegis1:nth-child(1) {
+  margin-left: 3px; }
+
+.registrationItems .addRegis li span i.addRegis2 {
+  background-color: #2EA9E5;
+  color: #fff; }
+
+.goodskind-popup .popup {
+  width: 65%; }
+
+.goodskind-popup .popup-body div {
+  height: 80px;
+  line-height: 80px;
+  font-size: 18px; }
+
+.goodskind-popup .popup-buttons button:nth-child(1) {
+  background-color: #B5B5B5; }
+
+.goodskind-popup .popup-buttons button:nth-child(2) {
+  background-color: #88CC27; }
+
+/* 小pad上的物品登记页面样式结束 */

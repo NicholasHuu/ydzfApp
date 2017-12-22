@@ -1,0 +1,20 @@
+/*headPopover样式 start*/
+.headPopover{
+  width: 100px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  font-size: $font16;
+  background-color: #D05201;
+  color: #fff;
+  //分割线
+  div:nth-child(2){
+    border: 1px solid #cccccc
+  }
+  //选项
+  div:nth-child(1),div:nth-child(3){
+    height: 40px;
+    line-height: 40px;
+  }
+}
+/*headPopover样式 end*/

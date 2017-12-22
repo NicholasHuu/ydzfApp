@@ -1,0 +1,12 @@
+<!--计划外列表-->
+<ul class="list">
+    <li class="item" ng-repeat="storeItem in storeData" ng-click="planListClick()"
+        data-regielicenceno="{{storeItem.REGIELICENCENO}}" data-me05_id="{{storeItem.ME05_ID}}"
+        data-me06_id="{{storeItem.ME06_ID}}" data-examtypecode="{{storeItem.EXAMTYPECODE}}"
+        data-me11ID="{{storeItem.ME11_ID}}" data-examtypeName="{{storeItem.EXAMTYPENAME}}"
+        ng-class="{'checkColor':storeItem.ME20_ID == 0 && storeItem.ME11_ID,'singInColor':storeItem.ME20_ID == 1 && storeItem.ME11_ID}">
+        <div ng-bind="storeItem.CUSTOMERNAME"></div>
+        <div ng-bind="storeItem.CUSTOMERPLACE"></div>
+    </li>
+</ul>
+

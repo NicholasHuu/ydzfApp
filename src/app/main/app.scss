@@ -1,0 +1,193 @@
+$font16:16px;
+$font20:20px;
+$font14:14px;
+//app页面背景色
+.common_content{
+  background-color: #FFF5EE !important;
+}
+/*使ion-content充满屏幕*/
+ion-content>div.scroll{
+  height: 100%;
+}
+/*白色背景*/
+.bgWhite{
+  background-color: white;
+}
+/*更多按钮样式*/
+.morebutton{
+  font-size: 30px!important;
+  margin-right: 10px;
+}
+
+/*列表样式*/
+.item{
+  padding:7px;
+  font-size:$font14;
+  color:#8E8E8D;
+  border-color: #E5E5E5;
+  padding-right: 0px;
+}
+/*模态窗口样式修改*/
+.modal-backdrop, .modal-backdrop-bg{
+  height:100%;
+}
+.modal{
+  background-color:rgba(0,0,0,0);
+  top:0;
+}
+.list-inset{
+  width:100%;
+  position:absolute;
+  bottom:0px;
+  margin:0px;
+  background-color:#CCC;
+}
+.list-inset>.item{
+  width:60%;
+  margin:0px auto;
+  text-align:center;
+}
+
+/*navBar样式自定义*/
+.bar.bar-selfStyle .title {
+  color: #fff;
+}
+.bar.bar-selfStyle {
+  border-color: #D05201;
+  background-color: #D05201;
+  background-image: linear-gradient(0deg,#D05201,#D05201 50%,transparent 50%);
+  color: #fff;
+}
+.bar-selfStyle .button.button-clear {
+  border-color: transparent;
+  background: 0 0;
+  box-shadow: none;
+  color: #fff;
+}
+.bar-selfStyle .button {
+  border-color: #D05201;
+  background-color: #D05201;
+  color: #fff;
+}
+
+/*页面底部扫描按钮*/
+.marketRecord{
+  width:100%;
+  font-size:$font14;
+  height:40px;
+  line-height: 40px;
+  border-top:0px solid #bbb;
+  text-align: center;
+  background-color: #88CC27;
+  color: white;
+}
+.item-toggle{
+  pointer-events: auto!important;
+}
+.chooseSpan{
+  background: #EDB82A !important;
+}
+.navContentContrain{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between
+}
+.floatScannBtn{
+  position: absolute;
+  width: 80%!important;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*时间控件样式自定义*/
+.mbsc-material .mbsc-sc-whl-gr {
+  padding: 0.5em .25em!important;
+}
+.mbsc-material .mbsc-fr-hdr {
+  color: white!important;
+  background-color: #D15300!important;
+  font-size: 18px!important;
+  padding: 0px!important;
+}
+.mbsc-material .mbsc-fr-btn-w {
+  display: block!important;
+  float: none!important;
+  margin: 0 !important;
+  text-align: center!important;
+  margin-top: 5px!important;
+}
+.mbsc-material .mbsc-fr-btn-cont {
+  display: block!important;
+  overflow: hidden;
+  padding: 0 .5em .5em;
+  background-color: #D15300;
+  color: white;
+  font-size: 20px;
+}
+
+//异常提示框样式
+.errorAlert{
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+  font-size: 50px;
+  color: red;
+}
+
+.errorAlertCont{
+  color: red;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 5px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.errorAlertHead{
+  color: white;
+  font-size: 20px;
+  padding: 10px 10px;
+}
+
+.popup-head {
+  padding: 0px !important;
+}
+//文书生成弹出框标题样式
+.popupHead{
+  padding: 7px;
+}
+
+/*外部样式引入*/
+@import "../directive/headPopover/headPopover.scss";
+@import "../directive/verticalNavigation/verticalNavigation.scss";
+@import "../home/home.scss";
+@import "../marketInspect/marketInspect.scss";
+@import "../marketInspect/nearby/nearby.scss";
+@import "../marketInspect/insideThePlan/insideThePlan.scss";
+@import "../marketInspect/outsideThePlan/outsideThePlan.scss";
+@import "../basicInformation/changeInformation/changeInformation.scss";
+@import "../basicInformation/basicInformation.scss";
+@import "../basicInformation/essentialInformation/essentialInformation.scss";
+@import "../basicInformation/businessInformation/businessInformation.scss";
+@import "../basicInformation/managementInformation/managementInformation.scss";
+@import "../basicInformation/distributionInformation/distributionInformation.scss";
+@import "../basicInformation/marketInspectionRecord/marketInspectionRecord.scss";
+@import "../basicInformation/violationRecord/violationRecord.scss";
+@import "../basicInformation/illegalRecord/illegalRecord.scss";
+@import "../basicInformation/complaintReport/complaintReport.scss";
+@import "../marketInspectRecord/marketInspectRecord.scss";
+@import "../marketInspectRecord/basicInfoRegistration/basicInfoRegistration.scss";
+@import "../marketInspectRecord/licence/licence.scss";
+@import "../marketInspectRecord/orderRectification/orderRectification.scss";
+@import "../marketInspectRecord/goodsInformationRegistration/goodsInformationRegistration.scss";
+@import "../marketInspectRecord/cigaretteManagement/cigaretteManagement.scss";
+@import "../marketInspectRecord/documentsGenerated/documentsGenerated.scss";
+@import "../marketInspectRecord/documentPreview/documentPreview.scss";
+@import "../documentPreview/documentPreview.scss";
+@import "../mine/mine.scss";
+@import "../basicInformation/imageInformatio/imageInformatio.scss";
+@import "../padHome/padHome.scss";
+@import "../registrationItems/registrationItems.scss";

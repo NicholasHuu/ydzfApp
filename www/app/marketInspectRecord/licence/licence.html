@@ -1,0 +1,126 @@
+<div class="navContentContrain">
+<div class="licence">
+    <ul class="list" ng-click="chooseCondition()">
+        <li class="item item-toggle">
+            是否亮证经营
+            <label class="toggle toggle-assertive item1">
+                <input type="checkbox" ng-model="pageData.ME_RESLUT01"
+                       ng-change="checkChange(pageData.ME_RESLUT01,'meReslut01','meReslut01Handle',[])">
+                <div class="track">
+                    <span ng-if="pageData.ME_RESLUT01" class="menu-disabled-true">否</span>
+                	<span ng-if="!pageData.ME_RESLUT01" class="menu-disabled-false">是</span>
+                    <div class="handle"></div>
+                </div>
+            </label>
+            <div class="li_content" ng-show="pageData.ME_RESLUT01==true" id="meReslut01Handle">
+            	<div class="recNot">
+                <span data-zlzx ng-class="{true:'chooseSpan'}[pageData.ME_RESLUT01_HANDLE == '1' || pageData.ME_RESLUT01_HANDLE== '3']">要求经营户整改</span>
+            	<span ng-class="{true:'chooseSpan'}[pageData.ME_RESLUT01_HANDLE=='2' || pageData.ME_RESLUT01_HANDLE=='3']">通知办证组</span>
+                </div>
+            </div>
+        </li>
+        <li class="item item-toggle">
+            许可证使用异常情况
+            <label class="toggle toggle-assertive">
+                <input type="checkbox" ng-model="pageData.ME_RESLUT02"
+                       ng-change="checkChange(pageData.ME_RESLUT02,'meReslut02','meReslut02Handle',[])">
+                <div class="track">
+                    <span ng-if="pageData.ME_RESLUT02" class="menu-disabled-true">异常</span>
+                    <span ng-if="!pageData.ME_RESLUT02" class="menu-disabled-false">无异常</span>
+                    <div class="handle"></div>
+                </div>
+            </label>
+            <div id="meReslut02Handle" class="li_content specialP" ng-show="pageData.ME_RESLUT02==true" ng-click="meReslut02Click()" >
+                <p data-meresult02 = '2' ng-class="{true:'chooseSpan'}[meReslut02Val=='2']">有证无店</p>
+                <p data-meresult02 = '3' ng-class="{true:'chooseSpan'}[meReslut02Val=='3']">有证有报笼</p>
+                <p data-meresult02 = '4' ng-class="{true:'chooseSpan'}[meReslut02Val=='4']">有证无报笼</p>
+                <div class="recNot">
+                <span data-zlzx ng-class="{true:'chooseSpan'}[pageData.ME_RESLUT02_HANDLE == '1' || pageData.ME_RESLUT02_HANDLE== '3']">要求经营户整改</span>
+            	<span ng-class="{true:'chooseSpan'}[pageData.ME_RESLUT02_HANDLE == '2' || pageData.ME_RESLUT02_HANDLE== '3']">通知办证组</span>
+                </div>
+            </div>
+        </li>
+        <li class="item item-toggle" >
+            是否与实际地址一致
+            <label class="toggle toggle-assertive">
+                <input type="checkbox" ng-model="pageData.ME_RESLUT03"
+                       ng-change="checkChange(pageData.ME_RESLUT03,'meReslut03','meReslut03Handle',['ME_RESLUT03_ACTADDRESS'])">
+                <div class="track">
+                    <span ng-if="pageData.ME_RESLUT03" class="menu-disabled-true">否</span>
+                    <span ng-if="!pageData.ME_RESLUT03" class="menu-disabled-false">是</span>
+                    <div class="handle"></div>
+                </div>
+            </label>
+            <div id="meReslut03Handle" class="licenInput li_content" ng-show="pageData.ME_RESLUT03==true">
+                <p>实际地址:<input class="HActaddress" type="text" ng-model="pageData.ME_RESLUT03_ACTADDRESS"
+                               placeholder="必填" ng-class="{true:'redBorder'}[!ME_RESLUT03IsOk]"></p>
+                <div class="recNot">
+                <span data-zlzx ng-class="{true:'chooseSpan'}[pageData.ME_RESLUT03_HANDLE == '1' || pageData.ME_RESLUT03_HANDLE== '3']">要求经营户整改</span>
+                <span ng-class="{true:'chooseSpan'}[pageData.ME_RESLUT03_HANDLE == '2' || pageData.ME_RESLUT03_HANDLE== '3']">通知办证组</span>
+                </div>
+            </div>
+        </li>
+        <li class="item item-toggle">
+            是否与营业执照一致
+            <label class="toggle toggle-assertive">
+                <input type="checkbox" ng-model="pageData.ME_RESLUT04"
+                       ng-change="checkChange(pageData.ME_RESLUT04,'meReslut04','meReslut04Handle',['ME_RESLUT04_ACTLICENCE'])">
+                <div class="track">
+                    <span ng-if="pageData.ME_RESLUT04" class="menu-disabled-true">否</span>
+                    <span ng-if="!pageData.ME_RESLUT04" class="menu-disabled-false">是</span>
+                    <div class="handle"></div>
+                </div>
+            </label>
+            <div id="meReslut04Handle" class="li_content" ng-show="pageData.ME_RESLUT04==true">
+                <p>营业执照: <input class="HActlicence" type="text" ng-model="pageData.ME_RESLUT04_ACTLICENCE"
+                                placeholder="必填" ng-class="{true:'redBorder'}[!ME_RESLUT04IsOk]"></p>
+                <div class="recNot">
+                <span data-zlzx ng-class="{true:'chooseSpan'}[pageData.ME_RESLUT04_HANDLE == '1' || pageData.ME_RESLUT04_HANDLE== '3']">要求经营户整改</span>
+                <span ng-class="{true:'chooseSpan'}[pageData.ME_RESLUT04_HANDLE == '2' || pageData.ME_RESLUT04_HANDLE== '3']">通知办证组</span>
+                </div>
+            </div>
+        </li>
+        <li class="item item-toggle">
+            是否涉嫌租赁
+            <label class="toggle toggle-assertive">
+                <input type="checkbox" ng-model="pageData.ME_RESLUT05"
+                       ng-change="checkChange(pageData.ME_RESLUT05,'meReslut05',null,['ME_RESLUT05_NAME','ME_RESLUT05_PROVINCE','ME_RESLUT05_CARDNO','ME_RESLUT05_PHONE'])">
+                <div class="track">
+                    <span ng-if="pageData.ME_RESLUT05" class="menu-disabled-true">是</span>
+                    <span ng-if="!pageData.ME_RESLUT05" class="menu-disabled-false">否</span>
+                    <div class="handle"></div>
+                </div>
+            </label>
+            <div class="li_content" ng-show="pageData.ME_RESLUT05==true">
+                <p>实际经营人:<input class="HName" type="text" name="operator" ng-model="pageData.ME_RESLUT05_NAME"
+                                placeholder="必填" ng-class="{true:'redBorder'}[!ME_RESLUT05IsOk]"></p>
+                <p class="meReslut05City">
+                    籍贯:<input type="text" name="placeOfOrigin" placeholder="选填" ng-model="pageData.ME_RESLUT05_PROVINCE">
+                </p>
+                <p>身份证号:<input type="text" name="IDnumber" ng-model="pageData.ME_RESLUT05_CARDNO" placeholder="选填"></p>
+                <p>联系电话:<input type="text" name="phone" ng-model="pageData.ME_RESLUT05_PHONE" placeholder="选填"></p>
+            </div>
+        </li>
+        <li class="item item-toggle">
+            是否有其他违规情况
+            <label class="toggle toggle-assertive">
+                <input type="checkbox" ng-model="pageData.ME_RESLUT06"
+                       ng-change="checkChange(pageData.ME_RESLUT06,'meReslut06',null,['ME_RESLUT06_DETAIL'])">
+                <div class="track">
+                    <span ng-if="pageData.ME_RESLUT06" class="menu-disabled-true">是</span>
+                    <span ng-if="!pageData.ME_RESLUT06" class="menu-disabled-false">否</span>
+                    <div class="handle"></div>
+                </div>
+            </label>
+            <div class="li_content" ng-show="pageData.ME_RESLUT06==true">
+                <div id="Hsituation">
+                    <div>情况:</div>
+                    <input class="Hsitua" type="text" name="" ng-model="pageData.ME_RESLUT06_DETAIL"
+                           placeholder="必填" ng-class="{true:'redBorder'}[!ME_RESLUT06IsOk]">
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="marketRecord" ng-click="postData()">完成,下一项</div>
+</div>

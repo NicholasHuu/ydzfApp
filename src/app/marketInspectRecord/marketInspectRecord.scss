@@ -1,0 +1,36 @@
+
+//市场检查中签到确认框的样式
+.sign-popup	.popup{
+	font-size: $font14;
+	width:55%;
+}
+.popup-container .popup-buttons{
+		padding:0;
+		min-height:0px;
+		height:40%;
+		button{
+			width:50%;
+			margin-right:0px;
+			border-radius: 0px;
+			border:0px;
+			padding:0px;
+			min-height:30px;
+		}
+}
+.sign-popup .popup-head{
+		padding:0px;
+}
+.sign-popup .popup-buttons{
+	button:nth-child(1){
+		background-color:#F0F2EF;
+		color:#666;
+	}
+	button:nth-child(2){
+		background-color:#CBAD29;
+		color:#fff;
+	}
+}
+.sign-popup .popup-body{
+	color:#303030;
+	text-align: center;
+}

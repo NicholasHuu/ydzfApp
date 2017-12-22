@@ -1,0 +1,18 @@
+<!-- 基础档案查询下的投诉举报记录页面开始 -->
+<ul class="list bgEven complaintReport">
+    <li class="item">
+        <span>日期</span>
+        <span>投诉举报事项</span>
+        <span>是否<br/>核查</span>
+        <span>是否<br/>属实</span>
+    </li>
+    <li class="item basInfo_listItme" ng-repeat="storeItem in data">
+        <span ng-bind="storeItem.COMPLAINTTIME | formatDate"></span>
+        <span ng-bind-html="storeItem.DESCRIBE"></span>
+        <span>
+            <button class="button checkBtn">未核实</button>
+        </span>
+        <span ng-bind="storeItem.isItTrue"></span>
+    </li>
+</ul>
+<!-- 基础档案查询下的投诉举报记录页面结束 -->

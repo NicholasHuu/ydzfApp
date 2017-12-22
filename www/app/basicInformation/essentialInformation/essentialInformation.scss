@@ -1,0 +1,30 @@
+/*基础档案查询-----基本信息样式开始*/
+.essential{
+	background:#fff;
+	border-radius:7px;
+	color:#303030;
+	li{
+		display:block;
+		border-bottom:1px solid #E6E6E6;
+		color:#303030;
+		font:$font14;
+		position:relative;
+		padding:5px;
+	}
+	.listItem{
+		border-bottom:0px;
+	}
+}
+.essential2{
+	margin-top:3%;
+}
+
+.basInfo_listItme{
+	display: flex !important;
+	justify-content: space-between !important;
+	align-items: center !important;
+}
+.basInfo_listItme>span:nth-child(2){
+	display: block;
+}
+/*基础档案查询----基本信息样式结束*/

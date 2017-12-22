@@ -1,0 +1,15 @@
+<!--市场检查页面-->
+<ion-view view-title="市场检查">
+    <ion-content class="common_content" scroll="false">
+        <vertical-navigation menu-ary="navigationMenu" menu-click="navigationClick()">
+            <!--市场检查页面底部时间选择按钮-->
+            <div class="insidePlan_datePlugin">
+                <button ng-click="yesterdayClick()" class="btn button-clear" style="color: white" id="yesterdayBtn"><</button>
+                <span>{{storeData2}}</span>
+                <button class="btn button-clear" ng-click="tomorrowClick()" style="color: white" id="tomorrowBtn">></button>
+            </div>
+            <!--市场检查页面底部扫描按钮-->
+            <div ng-click="scanCode()" class="insidePlan_scannerBtn">扫码进店</div>
+        </vertical-navigation>
+    </ion-content>
+</ion-view>

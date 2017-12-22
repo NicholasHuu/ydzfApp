@@ -1,0 +1,12 @@
+<!-- 基础档案查询下的违规记录页面开始 -->
+<ul class="list bgEven violationRecord">
+    <li>
+        <span>日期</span>
+        <span>违规事项</span>
+    </li>
+    <li class="item basInfo_listItme" ng-repeat="storeItem in data">
+        <span ng-bind="storeItem.EXAMDATE"></span>
+        <span ng-bind="storeItem.RULL_ITEM"></span>
+    </li>
+</ul>
+<!-- 基础档案查询下的违规记录页面结束 -->

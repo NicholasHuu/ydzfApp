@@ -1,0 +1,38 @@
+<!--首页页面-->
+<ion-view view-title="首页" hide-back-button=true>
+	<!--首页右侧多选按钮-->
+	<ion-nav-buttons side="right">
+		<button class="button button-clear ion-ios-more morebutton" ng-click="moreButton()"></button>
+	</ion-nav-buttons>
+
+	<ion-content class="common_content" on-scroll="scrollHidePopver()">
+		<!--多选下拉选择框组件-->
+		<head-popover ng-if="moreButtonShow"></head-popover>
+		<!--首页图标容器-->
+		<section class="banner">
+			<ul>
+				<li><a ui-sref="marketInspect"><img ng-src="img/home-icon/icon-01" alt=""><span>市场检查</span></a></li>
+				<li><a ui-sref="documentPreview"><img ng-src="img/home-icon/icon-02" alt=""><span>无证户</span></a></li>
+				<li><a href=""><img ng-src="img/home-icon/icon-03" alt=""><span>流动摊贩</span></a></li>
+				<li><a href=""><img ng-src="img/home-icon/icon-05" alt=""><span>实地检查</span></a></li>
+				<li><a href=""><img ng-src="img/home-icon/icon-08" alt=""><span>净化率检查</span></a></li>
+				<li><a href=""><img ng-src="img/home-icon/icon-07" alt=""><span>进出库</span></a></li>
+				<li><a href=""><img ng-src="img/home-icon/icon-06" alt=""><span>喷码识别</span></a></li>
+				<li><a href=""><img ng-src="img/home-icon/icon-12" alt=""><span>双随机检查</span></a></li>
+				<li><a href=""><img ng-src="img/home-icon/icon-09" alt=""><span>大要案</span></a></li>
+				<li><a href=""><img ng-src="img/home-icon/icon-10" alt=""><span>检举举报</span></a></li>
+				<li><a href=""><img ng-src="img/home-icon/icon-11" alt=""><span>物品增补登记</span></a></li>
+			</ul>
+		</section>
+		<!--首页今日计划信息-->
+		<section class="foot">
+			<div class="fTitle"><span class="fTitleL">今日计划内任务</span><span class="fTitleR">{{storeData1}}</span></div>
+			<div class="tables">
+				<p class="tbLeft">市场检查：</p>
+				<p class="tbRight"><span>{{storeData.SCJC_PLAN}}户,已查{{storeData.SCJC_INPLAN}}户</span>
+					<span>（另查计划外持证户{{storeData.SCJC_OUTPLAN}}户，无证户{{storeData.SCJC_NOLICENCE}}户,流动摊贩{{storeData.SCJC_VENDOR}}）</span>
+				</p>
+			</div>
+		</section>
+	</ion-content>
+</ion-view>

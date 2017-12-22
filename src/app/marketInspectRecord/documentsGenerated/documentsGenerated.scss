@@ -1,0 +1,136 @@
+//文书生成页面样式
+
+.basicInfo li{
+	span{
+		input{
+			height:20px;
+			float:left;
+			text-align: right;
+			padding:0px;
+		}
+	} 
+	span.selectColor{
+		color:#A7A8A3;
+	}
+	.ion-chevron-right{
+		color:#A7A8A3;
+	} 
+	.modelChecked{
+		float:right;
+	}
+	
+}
+//文书生成页面的修改相关车辆和添加相关人员资料对话框的样式
+.alert-popup .popup{
+	width:70%;
+}
+.alert-popup .popup-head{
+      background-color: #D15300;
+      padding:7px;
+      h3{
+      	color:#fff;
+      }
+}
+.alert-popup .popup-body{
+	padding:0;
+	ul{
+		margin-top: 0px;
+		li{
+			text-align: left;
+			span{
+				width:70%;
+				float:left;
+				select{
+					margin-left: 31%;
+				}
+			}
+		} 
+	}
+}
+.alert-popup .popup-buttons{
+	color:#fff;
+	height:35px;
+	button:nth-child(1){
+		background-color:#B5B5B5;
+
+	}
+	button:nth-child(2){
+		background-color:#88CC27;
+
+	}
+}
+//物品处理办法对话框的样式
+.articles-popup .popup-head{
+	background-color: #D15300;
+	padding:7px;
+	h3{
+		color:#fff;
+	}
+}
+.articles-popup .popup-body{
+	padding:0;
+	ul{
+		margin-top:0;
+		li{
+			text-align: center;
+		}
+		li.elect{
+			background-color:#EDB82B;
+			color:#fff;
+		}
+		li.articlesLeft{
+			text-align: center;
+		}
+	}
+}
+.articles-popup .popup-buttons{
+	color:#fff;
+	height:35px;
+	button{
+		background-color:#CE7849;
+	}
+	.button.button-positive{
+		background-color:#CE7849;
+	}
+}
+// 主要案件性质样式
+.natureOfTheCase{
+	width:100%;
+	height:100%;
+	position: relative;
+	z-index:10;
+	.natureOfTheCase-bg{
+		width:100%;
+		height:100%;
+		background-color: #fff;
+		position: absolute;
+		z-index:5;
+	}
+} 
+.mainTheCase{
+	position: absolute;
+	z-index: 11;
+	ul.mainNav{
+		height:85px;
+		background-color: #F2F2F2;
+		padding-left: 3px;
+		span{
+			font-size:12px;
+			padding:3px 8px;
+			background-color: #E0DCD9;
+			color:#303030;
+			margin:0 3px;
+			border-radius: 3px;
+			float: left;
+			margin-top: 9px;
+			display:block;
+		}
+		.tab{
+			background-color: #EDB82C;
+		}
+		li{
+			width:99%;
+			margin:0 auto;
+		}
+	}
+}

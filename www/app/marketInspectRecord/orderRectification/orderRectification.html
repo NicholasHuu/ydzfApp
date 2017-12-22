@@ -1,0 +1,139 @@
+<div id="orderRectification">
+    <div class="part1" ng-show="focusIndex0">
+        <div class="order">
+            <p class="bgTitle">
+                <span>经营户名称：</span><span>{{orderRectification.CUSTOMERNAME}}</span>
+            </p>
+        </div>
+        <div class="order">
+            <p class="bgTitle">
+                <span>经营户地址：</span><span>{{orderRectification.CUSTOMERPLACE}}</span>
+            </p>
+        </div>
+        <div class="order">
+            <p class="bgTitle">违规经营</p>
+            <div class="bg_0 bg">
+                <p><input disabled type="checkbox" class="choice" ng-checked="orderRectification.ME_RESLUT01" ng-model="orderRectification.ME_RESLUT01">未亮证经营</p>
+                <p><input disabled type="checkbox" class="choice" ng-checked="orderRectification.ME_RESLUT03" ng-model="orderRectification.ME_RESLUT03">许可证登记经营地址与司机地址不符</p>
+                <p><input disabled type="checkbox" class="choice" ng-checked="orderRectification.ME_RESLUT18" ng-model="orderRectification.ME_RESLUT18">许可证有效期过期</p>
+                <p><input disabled type="checkbox" class="choice" ng-checked="orderRectification.ME_RESLUT04" ng-model="orderRectification.ME_RESLUT04">许可证记载信息与工商营业执照信息不符</p>
+            </div>
+        </div>
+        <div class="order">
+            <p class="bgTitle">违法经营</p>
+            <div class="bg_0 bg">
+                <p><input disabled type="checkbox" class="choice" ng-checked="orderRectification.ME_RESLUT10" ng-model="orderRectification.ME_RESLUT10">天价烟</p>
+                <p><input disabled type="checkbox" class="choice" ng-checked="orderRectification.ME_RESLUT07" ng-model="orderRectification.ME_RESLUT07">假烟</p>
+                <p><input disabled type="checkbox" class="choice" ng-checked="orderRectification.ME_RESLUT08" ng-model="orderRectification.ME_RESLUT08">走私烟</p>
+                <p><input disabled type="checkbox" class="choice" ng-checked="orderRectification.ME_RESLUT09" ng-model="orderRectification.ME_RESLUT09">外渠道卷烟</p>
+            </div>
+        </div>
+        <div class="order">
+            <p class="bgTitle">处理意见</p>
+            <div class="bg_1 bg">
+                <p><input type="checkbox" class="choice" ng-checked="orderRectification.ME_RESLUT19" ng-model="orderRectification.ME_RESLUT19">违反烟草专卖零售许可证使用的相关规定,责令你(单位)自收到本通知之日起30日内整改完毕。前来我局办理相关手续时,请带好第一联。</span>
+                </p>
+                <p><input type="checkbox" class="choice" ng-checked="orderRectification.ME_RESLUT20" ng-model="orderRectification.ME_RESLUT20">违反《烟草专卖法》及《实施条例》的相关规定,责令你(单位)自收到本通知书之日起立刻停止违法销售非法卷烟的行为</span></p>
+            </div>
+        </div>
+        <div class="order">
+            <p class="bgTitle">存档单位</p>
+            <div class="bg_1 bg">
+                <p><input type="checkbox" class="choice" ng-checked="orderRectification.ME_RESLUT21" ng-model="orderRectification.ME_RESLUT21">中队留存</p>
+                <p><input type="checkbox" class="choice" ng-checked="orderRectification.ME_RESLUT22" ng-model="orderRectification.ME_RESLUT22">交办证窗口</p>
+            </div>
+        </div>
+    </div>
+    <div class="part2" ng-show="focusIndex1">
+    	<!--整改通知书 -->
+        <div class="rectificationNotice">
+            <p class="H2">整改通知书</p>
+            <p><span class="borderBottom">{{orderRectification.CUSTOMERNAME}}：</span></p>
+            <p style="text-indent: 2rem;"><span>经查你（单位）于</span><span class="borderBottom">{{Hdate}}</span><span>在</span><span class="borderBottom">{{orderRectification.CUSTOMERPLACE}}</span><span>存在以下行为：</span></p>
+            <div class="Hreason">
+                <p>违规经营：</p>
+                <ul>
+                     <li class="">
+                        <input disabled type="checkbox" ng-checked="orderRectification.ME_RESLUT01" ng-model="orderRectification.ME_RESLUT01"> 未亮证经营
+                    </li>
+                     <li class="">
+                        <input disabled type="checkbox" ng-checked="orderRectification.ME_RESLUT03" ng-model="orderRectification.ME_RESLUT03"> 许可证登记经营地址与实际经营地址不一致
+                    </li>
+                     <li class="">
+                        <input disabled type="checkbox" ng-checked="orderRectification.ME_RESLUT18" ng-model="orderRectification.ME_RESLUT18"> 许可证有效期过期
+                    </li>
+                     <li class="">
+                        <input disabled type="checkbox" ng-checked="orderRectification.ME_RESLUT04" ng-model="orderRectification.ME_RESLUT04"> 许可证记载信息与工商营业执照登记信息不符
+                    </li>
+                </ul>
+            </div> 
+            <div class="Hreason">
+                <p>违法经营：</p>
+                <ul>
+                     <li class="">
+                        <input disabled type="checkbox" ng-checked="orderRectification.ME_RESLUT10" ng-model="orderRectification.ME_RESLUT10"> 天价烟
+                    </li>
+                     <li class="">
+                        <input disabled type="checkbox" ng-checked="orderRectification.ME_RESLUT07" ng-model="orderRectification.ME_RESLUT07"> 假烟
+                    </li>
+                     <li class="">
+                        <input disabled type="checkbox" ng-checked="orderRectification.ME_RESLUT08" ng-model="orderRectification.ME_RESLUT08"> 走私烟
+                    </li>
+                     <li class="">
+                        <input disabled type="checkbox" ng-checked="orderRectification.ME_RESLUT09" ng-model="orderRectification.ME_RESLUT09"> 外渠道卷烟
+                    </li>
+                </ul>
+            </div>  
+            <div class="Hreason">
+                <p>处理意见：</p>
+                <ul>
+                     <li class="">
+                        <input disabled type="checkbox" ng-checked="orderRectification.ME_RESLUT19" ng-model="orderRectification.ME_RESLUT19"> 违反烟草专卖零售许可证使用的相关规定，责令你（单位）自收到本通知之日起30日内整改完毕。前来我局办理相关手续时，请带好第一联。
+                    </li>
+                     <li class="">
+                        <input disabled type="checkbox"  ng-checked="orderRectification.ME_RESLUT20" ng-model="orderRectification.ME_RESLUT20"> 违反《烟草专卖法》及《实施条例》的相关规定，责令你（单位）自收到本通知书之日起立即停止违法销售非法卷烟的行为。
+                    </li>
+                     <li class="">
+                        我支队将对你（单位）的整改情况进行核实，并根据整改情况采取相应措施。
+                    </li>
+                </ul>
+            </div>      
+            <div class="end">
+                <p>{{previewDate.DEPT_NAME2}}</p>
+                <p>{{Hdate_ch}}</p>
+            </div>
+            <p class="Hcenter">本文书一式两联/第一联：交当事人</p>
+                    <!-- 华丽的分割线 -->
+            <hr>
+            <p class="H2">送达回执单</p>
+            <p>{{previewDate.DEPT_NAME2}}：</p>
+            <p class="brings">于{{Hdate_ch}}，我（单位）:{{orderRectification.CUSTOMERNAME}}，因：</p>
+            <p class="Hcause">
+                <span><input disabled type="checkbox" ng-checked="orderRectification.ME_RESLUT01" ng-model="orderRectification.ME_RESLUT01"> 未亮证经营/</span>
+                <span><input disabled type="checkbox" ng-checked="orderRectification.ME_RESLUT18" ng-model="orderRectification.ME_RESLUT18"> 许可证有效期过期/</span>
+                <span><input disabled type="checkbox" ng-checked="orderRectification.ME_RESLUT03" ng-model="orderRectification.ME_RESLUT03"> 许可证登记经营地址与实际经营地址不一致/</span>
+                <span><input disabled type="checkbox" ng-checked="orderRectification.ME_RESLUT04" ng-model="orderRectification.ME_RESLUT04"> 许可证记载信息与工商营业执照登记信息不一致，收到你局执法人员出具的整改通知书，我（单位）将在30日内整改完毕。</span>
+            </p>
+             <p class="Hcause">
+                <span>违法销售</span><span><input disabled type="checkbox" ng-checked="orderRectification.ME_RESLUT10" ng-model="orderRectification.ME_RESLUT10"> 天价烟/</span>
+                <span><input disabled type="checkbox" ng-checked="orderRectification.ME_RESLUT07" ng-model="orderRectification.ME_RESLUT07"> 假烟/</span>
+                <span><input disabled type="checkbox" ng-checked="orderRectification.ME_RESLUT08" ng-model="orderRectification.ME_RESLUT08"> 走私烟/</span>
+                <span><input disabled type="checkbox" ng-checked="orderRectification.ME_RESLUT09" ng-model="orderRectification.ME_RESLUT09"> 外渠道卷烟，收到你局执法人员出具的整改通知书，我（单位）承诺将立即停止违法销售非法卷烟行为，若下次再发生类似行为，愿接受相应处罚。</span>
+            </p>
+            <p class="Hright"><span>法人/经办人：</span><span class="H_borderBottom"></span>、<span class="H_borderBottom"></span>
+            </p>
+            <p class="Hright"><span>联系电话&nbsp;&nbsp;：&nbsp;&nbsp;</span><span class="H_borderBottom"></span><span class="H_borderBottom"></span>
+            </p>
+            <p class="Hright"><span>日期&nbsp;&nbsp;&nbsp;&nbsp;：&nbsp;&nbsp;</span><span class="H_borderBottom"></span><span class="H_borderBottom"></span>
+            </p>
+            <p class="Hcenter">本文书一式两联/第二联：存档（<input disabled type="checkbox" class="choice" ng-checked="orderRectification.ME_RESLUT21" ng-model="orderRectification.ME_RESLUT21">中队留存<input disabled type="checkbox" class="choice" ng-checked="orderRectification.ME_RESLUT22" ng-model="orderRectification.ME_RESLUT22">交办证窗口）</p>
+            <p class="Hright">
+                <span>落实日期：</span><span class="H_borderBottom"></span>&#12288;
+                <span>经办人员确认：</span><span class="H_borderBottom"></span>
+            </p>         
+        </div>
+    </div>
+</div>
+<div class="marketRecord">
+    <div><span ng-click="focus()">{{preview}}</span><span ng-click="keepSave()">{{keep}}</span></div>
+</div>

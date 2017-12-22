@@ -1,0 +1,163 @@
+<div class="navContentContrain">
+    <div class="cigaretteManagement">
+        <ul class="list" ng-click="chooseCondition()">
+            <li class="item item-toggle li_content1">
+                是否销售假烟
+                <label class="toggle toggle-assertive">
+                    <input type="checkbox" ng-model="cigaretteParams.ME_RESLUT07"
+                           ng-change="checkChange(cigaretteParams.ME_RESLUT07,'meReslut07','meReslut07Handle')">
+                    <div class="track">
+                    	<span ng-if="cigaretteParams.ME_RESLUT07" class="menu-disabled-true">是</span>
+                        <span ng-if="!cigaretteParams.ME_RESLUT07" class="menu-disabled-false">否</span>
+                        <div class="handle"></div>
+                    </div>
+                </label>
+                <div class="li_content" ng-show="cigaretteParams.ME_RESLUT07==true" id="meReslut07Handle">
+                	<div class="recNot" ng-model="cigaretteParams.ME_RESLUT07_HANDLE">
+    				<span data-zlzx ng-class="{true:'chooseSpan'}[cigaretteParams.ME_RESLUT07_HANDLE == '1' || cigaretteParams.ME_RESLUT07_HANDLE== '3']">要求经营户整改</span>
+    				<span data-xxdj ng-class="{true:'chooseSpan'}[cigaretteParams.ME_RESLUT07_HANDLE == '2' || cigaretteParams.ME_RESLUT07_HANDLE== '3']">先行登记保存</span>
+    			</div>
+                </div>
+            </li>
+            <li class="item item-toggle li_content1">
+                是否销售走私卷烟
+                <label class="toggle toggle-assertive">
+                    <input type="checkbox" ng-model="cigaretteParams.ME_RESLUT08"
+                           ng-change="checkChange(cigaretteParams.ME_RESLUT08,'meReslut08','meReslut08Handle')">
+                    <div class="track">
+                    	<span ng-if="cigaretteParams.ME_RESLUT08" class="menu-disabled-true">是</span>
+                        <span ng-if="!cigaretteParams.ME_RESLUT08" class="menu-disabled-false">否</span>
+                        <div class="handle"></div>
+                    </div>
+                </label>
+                <div class="li_content" ng-show="cigaretteParams.ME_RESLUT08==true" id="meReslut08Handle">
+                	<div class="recNot" ng-model="cigaretteParams.ME_RESLUT08_HANDLE">
+    				<span data-zlzx ng-class="{true:'chooseSpan'}[cigaretteParams.ME_RESLUT08_HANDLE == '1' || cigaretteParams.ME_RESLUT08_HANDLE== '3']">要求经营户整改</span>
+    				<span data-xxdj ng-class="{true:'chooseSpan'}[cigaretteParams.ME_RESLUT08_HANDLE == '2' || cigaretteParams.ME_RESLUT08_HANDLE== '3']">先行登记保存</span>
+    			</div>
+                </div>
+            </li>
+             <li class="item item-toggle li_content1">
+                是否销售外渠道卷烟
+                <label class="toggle toggle-assertive">
+                    <input type="checkbox" ng-model="cigaretteParams.ME_RESLUT09"
+                           ng-change="checkChange(cigaretteParams.ME_RESLUT09,'meReslut09','meReslut09Handle')">
+                    <div class="track">
+                    	<span ng-if="cigaretteParams.ME_RESLUT09" class="menu-disabled-true">是</span>
+                        <span ng-if="!cigaretteParams.ME_RESLUT09" class="menu-disabled-false">否</span>
+                        <div class="handle"></div>
+                    </div>
+                </label>
+                <div class="li_content" ng-show="cigaretteParams.ME_RESLUT09==true" id="meReslut09Handle">
+                	<div class="recNot" ng-model="cigaretteParams.ME_RESLUT09_HANDLE">
+    				<span data-zlzx ng-class="{true:'chooseSpan'}[cigaretteParams.ME_RESLUT09_HANDLE == '1' || cigaretteParams.ME_RESLUT09_HANDLE== '3']">要求经营户整改</span>
+    				<span data-xxdj ng-class="{true:'chooseSpan'}[cigaretteParams.ME_RESLUT09_HANDLE == '2' || cigaretteParams.ME_RESLUT09_HANDLE== '3']">先行登记保存</span>
+    			</div>
+                </div>
+            </li>
+             <li class="item item-toggle li_content1">
+                是否销售天价烟
+                <label class="toggle toggle-assertive">
+                    <input type="checkbox" ng-model="cigaretteParams.ME_RESLUT10"
+                           ng-change="checkChange(cigaretteParams.ME_RESLUT10,'meReslut10','meReslut10Handle')">
+                    <div class="track">
+                    	<span ng-if="cigaretteParams.ME_RESLUT10" class="menu-disabled-true">是</span>
+                        <span ng-if="!cigaretteParams.ME_RESLUT10" class="menu-disabled-false">否</span>
+                        <div class="handle"></div>
+                    </div>
+                </label>
+                <div class="li_content" ng-show="cigaretteParams.ME_RESLUT10==true" id="meReslut10Handle">
+                	<div class="recNot" ng-model="cigaretteParams.ME_RESLUT10_HANDLE">
+    				<span data-zlzx ng-class="{true:'chooseSpan'}[cigaretteParams.ME_RESLUT10_HANDLE == '1' || cigaretteParams.ME_RESLUT10_HANDLE== '3']">要求经营户整改</span>
+    				<span data-xxdj ng-class="{true:'chooseSpan'}[cigaretteParams.ME_RESLUT10_HANDLE == '2' || cigaretteParams.ME_RESLUT10_HANDLE== '3']">先行登记保存</span>
+    			</div>
+                </div>
+            </li>
+             <li class="item item-toggle">
+                是否存在账外账
+                <label class="toggle toggle-assertive">
+                    <input type="checkbox" ng-model="cigaretteParams.ME_RESLUT11" ng-change="checkChange(cigaretteParams.ME_RESLUT11,'meReslut11')">
+                    <div class="track">
+                    	<span ng-if="cigaretteParams.ME_RESLUT11" class="menu-disabled-true">是</span>
+                        <span ng-if="!cigaretteParams.ME_RESLUT11" class="menu-disabled-false">否</span>
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+             <li class="item item-toggle">
+                是否存在暗仓暗格
+                <label class="toggle toggle-assertive">
+                    <input type="checkbox" ng-model="cigaretteParams.ME_RESLUT12" ng-change="checkChange(cigaretteParams.ME_RESLUT12,'meReslut12')">
+                    <div class="track">
+                    	<span ng-if="cigaretteParams.ME_RESLUT12" class="menu-disabled-true">是</span>
+                        <span ng-if="!cigaretteParams.ME_RESLUT12" class="menu-disabled-false">否</span>
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+             <li class="item item-toggle">
+                车辆或店外固定场所
+                <label class="toggle toggle-assertive">
+                    <input type="checkbox" ng-model="cigaretteParams.ME_RESLUT13" ng-change="checkChange(cigaretteParams.ME_RESLUT13,'meReslut13')">
+                    <div class="track">
+                    	<span ng-if="cigaretteParams.ME_RESLUT13" class="menu-disabled-true">是</span>
+                        <span ng-if="!cigaretteParams.ME_RESLUT13" class="menu-disabled-false">否</span>
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+             <li class="item item-toggle">
+                是否无证经营
+                <label class="toggle toggle-assertive">
+                    <input type="checkbox" ng-model="cigaretteParams.ME_RESLUT14" ng-change="checkChange(cigaretteParams.ME_RESLUT14,'meReslut14')">
+                    <div class="track">
+                    	<span ng-if="cigaretteParams.ME_RESLUT14" class="menu-disabled-true">是</span>
+                        <span ng-if="!cigaretteParams.ME_RESLUT14" class="menu-disabled-false">否</span>
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+             <li class="item item-toggle">
+               是否回收并涉嫌倒卖卷烟
+                <label class="toggle toggle-assertive"">
+                    <input type="checkbox" ng-model="cigaretteParams.ME_RESLUT15" ng-change="checkChange(cigaretteParams.ME_RESLUT15,'meReslut15')">
+                    <div class="track">
+                    	<span ng-if="cigaretteParams.ME_RESLUT15" class="menu-disabled-true">是</span>
+                        <span ng-if="!cigaretteParams.ME_RESLUT15" class="menu-disabled-false">否</span>
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+             <li class="item item-toggle">
+               是否有其它违规情况
+                <label class="toggle toggle-assertive">
+                    <input type="checkbox" ng-model="cigaretteParams.ME_RESLUT16"
+                           ng-change="checkChange(cigaretteParams.ME_RESLUT16,'meReslut16',null,cigaretteParams.ME_RESLUT16_DETAIL)">
+                    <div class="track">
+                    	<span ng-if="cigaretteParams.ME_RESLUT16" class="menu-disabled-true">是</span>
+                        <span ng-if="!cigaretteParams.ME_RESLUT16" class="menu-disabled-false">否</span>
+                        <div class="handle"></div>
+                    </div>
+                </label>
+                <div class="li_content" ng-show="cigaretteParams.ME_RESLUT16==true">
+                    <div id="Hsituation">
+                        <span style="width: 50px;background-color: white;color: #ccc;display: inline-block">违规情况:</span>
+                        <input type="text" ng-model="cigaretteParams.ME_RESLUT16_DETAIL" ng-class="{true:'redBorder'}[!cigaretteParams.ME_RESLUT16_DETAIL]">
+                    </div>
+                </div>
+            </li>
+             <li class="item item-toggle">
+               	执法配合度
+                <label class="toggle toggle-assertive">
+                    <input type="checkbox" ng-model="cigaretteParams.ME_RESLUT17" ng-change="checkChange(cigaretteParams.ME_RESLUT17,'meReslut17')">
+                    <div class="track">
+                    	<span ng-if="cigaretteParams.ME_RESLUT17" class="menu-disabled-true">不配合</span>
+                        <span ng-if="!cigaretteParams.ME_RESLUT17" class="menu-disabled-false">配合</span>
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+        </ul>
+    </div>
+    <div class="marketRecord" ng-click="cigaretteClick()">完成,下一项</div>
+</div>

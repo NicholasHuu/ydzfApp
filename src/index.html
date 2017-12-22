@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="main">
+	<head>
+		<meta charset="utf-8" />
+		<meta id="viewSet" name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title></title>
+		<link rel="stylesheet" href="./lib/ionic/css/ionic.min.css">
+		<link rel="stylesheet" href="./lib/mobiscroll/mobiscroll.angular.min.css">
+		<link rel="stylesheet" href="./lib/mobiscroll/material.css">
+		<!-- inject:css -->
+		
+		<!-- endinject -->
+	</head>
+	<body>
+		<ion-nav-bar align-title="center" class="bar bar-header bar-selfStyle">
+			<ion-nav-back-button class="button-clear" ng-click="navBarClick()">
+				<i class="icon ion-ios-arrow-back"></i> 返回
+			</ion-nav-back-button>
+		</ion-nav-bar>
+		<ion-nav-view ></ion-nav-view>
+		<!--<ion-nav-view name="smallPad" ng-show="isShowBigPad"></ion-nav-view>-->
+	</body>
+	<script src="./lib/wmf/jwmf-1.1.1.min.js"></script>
+	<script src="./lib/jquery/dist/jquery.min.js"></script>
+	<script src="./lib/ionic/js/ionic.bundle.min.js"></script>
+	<script src="./lib/mobiscroll/mobiscroll.angular.min.js"></script>
+	<script type="text/javascript">
+        if(parseFloat(window.devicePixelRatio).toFixed(2) == 1.18){
+            $("#viewSet").attr("content","initial-scale=1.5, maximum-scale=1.5, user-scalable=no, width=device-width")
+        }
+	</script>
+	<!-- inject:js -->  
+
+	<!-- endinject -->
+</html>

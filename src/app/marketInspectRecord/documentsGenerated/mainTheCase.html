@@ -1,0 +1,26 @@
+<ion-modal-view>
+    <ion-content>
+    	<div class="natureOfTheCase">
+    		<div class="natureOfTheCase-bg"></div>
+    		<!-- 主要案件性质模态窗口 -->
+	    	<div class="mainTheCase">
+	    		<ul class="mainNav">
+	    			<li  ng-click="tabsClick()" >
+	    				<span ng-bind="storeItem.TRANDGRESSNAME" ng-repeat="storeItem in transgressTypeList track by $index" ng-class="{true:'tab'}[$index==0]" data-typeCode={{storeItem.TRANSGRESSCODE}}></span>
+	    			</li>
+	    		</ul>
+	    		<div class="mainCaseContent">
+	    			<div class="mainCaseContent1" > 
+	    				<ul class="list" ng-click="boxClick()">
+	    					<li class="item" ng-repeat="storeItem1 in transgressByTypeList" data-typeCode="{{storeItem1.TRANSGRESSCODE}}" data-transgressId="{{storeItem1.TRANSGRESS_ID}}" data-transgressName="{{storeItem1.GROUPNAME}}">
+	    						<div class="insidePlan_address" ng-bind="storeItem1.GROUPNAME"></div>
+	    						<div class="insidePlan_address" ng-bind="storeItem1.REPRESENTION"></div>
+	    						<div class="insidePlan_address" ng-bind="storeItem1.BYLAW"></div>
+	    					</li>
+	    				</ul>
+	    			</div>
+	    		</div>
+	    	</div>
+    	</div>
+    </ion-content>
+</ion-modal-view>

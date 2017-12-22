@@ -1,0 +1,29 @@
+<ion-modal-view>
+    <ion-content>
+        <!-- 检查形式内容 -->
+        <div class="list list-inset" ng-if="model1">
+            <div class="item" ng-repeat="x in storeData">
+                <div ng-bind="x.NAME"></div>
+            </div>
+            <div class="item itemButton">
+                <button class="button buttonStyle" ng-click="hideModel()">取消</button>
+            </div>
+        </div>
+        <!-- 检查人员内容 -->
+        <div class="list list-inset" ng-if="!model1">
+            <div class="item" ng-repeat="storeData2Item in storeData1">
+                <!-- <div > -->
+                    <label class="checkbox" style="width: 100%;padding: 0px">
+                        <input type="checkbox" style="float:right;margin-right: 10px">
+                        <span ng-bind="storeData2Item" style="display: inline-block;margin-top: 5px;"></span>
+                    </label>
+
+                <!-- </div> -->
+            </div>
+            <div class="item itemButton modalItem">
+                <div ng-click="hideModel()" class="modelLeftBtn">取消</div>
+                <div ng-click="hideModel()" class="modelRightBtn">完成</div>
+            </div>
+        </div>
+    </ion-content>
+</ion-modal-view>

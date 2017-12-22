@@ -1,0 +1,214 @@
+<div id="documentPreview">
+    <div class="part_1">
+        <!--先行登记保存通知书-->
+        <div class="documentPreview" ng-show="focusIndex==0">
+            <p class="dpTitle" ng-bind="KeepNotice_1.DEPARTMENT_NAME"></p>
+            <p class="dpTitle">先行登记保存通知书</p>
+            <p class="dpTitle1"><span>&nbsp;&nbsp;</span>烟专[<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>]存通字第<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>号</p>
+            <div class="doucumentPreviewCont">
+                <p><span>{{KeepNotice_1.SUSPECTOBJNAME}}</span>:</p>
+                <p class="dpcIndent">你（单位）因<span>{{KeepNotice_1.GROUPNAME}}</span>的行为，涉嫌违反了<span>{{KeepNotice_1.BYPUNISH}}</span>的规定，依据《中华人民共和国行政处罚法》第三十七条第二款的规定，对你（单位）的有关物品予以先行登记保存：</p>
+                <table>
+                    <tr>
+                        <th class="th1">编号</th>
+                        <th class="th2">品种/规格</th>
+                        <th class="th3">数量/单位</th>
+                        <th class="th3">备注</th>
+                    </tr>
+                    <tr ng-repeat="x in KeepNotice_0">
+                        <td>{{$index+1}}</td>
+                        <td>{{x.GOODS_NAME}}</td>
+                        <td>{{x.GOODSCOUNT}}</span>条</td>
+                        <td></td>
+                    </tr>
+                    <tr class="tdSum">
+                        <td colspan="1" class="tdSum1">合计</td>
+                        <td colspan="3" class="tdSum2">{{KeepNotice_1.TTCOUNT}}条</td>
+                    </tr>
+                </table>
+                <p class="dpcIndent">登记保存期限为7天，任何单位或者个人都不得销毁或者转移上述物品。保存地点：<span>{{KeepNotice_1.STOREADDRESS}}</span>。</p>
+                <p>当事人签名或盖章：<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;见证人签名：<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>、<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+                <p>执法人员签名：<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>、<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+                <p>本局地址：<span>{{KeepNotice_1.DEPTADDRESS}}</span></p>
+                <p>特别事项备注：</p>
+                <p class="dpcIndent">{{KeepNotice_1.REMARK}}</p>
+                <p class="dpcRight" ng-bind="KeepNotice_1.DEPARTMENT_NAME"></p>
+                <p class="dpcRight" ng-bind="KeepNotice_1.CURRENTDATE"></p>
+            </div>
+        </div>
+        <!--询问通知书-->
+        <div class="inquiryNotice" ng-show="focusIndex==1">
+            <p class="H2">{{askAdvice.DEPARTMENT_NAME}}</p>
+            <p class="H2">询问通知书</p>
+            <p class="H3">烟专[]询字第<span class="borderBottom"></span>号</p>
+            <p><span>当事人：</span><span class="borderBottom">{{askAdvice.PARTY_NAME}}</span></p>
+            <p style="text-indent:2rem;">
+                <span>为调查</span>
+                <span class="borderBottom">{{askAdvice.TOTALEVENTTRANSGRESS}}</span>
+                <span>请于</span>
+                <span class="borderBottom">{{askAdvice.ASKYEAR}}</span> 
+                <span> 年 </span>
+                <span class="borderBottom">{{askAdvice.ASKMONTH}}</span>
+                <span>月</span>
+                <span class="borderBottom">{{askAdvice.ASKDAY}}</span>
+                <span>日</span>
+                <span class="borderBottom">{{askkTime[1]}}</span>
+                <span>时到</span>
+                <span class="borderBottom">{{askAdvice.ASK_ADDRESS}}</span><span>处接受询问,特此通知</span></p>
+            <div class="datum">
+                <p class="brings">来时请携带下列证件材料：</p>
+                <ul class="list">
+                    <li class="">
+                        <input type="checkbox" ng-checked="askBringdatum[0].split(':')[1] == 'true'?true:false"> 身份证
+                    </li>
+                    <li class="">
+                        <input type="checkbox" ng-checked="askBringdatum[1].split(':')[1] == 'true'?true:false"> 营业执照（当事人有工商营业执照时需勾选）
+                    </li>
+                    <li class="">
+                        <input type="checkbox" ng-checked="askBringdatum[2].split(':')[1] == 'true'?true:false"> 烟草专卖许可证副本（当事人为持证户时需勾选）
+                    </li>
+                    <li class="">
+                        <input type="checkbox" ng-checked="askBringdatum[3].split(':')[1] == 'true'?true:false"> 法定代表人身份证明（当事人为法人时需勾选）
+                    </li>
+                    <li class="">
+                        <input type="checkbox" ng-checked="askBringdatum[4].split(':')[1] == 'true'?true:false"> 委托书
+                    </li>
+                    <li class="">
+                        <input type="checkbox" ng-checked="askBringdatum[5].split(':')[1] == 'true'?true:false"> 其他<span class="borderBottom">{{askAdvice.OTHER_CONTENT}}</span>
+                    </li>
+                </ul>
+                <p><span>联系人：</span><span class="borderBottom">{{askAdvice.LINK_MAN_NAME}}</span></p>
+                <p><span>联系电话：</span><span class="borderBottom">{{askAdvice.LINK_PHONE}}</span></p>
+            </div>
+            <div class="end">
+                <p>{{askAdvice.DEPARTMENT_NAME}}</p>
+                <p>{{askAdvice.CURRENTDATE}}</p>
+            </div>
+        </div>
+        <!--检查（勘验）笔录-->
+        <div class="documentPreview" ng-show="focusIndex==2">
+            <p class="dpTitle">{{Data.DEPARTMENT_NAME}}</p>
+            <p class="dpTitle">检查（勘验）笔录</p>
+            <div class="doucumentPreviewCont2">
+                <table class="table1">
+                    <tr>
+                        <td>案发时间</td>
+                        <td colspan="3">{{Data.HAPPEN_TIME}}</td>
+                        <td>案发地点</td>
+                        <td colspan="2">{{Data.HAPPEN_ADDRESS}}</td>
+                    </tr>
+                    <tr>
+                        <td>当事人</td>
+                        <td colspan="3">{{Data.PARTY_NAME}}</td>
+                        <td>联系地址</td>
+                        <td colspan="2">{{Data.CONTACTADDR}}</td>
+                    </tr>
+                    <tr>
+                        <td>性别</td>
+                        <td style="width:11%">
+                            {{Data.GENDER}}
+                        </td>
+                        <td style="width:11%">年龄</td>
+                        <td style="width:11%">{{Data.AGE}}</td>
+                        <td>证件号码</td>
+                        <td colspan="2">{{Data.CARDNO}}</td>
+                    </tr>
+                    <tr>
+                        <td style="width:16.6%">法定代表人（负责人）</td>
+                        <td colspan="2">{{Data.MASTERNAME}}</td>
+                        <td>许可证号</td>
+                        <td style="width:16.6%">{{Data.REGIELICENCENO}}</td>
+                        <td style="width:16.6%">联系电话</td>
+                        <td style="width:16.6%">{{Data.CONTACTPHONE}}</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="td1">现
+                            <br>场
+                            <br>检
+                            <br>查
+                            <br>情
+                            <br>况</td>
+                        <td colspan="6">
+                            <p>我局稽查人员<span>    </span>、<span>     </span>（烟草专卖执法检查证号<span>         </span>、<span>     </span>）出示执法证件，向当事人表明{{Data.DEPARTMENT_NAME}}行政执法人员的身份后，根据《中华人民共和国烟草专卖法》第三十八条、《中华人民共和国烟草专卖法实施条例》第四十四条和《烟草专卖行政处罚程序规定》第二十条之规定，对现场依法进行检查（调查）。当场告知当事人享有以下权利：第一，执法人员少于两人或执法证件与身份不符的有权拒绝检查（调查）；第二，如认为执法人员与本案当事人有利害关系的，有权依法申请有关人员回避；第三，当事人享有陈述和申辩的权利。并告知当事人应当承担以下义务：必须如实回答询问并提供有关材料，不得拒绝、阻扰检查（调查）。</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            <p>现场检查情况：</p>
+                            <p>{{Data.CHECKINFO}}
+                                <br>
+                                <br>
+                                {{Data.CHECKINFO2}}
+                                <br>
+                                <br>
+                                {{Data.CHECKINFO3}}
+                                <br>
+                                <br>
+                                {{Data.CHECKINFO4}}
+                                <br>
+                                <br>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            <p>据此，本局根据《中华人民共和国行政处罚法》第三十七条第二款的规定，经请示局主管领导批准后，将上述卷烟予以先行登记保存（详见先行登记保存通知书，编号 <span>{{Data.PRE_REGISTERNO}}</span>），并通知当事人于<span>{{Data.ASKYEAR}}</span>年<span>{{Data.ASKMONTH}}</span>月<span>{{Data.ASKDAY}}</span>日前来我局接受调查（具体时间以询问通知书为准）。</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1">备注</td>
+                        <td colspan="6">
+                            <p>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <p>检查人：<span>{{Data.PROVER_NAME}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>、<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+                <p>当事人签名或盖章：<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;见证人签名：{{Data.EYE_WITNESS_NAME}}&nbsp;&nbsp;&nbsp;&nbsp;<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>、
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+            </div>
+        </div>
+        <!--先行登记保存物品处理通知书-->
+        <div class="register" ng-show="focusIndex==3">
+            <p class="H2" style="letter-spacing: 6px;">{{Data.DEPARTMENT_NAME}}</p>
+            <p class="H2">先行登记保存物品处理通知书</p>
+            <p class="H3"><span>   </span>烟专[<span>      </span>]处字第<span class="borderBottom">      </span>号</p>
+            <p><span>当事人:</span><span class="borderBottom">{{Data.PARTY_NAME}}</span></p>
+            <p><span>地&#12288;址:</span><span class="borderBottom">{{Data.CONTACTADDR}}</span></p>
+            <p style="text-indent: 2rem;"><span>因</span><span class="borderBottom">{{Data.TOTALEVENTTRANSGRESS}}</span>
+                <san>一案，我机关对你（单位）的有关物品予以先行登记保存，现将物品处理如下：</san>
+            </p>
+            <div class="datum">
+                <ul class="list">
+                    <li class="">
+                        <input id="Hcheck01" type="checkbox" ng-true-value="'01'" ng-model="Data.DEALWAY">将登记保存的物品送交鉴定或检验；
+                    </li>
+                    <li class="">
+                        <input id="Hcheck02" type="checkbox" ng-true-value="'02'" ng-model="Data.DEALWAY">移送有关部门处理；
+                    </li>
+                    <li class="">
+                        <input id="Hcheck03" type="checkbox" ng-true-value="'03'" ng-model="Data.DEALWAY"> 采取证据保全措施；
+                    </li>
+                    <li class="">
+                        <input id="Hcheck04" type="checkbox" ng-true-value="'04'" ng-model="Data.DEALWAY"> 依法不予行政处罚，解除先行登记保存措施。
+                    </li>
+                </ul>
+                <p><span>执法人员签名:</span><span class="H_borderBottom"></span>、<span class="H_borderBottom"></span></p>
+                <p><span>当事人签名或盖章:</span><span class="H_borderBottom"></span>&nbsp;<span>见证人签名:</span><span class="H_borderBottom"></span>、<span class="H_borderBottom"></span></p>
+            </div>
+            <div class="end">
+                <p>{{Data.DEPARTMENT_NAME}}</p>
+                <p>{{Data.CURRENTDATE}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="part_2">
+        <span ng-class="{'Hactive':focusIndex==0}" ng-click="focus(0)">先行保存登记书</span><span ng-class="{'Hactive':focusIndex==1}" ng-click="focus(1)">询问通知书</span><span ng-class="{'Hactive':focusIndex==2}" ng-click="focus(2)">检查(勘测)笔录</span><span ng-class="{'Hactive':focusIndex==3}" ng-click="focus(3)">物品处理通知书</span>
+    </div>
+    <div class="part_3" ng-click="printDocument()">打印当前文书</div>
+</div>

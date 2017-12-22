@@ -1,0 +1,12 @@
+<!-- 基础档案查询下的市场检查记录页面开始 -->
+<ul class="list bgEven marketInspectionRecord">
+    <li>
+        <span>检查日期</span>
+        <span>检查结果</span>
+    </li>
+    <li class="item basInfo_listItme" ng-repeat="storedata in data">
+        <span ng-bind="storedata.UPDATETIME"></span>
+        <span ng-bind-html="storedata.CHECKRESULT | marketInspectionRecordLongStr"></span>
+    </li>
+</ul>
+<!-- 基础档案查询下的市场检查记录页面结束 -->

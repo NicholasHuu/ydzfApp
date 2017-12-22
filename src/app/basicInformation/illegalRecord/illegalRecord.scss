@@ -1,0 +1,55 @@
+// 基础档案查询下的违法记录样式开始
+.illegalRecord>li>div:first-child{
+	background:#F32728;
+	width:100%;
+	color:#303030;
+	border-bottom: none;
+}
+.illegalRecord{
+	li{
+		width:96%;
+		margin:0px auto;
+		border: 1px solid #bbb;
+		padding:0px;
+		color:#303030;
+		border-radius:7%;
+		background:white;
+		div:nth-child(1){
+			height:30px;
+			padding:0px;
+			line-height: 30px;
+			padding-left:7px;
+			color:#fff;
+		}
+		div{
+			width:96%;
+			padding-top:7px;
+			padding-bottom: 7px;
+			margin:0px auto;
+			border-bottom: 1px solid #E6E6E6;
+			span{
+				display:block;
+				float:left;
+				font-size:14px;
+				color:#303030;
+			}
+		}
+		div:last-child{
+			border-bottom: none;
+		}
+	}
+	li:first-child{
+		margin-top:10px;
+	}
+	li.item{
+		white-space:normal;
+	}
+}
+.illegalRecord>li>div>span:nth-child(1){
+	width:25%;
+	text-align:left;
+}
+.illegalRecord>li>div>span:nth-child(2){
+	width:75%;
+}
+// 基础档案查询下的违法记录样式开始

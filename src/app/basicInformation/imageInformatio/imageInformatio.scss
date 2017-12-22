@@ -1,0 +1,30 @@
+//基础档案查询——形象信息样式开始
+ul.imageInfo{
+	width:100%;
+	margin:7px auto 0;
+	li{
+		float:left;
+		width:45%;
+		margin:0 7px;
+		div{
+			width:100%;
+			height:85%;
+			img{
+				display: block;
+				float:left;
+				width:100%;
+				height:122px;
+				background-color: #ccc;
+				margin-bottom: 2px;
+			}
+		}
+		span{
+			height:15%;
+			display: block;
+			font-size: $font14;
+			color:#000;
+			width:100%;
+		}
+	}
+}
+//基础档案查询——形象信息样式结束

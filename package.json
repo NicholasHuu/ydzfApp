@@ -1,0 +1,28 @@
+{
+  "name": "ionic-with-gulp",
+  "version": "1.1.1",
+  "description": "ionic-with-gulp: JCFX",
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-inject": "^4.2.0",
+    "gulp-minify-css": "^1.2.4",
+    "run-sequence": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "bower": "^1.8.0",
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-inject": "^4.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-webpack": "^1.5.0",
+    "webpack-stream": "^3.2.0",
+    "wiredep": "^4.0.0"
+  },
+  "cordovaPlugins": [],
+  "cordovaPlatforms": []
+}

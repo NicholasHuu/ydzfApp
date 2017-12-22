@@ -1,0 +1,59 @@
+// 基础档案查询下的配送信息样式开始
+.contain_head {
+    overflow: hidden;
+    margin-top: 3px;
+    background: #FFFFFF;
+    color:#303030;
+    ul {
+        margin-left: 0px;
+        li {
+        	height:30px;
+        	line-height:30px;
+            overflow: hidden;
+            margin-top: 6px;
+            color:#303030;
+            border-bottom: 1px solid #E6E6E6;
+            span:nth-child(2) {
+                text-align: right;
+            }
+            span:nth-child(1) {
+                text-indent: 5px;
+            }
+            span {
+                display: block;
+                width: 48%;
+                float: left;
+            }
+        }
+        li:last-child{
+        	border-bottom: none;
+        }
+    }
+}
+
+.contain_body {
+    background: #FFFFFF;
+    border-radius: 7px;
+    margin-top: 20px;
+    color:#303030;
+    table {
+        width: 100%;
+        tbody {
+            width: 100%;
+            tr {
+                height: 36px;
+                line-height: 36px;
+                border-bottom: 1px solid #E6E6E6;
+                color:#303030;
+                td:nth-child(1) {
+                    text-align: center;
+                }
+            }
+            tr:nth-child(1) {
+                background: #D2F4FD;
+                border-bottom: none;
+            }
+        }
+    }
+}
+// 基础档案查询下的配送信息样式开始

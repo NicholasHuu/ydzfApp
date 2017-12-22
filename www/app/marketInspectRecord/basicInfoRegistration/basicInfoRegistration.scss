@@ -1,0 +1,67 @@
+// 检查情况记录-基础信息登记样式开始
+.basicInfo{
+	border-radius:0;
+	margin-top:7px;
+	li{
+		background-color: #fff;
+	}
+}
+.basicInfo1{
+	background-color: #fff;
+	li{
+		border:0;
+		margin-bottom:7px;
+		color:#303030;
+		span i{
+			color:#999;
+		}
+	}
+}
+.list-inset{
+	div.modalItem{
+	text-align:center;
+	}
+}
+.itemButton{
+	margin-top:5%;
+	width:100%;
+}
+.buttonStyle{
+	line-height:0;
+	background-color:#fff;
+	border:0px;
+	min-height:0;
+	padding-top:4%;
+	font-weight:bold;
+	width:100%;
+}
+
+.modalItem>.modelLeftBtn{
+	float: left;
+	margin-left: 10px;
+	width: 30%;
+}
+.modalItem>.modelRightBtn{
+	float: right;
+	margin-right: 10px;
+	width: 30%;
+}
+
+.checkbox input:before, .checkbox-icon:before {
+	border: 0px!important;
+}
+
+.remark{
+	margin-top:4%;
+	padding-left:5px;
+	background-color:#fff;
+	height:23%;
+	padding-top:4%;
+	color:#303030;
+	textarea{
+		/*float:right;
+		margin-right:7px;*/
+		border:1px solid #ccc;
+	}
+}
+// 检查情况记录-基础信息登记样式结束

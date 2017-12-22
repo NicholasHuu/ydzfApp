@@ -1,0 +1,9 @@
+<!--附近列表页面-->
+<ul class="list">
+    <li class="item" ng-repeat="storeItem in storeData" ng-click="planListClick()">
+        <div class="nearCustomName" ng-bind="storeItem.CUSTOMERNAME"></div>
+        <div class="nearCustomPlace">
+        	<span ng-bind="storeItem.CUSTOMERPLACE"></span><span ng-bind="storeItem.DISTANCE"></span>米
+        </div>
+    </li>
+</ul>

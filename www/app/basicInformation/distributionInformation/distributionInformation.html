@@ -1,0 +1,27 @@
+<!-- 基础档案查询下的配送信息页面开始 -->
+<div class="contain_head">
+    <ul>
+        <li><span>最后一次配送时间:</span><span ng-bind="storeData.LASTDELIVERYDATE"></span></li>
+        <li><span>配型总量(条):</span><span ng-bind="storeData.DISTRIBUTIONVOLUME"></span></li>
+    </ul>
+</div>
+<div class="contain_body">
+    <table>
+        <tr>
+            <td></td>
+            <td>A类</td>
+            <td>C类</td>
+        </tr>
+        <tr>
+            <td>配送量</td>
+            <td ng-bind="storeData.DELIVERY_A"></td>
+            <td ng-bind="storeData.DELIVERY_C"></td>
+        </tr>
+        <tr>
+            <td>环比</td>
+            <td ng-bind="storeData.HB_A"></td>
+            <td ng-bind="storeData.HB_C"></td>
+        </tr>
+    </table>
+</div>
+<!-- 基础档案查询下的配送信息页面结束 -->

@@ -1,0 +1,22 @@
+<!--基础档案查询-基本信息页面-->
+<ul class="essential">
+	<li class="basInfo_listItme"><span>企业名称或字号:</span><span ng-bind="storeData.CUSTOMERNAME" ></span></li>
+	<li class="basInfo_listItme"><span>经营地址:</span><span ng-bind="storeData.CUSTOMERPLACE" ></span></li>
+	<li class="basInfo_listItme"><span>所属街道（乡镇）:</span><span ng-bind="storeData.ZONENAME" ></span></li>
+	<li class="basInfo_listItme"><span>经济性质:</span><span ng-bind="storeData.FINANCETYPENAME" ></span></li>
+	<li class="basInfo_listItme"><span>零售业态:</span><span ng-bind="storeData.NATIONALCONDITIONSNAME" ></span></li>
+	<li class="basInfo_listItme"><span>法定代表人或负责人：</span><span ng-bind="storeData.LEGALPERSON" ></span></li>
+	<li class="basInfo_listItme"><span>身份证号:</span><span ng-bind="storeData.CARDNUM" ></span></li>
+	<li class="basInfo_listItme"><span>户籍属性:</span><span ng-bind="(storeData.PROVINCENAME?storeData.PROVINCENAME:'')+(storeData.CITYNAME?storeData.CITYNAME:'')" ></span></li>
+	<li class="basInfo_listItme"><span>联系电话:</span><span ng-bind="storeData.PHONE" ></span></li>
+	<li class="listItem basInfo_listItme"><span>一人多控：</span><span ng-bind="storeData2.MULTIPLECONTOL | onManConStr" ></span></li>
+</ul>
+<ul class="essential essential2">
+	<li class="basInfo_listItme" class="listItem2"><span>最近一次配送日期:</span><span ng-bind="storeData.LASTDELIVERYDATE"></span></li>
+	<li class="basInfo_listItme"><span>经营户分类等级:</span><span ng-bind="storeData.ABIDELEVELNAME" ></span></li>
+	<li class="basInfo_listItme"><span>最近一次检查日期:</span><span ng-bind="storeData1.EXAMDATE" ></span></li>
+	<li class="basInfo_listItme"><span>最近一次检查异常日期:</span><span ng-bind="storeData1.UPDATETIME" ></span></li>
+	<li class="basInfo_listItme"><span>近一年违法次数:</span><span ng-bind="storeData1.IC" ></span></li>
+	<li class="basInfo_listItme" class="listItem"><span>近一年被投诉举报次数:</span><span ng-bind="storeData1.EC" ></span></li>
+</ul>
+

@@ -1,0 +1,36 @@
+// 基础档案查询下的变更信息样式开始
+.bgEven>li:nth-child(1){
+	background:#D2F4FD;
+	border-bottom: none;
+}
+.changeInfo{
+	background:#FFFFFF;
+	border-radius:7px;
+	li.item{
+		color: #303030 !important;
+		white-space: normal;
+	},
+	li{
+		width:100%;
+		border-bottom: 1px solid #E6E6E6;
+		span{
+			font-size:14px;
+			text-align:center;
+		}
+	}
+	li{
+		overflow:hidden;
+		span{
+			display:block;
+			width:34%;
+			float:left;
+		}
+		span:nth-child(1){
+			width:33%;
+		}
+		span:nth-child(2){
+			width:33%;
+		}
+	}
+}
+// 基础档案查询下的变更信息样式开始

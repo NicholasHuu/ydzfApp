@@ -1,0 +1,182 @@
+/* 小pad上的物品登记页面样式开始 */
+.registrationItems .regisItems{
+	li{
+		margin:0 1px;
+		overflow:hidden;
+		input{
+			display:block;
+			width:50%;
+			float:left;
+			font-size:12px;
+			margin-left:5px;
+			margin-top:6px;
+			background-color:#CCC;
+			height:28px;
+		}
+		span.regisItemsSearch{
+			padding:10px 20px;
+			background-color:#D05201;
+			color:#fff;
+			margin-left: 4px;
+			float:right;
+		}
+		span.ItemsSearch{
+			padding:4px 16px;
+			color:#fff;
+			margin-top:6px;
+			background-color:#2baae1;
+			float:left;
+		}
+		span{
+			i.totalStyle{
+				margin-right:10px;
+				display: block;
+				float:left;
+			}
+			i.totalStyle:nth-child(2){
+				margin-right: 0px;
+				width: 32px;
+				text-align: right;
+			}
+			i.totalStyle:nth-child(3){
+				margin-right:7px;
+			}
+			i.totalStyle:nth-child(5){
+				margin-right: 0px;
+				width: 72px;
+				text-align: right;
+			}
+		}
+	}
+	.scanBox{
+		overflow:hidden;
+		span:nth-child(1){
+			float:left;
+		}
+		span:nth-child(2){
+			float:right;
+		}
+	}
+	.mobilTotal{
+		overflow:hidden;
+		span:nth-child(1){
+			float:left;
+			width:29%;
+			text-align: right;
+		}
+		span:nth-child(2){
+			float:right;
+			width:70%;
+		}
+	}
+}
+#mobil_type{
+	overflow:hidden;
+		li{
+			overflow:hidden;
+			span:nth-child(1){
+               float:left;
+			}
+			span:nth-child(2){
+               float:right;
+			}
+		}
+}
+#mobil_keep{
+	margin-top:20px;
+	padding:0px;
+	span{
+		display:inline-block;
+		width:50%;
+		font-size:16px;
+		padding:16px 0px;
+		text-align:center;
+		background-color: #88CC27;
+		color:#fff;
+	}
+	span:nth-child(1){
+		background-color:gray;
+		color:black;
+	}
+}
+.registrationItems .addRegis{
+	li span{
+		.addRegis1{
+			display: block;
+			padding:5px 10px;
+			background-color: #F4F4F4;
+			color:#A8A9A3;
+			float:left;
+			margin-right: 15px;
+		}
+		i.addRegis1:nth-child(1){
+			margin-left: 3px;
+		}
+		i.addRegis2{
+			background-color:#2EA9E5;
+			color:#fff;
+		}
+	}
+}
+//查看流水信息页面样式
+.registrationItems .addRegis3{
+	li{
+		border:1px solid red;
+		border-radius: 5px;
+		margin-top:10px;
+		div{
+			padding:7px;
+			border-bottom:1px solid #ccc;
+			span{
+				display:inline-block;
+				text-align: left;
+			}
+			span:first-child{
+				width:17%;
+				text-align: center;
+				margin-right: 5px;
+			}
+			span:nth-child(3){
+				width:17%;
+				text-align: center;
+				margin-right: 5px;
+			}
+			span.addRegis3-content{
+				width:33%;
+			}
+			span.addRegis3-content1{
+				float:right;
+				color:red;
+				width:25%;
+			}
+		}
+		div:last-child{
+			border-bottom-width: 0px;
+		}
+	}
+}
+//显示数据的颜色
+.showColor{
+	color:#999;
+}
+//清空条形码数据弹出框样式
+.goodskind-popup .popup{
+	width:65%;
+}
+.goodskind-popup .popup-body{
+	div{
+		height:80px;
+		line-height: 80px;
+		font-size:18px;
+	}
+}
+.goodskind-popup .popup-buttons{
+	button:nth-child(1){
+		background-color:#B5B5B5;
+	}
+	button:nth-child(2){
+		background-color:#88CC27;
+
+	}
+}
+/* 小pad上的物品登记页面样式结束 */

@@ -1,0 +1,33 @@
+// 基础档案查询下的违规记录样式开始
+.violationRecord{
+	background:linear-gradient(to bottom,#eee, #ddd);
+	color:#303030;
+	li{
+		width:100%;
+		border-bottom: 1px solid #E6E6E6;
+		color:#303030;
+		span{
+			display:block;
+			float:left;
+			font-size:14px;
+			text-align:center;
+			color:#303030;
+		}
+	}
+	li:nth-child(1){
+		height:40px;
+		line-height:40px;
+		border-bottom: none;
+	}
+	li.item{
+		white-space:normal;
+		padding-left:0px;
+	}
+}
+.violationRecord>li>span:nth-child(1){
+	width:45%;
+}
+.violationRecord>li>span:nth-child(2){
+	width:55%;
+}
+// 基础档案查询下的违规记录样式结束

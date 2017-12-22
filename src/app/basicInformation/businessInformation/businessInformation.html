@@ -1,0 +1,41 @@
+<!--基础档案查询-经营信息页面 开始-->
+<ul class="essential">
+    <li class="basInfo_listItme"><span>工商执照号：</span>
+        <span>{{storeData.CORPLICENSERIALNO}}</span>
+    </li>
+    <li class="basInfo_listItme"><span>发证机构：</span>
+        <span>{{storeData.CORPDEPT}}</span>
+    </li>
+    <li class="basInfo_listItme"><span>发证日期：</span>
+        <span>{{storeData.CORPREGISTERDATE}}</span>
+    </li>
+    <li class="basInfo_listItme"><span>有效日期：</span>
+        <span>{{storeData.CORPREGTIME}}</span>
+    </li>
+    <li class="basInfo_listItme"><span>目前业态：</span>
+        <span>{{storeData.CORPSTATUSNAME}}</span>
+    </li>
+    <li class="basInfo_listItme listItem"><span>经营范围：</span>
+        <span>{{storeData.BUSINESSSCOPENAME}}</span>
+    </li>
+</ul>
+<ul class="essential2 essential">
+    <li class="basInfo_listItme"><span>营业时间：</span><span>{{storeData.OPERATINGTIMEBEGIN+"——"+storeData.OPERATINGTIMEEND}}</span></li>
+    <li class="basInfo_listItme"><span>门牌地址：</span><span>{{storeData.HOUSEADDRESS
+	}}</span></li>
+    <li class="basInfo_listItme"><span>执照地址：</span><span>{{storeData.CORPADDRESS}}</span></li>
+    <li class="basInfo_listItme"><span>访销地址：</span><span>{{storeData.SALEADDRESS}}</span></li>
+    <li class="basInfo_listItme"><span>配送地址：</span><span>{{storeData.PSADDRESS}}</span></li>
+    <li class="basInfo_listItme"><span>经营面积（m²）：</span><span>{{storeData.SELLSACREAGE}}</span></li>
+    <li class="basInfo_listItme"><span>加盟情况：</span><span>{{storeData.ALLIANCEBUSINESSNAME
+	}}</span></li>
+    <li class="basInfo_listItme"><span>产权属性：</span><span>{{storeData.PROPERTYRIGHTTYPENAME}}</span></li>
+    <li class="basInfo_listItme"><span>产权所有：</span><span>{{storeData.PROPERTYRIGHTERNAME}}</span></li>
+    <li class="basInfo_listItme listItem"><span>承租期限：</span><span>{{storeData.LEASETERMBEGIN+"——"+storeData.LEASETERMEND}}</span></li>
+</ul>
+<ul class="essential2 essential">
+    <li class="basInfo_listItme"><span>实际经营人：</span><span>{{storeData.TRANSACTOR}}</span></li>
+    <li class="basInfo_listItme"><span>户籍：</span><span>{{storeData.PROVINCENAME+storeData.CITYNAME}}</span></li>
+    <li class="basInfo_listItme"><span>身份证号：</span><span>{{storeData.TRANSACTORCARDNUM}}</span></li>
+</ul>
+<!--基础档案查询-经营信息页面 结束-->

@@ -1,0 +1,90 @@
+//责令整改页面样式开始
+#orderRectification {
+    padding-bottom: 40px;
+    .order {
+        padding: 5px 0px;
+        .bgTitle {
+            background: #FFF;
+            text-indent: 1rem;
+            overflow: hidden;
+            padding: 3px 0px;
+            margin: 0px;
+            span {
+                display: block;
+                float: left;
+            }
+            span:nth-child(1) {
+                width: 40%;
+            }
+            span:nth-child(2) {
+                width: 60%;
+                input {
+                    padding: 0px;
+                    height: 20px;
+                }
+            }
+        }
+        .bg {
+            padding: 5px 0px;
+            p {
+                width: 90%;
+                margin-left: 10%;
+                overflow: hidden;
+                span {
+                    float: left;
+                    font-size: 12px;
+                }
+                .choice {
+                    display: block;
+                    float: left;
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid #CCC;
+                    background: rgb(255, 255, 255);
+                    margin-right: 8px;
+                    margin-top: 2px;
+                }
+                span:nth-child(2) {
+                    width: 70%;
+                }
+            }
+        }
+        .bg_0 {
+            background: #E8E8E6;
+        }
+
+        .bg_1 {
+            background: #FFFDF6;
+        }
+    }
+    .part2{
+        overflow-y:scroll;
+    }
+    .H_borderBottom{
+        display:inline-block;
+        width:30px;
+        border-bottom: solid black .5px;
+    }
+}
+
+.marketRecord div {
+   /* width: 100%;
+    overflow: hidden;*/
+}
+
+.marketRecord div span:nth-child(1) {
+    display: block;
+    font-size: 14px;
+    width: 40%;
+    float: left;
+    background: #2EAFE8;
+}
+
+.marketRecord div span:nth-child(2) {
+    display: block;
+    font-size: 14px;
+    width: 60%;
+    float: left;
+    background: #88CC27;
+}
+//责令整改页面样式结束

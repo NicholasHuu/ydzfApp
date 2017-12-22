@@ -1,0 +1,433 @@
+/*!
+* http://www.mobiscroll.cn
+* 
+* Copyright (c) 2013, Acid Media, Inc.
+* All rights reserved.
+*
+* Redistribution and use in any form, with or without modification,
+* are not permitted.
+*
+*/
+.mbsc-material .mbsc-ripple,
+.mbsc-lv-material .mbsc-ripple {
+  background: #000000;
+}
+/* Frame */
+.mbsc-material .mbsc-fr-w {
+  background: #EDEDED;
+  color: #5C5C5C;
+}
+.mbsc-material .mbsc-fr-hdr {
+  color: #F54336;
+}
+.mbsc-material .mbsc-fr-btn {
+  color: #F54336;
+}
+.mbsc-material.mbsc-no-touch .mbsc-fr-btn-e:not(.mbsc-fr-btn-d):hover,
+.mbsc-material .mbsc-fr-btn-a {
+  background: rgba(0, 0, 0, 0.1);
+}
+.mbsc-material .mbsc-fr-bubble-bottom .mbsc-fr-arr {
+  border-color: transparent transparent #EDEDED transparent;
+}
+.mbsc-material .mbsc-fr-bubble-top .mbsc-fr-arr {
+  border-color: #EDEDED transparent transparent transparent;
+}
+/* Scroller */
+.mbsc-material .mbsc-sc-lbl {
+  color: #F54336;
+}
+.mbsc-material .mbsc-sc-itm.mbsc-btn-a {
+  background: rgba(0, 0, 0, 0.1);
+}
+.mbsc-material .mbsc-sc-whl-l {
+  border-color: #F54336;
+}
+.mbsc-material .mbsc-sc-btn {
+  color: #F54336;
+  background: #EDEDED;
+}
+.mbsc-material.mbsc-no-touch .mbsc-sc-btn:hover,
+.mbsc-material .mbsc-sc-btn-a {
+  background: rgba(0, 0, 0, 0.1);
+}
+.mbsc-material .mbsc-sc-whl-multi .mbsc-sc-itm-sel:before {
+  color: #F54336;
+}
+/* Rating */
+.mbsc-material .mbsc-rating-icon {
+  color: #F54336;
+}
+.mbsc-material .mbsc-rating-circle {
+  background: #F54336;
+  color: #EDEDED;
+}
+.mbsc-material .mbsc-rating-circle-unf {
+  background: none;
+  border-color: #F54336;
+}
+/* Numpad */
+.mbsc-material .mbsc-np-del {
+  color: #F54336;
+}
+/* Calbase */
+.mbsc-material .mbsc-cal-sc-c {
+  background: #EDEDED;
+}
+.mbsc-material .mbsc-cal-btn-txt {
+  color: #F54336;
+}
+.mbsc-material .mbsc-cal-hl-now .mbsc-cal-today {
+  color: #F54336;
+}
+.mbsc-material.mbsc-no-touch .mbsc-cal-day.mbsc-cal-day-v:hover .mbsc-cal-day-fg,
+.mbsc-material.mbsc-no-touch .mbsc-cal-sc .mbsc-cal-sc-cell:not(.mbsc-fr-btn-d):hover .mbsc-cal-sc-tbl,
+.mbsc-material .mbsc-cal .mbsc-cal-day-sel .mbsc-cal-day-fg,
+.mbsc-material .mbsc-cal-sc .mbsc-cal-sc-sel .mbsc-cal-sc-cell-i {
+  background: rgba(245, 67, 54, 0.3);
+}
+.mbsc-material .mbsc-cal-week-nrs-c {
+  color: #5C5C5C;
+  background: #EDEDED;
+}
+.mbsc-material .mbsc-cal-tab .mbsc-cal-tab-i {
+  color: #5C5C5C;
+}
+.mbsc-material .mbsc-cal-tabs .mbsc-cal-tab-sel .mbsc-cal-tab-i {
+  color: #F54336;
+}
+/* Calendar */
+.mbsc-material .mbsc-cal-day-m-c {
+  background: #F54336;
+}
+.mbsc-material .mbsc-cal-day-txt {
+  color: #EDEDED;
+}
+.mbsc-material .mbsc-cal-events {
+  color: #EDEDED;
+}
+.mbsc-material .mbsc-cal-event-color {
+  background: #F54336;
+}
+.mbsc-material .mbsc-cal-event-time,
+.mbsc-material .mbsc-cal-event-dur {
+  color: #EDEDED;
+}
+.mbsc-material .mbsc-cal-events-arr {
+  border-color: #F54336 transparent transparent transparent;
+}
+.mbsc-material .mbsc-cal-events-b .mbsc-cal-events-arr {
+  border-color: transparent transparent #F54336 transparent;
+}
+/* Range */
+.mbsc-material .mbsc-range-btn-t {
+  border-color: #c2c2c2;
+}
+.mbsc-material .mbsc-range-btn {
+  color: #5C5C5C;
+}
+.mbsc-material .mbsc-range-btn-sel .mbsc-range-btn {
+  border-color: #F54336;
+  color: #F54336;
+}
+.mbsc-material.mbsc-range .mbsc-cal-day-sel .mbsc-cal-day-frame {
+  color: #5C5C5C;
+  background: rgba(245, 67, 54, 0.1);
+}
+.mbsc-material.mbsc-range .mbsc-cal-table .mbsc-cal-day-hl .mbsc-cal-day-i .mbsc-cal-day-fg {
+  color: #EDEDED;
+  background: rgba(245, 67, 54, 0.8);
+}
+/* Menustrip */
+.mbsc-material.mbsc-ms-c {
+  background: #EDEDED;
+  color: #5C5C5C;
+}
+.mbsc-material .mbsc-btn-a .mbsc-ms-item {
+  background: rgba(0, 0, 0, 0.1);
+}
+.mbsc-material.mbsc-ms-b.mbsc-ms-top {
+  border-bottom: 1px solid #F54336;
+}
+.mbsc-material.mbsc-ms-b.mbsc-ms-bottom {
+  border-top: 1px solid #F54336;
+}
+.mbsc-material.mbsc-ms-b .mbsc-ms-item-sel.mbsc-ms-item {
+  border-bottom-color: #F54336;
+  color: #F54336;
+}
+.mbsc-material.mbsc-ms-b.mbsc-ms-bottom .mbsc-ms-item-sel.mbsc-ms-item {
+  border-top-color: #F54336;
+  border-bottom-color: transparent;
+}
+.mbsc-material.mbsc-ms-a .mbsc-ms-item-sel.mbsc-ms-item {
+  color: #F54336;
+}
+/* Listview */
+.mbsc-lv-material .mbsc-lv-item {
+  background: #EDEDED;
+  color: #5C5C5C;
+}
+.mbsc-lv-material .mbsc-lv-item-hl:after,
+.mbsc-lv-material .mbsc-lv-item-active::after,
+.mbsc-lv-material .mbsc-lv-item-dragging:after {
+  background: rgba(0, 0, 0, 0.1);
+}
+.mbsc-lv-material.mbsc-lv-alt-row .mbsc-lv-item:nth-child(even) {
+  background: #fcfcfc;
+}
+.mbsc-lv-material .mbsc-lv-gr-title {
+  background: #EDEDED;
+  color: #F54336;
+}
+.mbsc-lv-material .mbsc-lv-arr {
+  color: #F54336;
+}
+.mbsc-lv-material .mbsc-lv-handle-bar {
+  background: #F54336;
+}
+.mbsc-lv-material p.mbsc-lv-txt {
+  color: #767676;
+}
+/* Progress */
+.mbsc-material .mbsc-progress-track {
+  background: #d6d6d6;
+}
+.mbsc-material .mbsc-progress-bar {
+  background: #F54336;
+}
+/* Slider */
+.mbsc-material .mbsc-slider-step {
+  background: #000000;
+}
+.mbsc-material .mbsc-slider-handle {
+  background: #F54336;
+  border-color: #F54336;
+}
+.mbsc-material .mbsc-slider-start .mbsc-slider-handle {
+  border-color: #d6d6d6;
+  background: #EDEDED;
+}
+.mbsc-material .mbsc-slider-handle:before {
+  background: rgba(0, 0, 0, 0.1);
+}
+.mbsc-material .mbsc-slider-tooltip {
+  color: #EDEDED;
+  background: #F54336;
+}
+.mbsc-material .mbsc-slider-tooltip:before {
+  border-top-color: #F54336;
+}
+.mbsc-material.mbsc-slider-has-tooltip .mbsc-slider-start .mbsc-slider-tooltip {
+  background: #d6d6d6;
+}
+.mbsc-material.mbsc-slider-has-tooltip .mbsc-slider-start .mbsc-slider-tooltip:before {
+  border-top-color: #d6d6d6;
+}
+.mbsc-material.mbsc-slider input:disabled ~ .mbsc-progress-cont .mbsc-progress-bar {
+  background: #d6d6d6;
+}
+.mbsc-material.mbsc-slider input:disabled ~ .mbsc-progress-cont .mbsc-slider-handle {
+  background: #d6d6d6;
+  border-color: #d6d6d6;
+  box-shadow: 0 0 0 0.3125em #EDEDED;
+}
+.mbsc-material.mbsc-slider input:disabled ~ .mbsc-progress-cont .mbsc-slider-start .mbsc-slider-handle {
+  border-color: #d6d6d6;
+  background: #EDEDED;
+}
+/* Form elements */
+.mbsc-material.mbsc-page {
+  background-color: #EDEDED;
+  color: #6e6e6e;
+}
+.mbsc-material.mbsc-page *::-moz-selection {
+  background: #F54336;
+}
+.mbsc-material.mbsc-page *::selection {
+  background: #F54336;
+}
+.mbsc-material.mbsc-form {
+  background-color: #EDEDED;
+  color: #6e6e6e;
+}
+.mbsc-material.mbsc-form *::-moz-selection {
+  background: #F54336;
+}
+.mbsc-material.mbsc-form *::selection {
+  background: #F54336;
+}
+.mbsc-material .mbsc-divider,
+.mbsc-material .mbsc-form-group-title {
+  color: #F54336;
+}
+.mbsc-material a {
+  color: #F54336;
+}
+/* Textbox, textarea, select */
+.mbsc-material .mbsc-input textarea,
+.mbsc-material .mbsc-input input {
+  border-bottom: 1px solid #6e6e6e;
+  color: #1f1f1f;
+}
+.mbsc-material .mbsc-input input::-webkit-input-placeholder {
+  color: #a9a9a9;
+}
+.mbsc-material .mbsc-input input::-moz-placeholder {
+  color: #a9a9a9;
+}
+.mbsc-material .mbsc-input input:-ms-input-placeholder {
+  color: #a9a9a9;
+}
+.mbsc-material .mbsc-input select:focus ~ input,
+.mbsc-material .mbsc-input textarea:focus,
+.mbsc-material .mbsc-input input:focus {
+  border-bottom: 2px solid #F54336;
+}
+.mbsc-material .mbsc-checkbox-box:before,
+.mbsc-material .mbsc-radio-box:before,
+.mbsc-material .mbsc-switch-handle:before {
+  background: rgba(0, 0, 0, 0.1);
+}
+/* Select */
+.mbsc-material .mbsc-select .mbsc-input-wrap:after {
+  border: 5px solid #6e6e6e;
+  border-color: #6e6e6e transparent transparent transparent;
+}
+.mbsc-material .mbsc-sel-filter-cont {
+  border-color: #d6d6d6;
+}
+/* Checkbox, radio */
+.mbsc-material .mbsc-checkbox-box,
+.mbsc-material .mbsc-radio-box {
+  border-color: #6e6e6e;
+}
+.mbsc-material .mbsc-checkbox-box:after {
+  border-color: #EDEDED;
+}
+.mbsc-material .mbsc-checkbox input:checked + .mbsc-checkbox-box {
+  background: #F54336;
+  border-color: #F54336;
+}
+/* Radio */
+.mbsc-material .mbsc-radio-box:after {
+  background: #F54336;
+}
+.mbsc-material .mbsc-radio input:checked + .mbsc-radio-box {
+  border-color: #F54336;
+}
+/* Button */
+.mbsc-material .mbsc-btn {
+  background: #d6d6d6;
+  color: #000000;
+}
+.mbsc-material.mbsc-no-touch .mbsc-btn:not(:disabled):hover,
+.mbsc-material .mbsc-btn.mbsc-active {
+  background: #cccccc;
+}
+.mbsc-material .mbsc-btn-flat {
+  background: transparent;
+}
+.mbsc-material .mbsc-btn:disabled {
+  color: #bdbdbd;
+}
+.mbsc-material.mbsc-no-touch .mbsc-btn-flat:not(:disabled):hover,
+.mbsc-material .mbsc-btn-flat.mbsc-active {
+  background-color: #d6d6d6;
+}
+/* Switch */
+.mbsc-material .mbsc-switch-track {
+  background: #d6d6d6;
+}
+.mbsc-material .mbsc-switch .mbsc-switch-handle {
+  background: #fafafa;
+}
+.mbsc-material .mbsc-switch input:checked + .mbsc-switch-track {
+  background-color: rgba(245, 67, 54, 0.3);
+}
+.mbsc-material .mbsc-switch input:checked + .mbsc-switch-track .mbsc-switch-handle {
+  background: #F54336;
+}
+.mbsc-material .mbsc-switch input:disabled + .mbsc-switch-track {
+  background: #d6d6d6;
+}
+.mbsc-material .mbsc-switch input:disabled + .mbsc-switch-track .mbsc-switch-handle {
+  background: #bababa;
+}
+/* Segmented control and Stepper */
+.mbsc-material .mbsc-segmented-content {
+  border-color: #F54336;
+  color: #000000;
+}
+.mbsc-material .mbsc-segmented .mbsc-segmented-item input:checked + .mbsc-segmented-content,
+.mbsc-material .mbsc-segmented .mbsc-segmented-item input:checked ~ .mbsc-segmented-content {
+  background: #F54336;
+  color: #EDEDED;
+}
+.mbsc-material .mbsc-segmented .mbsc-segmented-item input.mbsc-active + .mbsc-segmented-content,
+.mbsc-material .mbsc-segmented .mbsc-segmented-item .mbsc-active .mbsc-segmented-content {
+  background: #cccccc;
+  color: #000000;
+}
+.mbsc-material .mbsc-segmented .mbsc-segmented-item input:disabled + .mbsc-segmented-content {
+  color: #bdbdbd;
+  border-color: #d6d6d6;
+  background: transparent;
+}
+.mbsc-material .mbsc-segmented .mbsc-segmented-item input:disabled:checked + .mbsc-segmented-content {
+  background: #d6d6d6;
+  color: #bdbdbd;
+  border-color: #d6d6d6;
+}
+.mbsc-material .mbsc-stepper .mbsc-segmented-content {
+  border-color: #d6d6d6;
+}
+.mbsc-material .mbsc-stepper-control .mbsc-segmented-content {
+  background: #d6d6d6;
+}
+.mbsc-material .mbsc-stepper input {
+  color: #000000;
+}
+.mbsc-material .mbsc-segmented input:disabled ~ .mbsc-segmented-item .mbsc-segmented-content,
+.mbsc-material .mbsc-segmented .mbsc-segmented-item.mbsc-stepper-control.mbsc-step-disabled .mbsc-segmented-content,
+.mbsc-material .mbsc-segmented .mbsc-segmented-item.mbsc-step-disabled .mbsc-segmented-content {
+  background: #d6d6d6;
+  color: #bdbdbd;
+}
+.mbsc-material .mbsc-segmented .mbsc-segmented-item input:disabled ~ .mbsc-segmented-item .mbsc-stepper-val {
+  border-color: #d6d6d6;
+  background: #EDEDED;
+}
+.mbsc-material .mbsc-stepper input:disabled {
+  color: #bdbdbd;
+  -webkit-text-fill-color: #bdbdbd;
+}
+.mbsc-material.mbsc-no-touch .mbsc-segmented-item:hover .mbsc-segmented-content {
+  background: #cccccc;
+  color: #000000;
+}
+/* Snackbar */
+.mbsc-material.mbsc-snackbar .mbsc-fr-w {
+  background: #323232;
+}
+.mbsc-material.mbsc-snackbar .mbsc-snackbar-btn {
+  color: #f54336;
+}
+/* Colorpicker */
+.mbsc-material .mbsc-color-active .mbsc-color-item,
+.mbsc-no-touch.mbsc-material .mbsc-color-item:hover {
+  box-shadow: inset 0 0 0 0.1875em #F54336;
+}
+.mbsc-material .mbsc-color-preview-item-empty {
+  border-color: #bababa;
+}
+.mbsc-material .mbsc-color-preview-cont {
+  border-top-color: #cccccc;
+}
+.mbsc-material.mbsc-form .mbsc-color-input {
+  border-bottom: 1px solid #6e6e6e;
+  color: #1f1f1f;
+}
+.mbsc-material .mbsc-color-clear-item {
+  background: rgba(223, 222, 222, 0.3);
+}

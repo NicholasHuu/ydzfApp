@@ -1,0 +1,82 @@
+/*首页样式 start*/
+//首页图标
+.common_content div{
+  .banner{
+    height:400px;
+    ul{
+      width: 95%;
+      margin:0 auto;
+      height:100%;
+      li{
+        float:left;
+        width: 25%;
+        margin-top:5%;
+        height: 22%;
+        a{
+          display:block;
+          height:100%;
+          color:#000;
+          text-decoration: none;
+          text-align:center;
+          font-size:$font14;
+          color:#555;
+          img{
+            display:block;
+            width:73px;
+            height:73px;
+            margin: 0 auto;
+          }
+          span{
+            display:block;
+            height: 20%;
+          }
+        }
+      }
+    }
+  }
+  //首页计划信息
+  .foot{
+    .fTitle{
+      height:40px;
+      margin-bottom:0;
+      border-bottom:1px solid #696969;
+      width:96%;
+      margin:0 auto;
+      .fTitleL{
+        float:left;
+        padding-top:4%;
+        font-weight:bold;
+        font-size:$font16;
+        color:#666;
+      }
+      .fTitleR{
+        float:right;
+        color:#666;
+        padding-top:4%;
+        font-size:$font16;
+      }
+    }
+    .tables{
+      width:96%;
+      margin:0 auto;
+      p{
+        padding-bottom:2%;
+        font-size:$font16;
+        color:#666;
+        float:left;
+        margin-top:1.5%;
+        span{
+            display: block;
+            float: left;
+        }
+      }
+      p.tbRight{
+        width:76%;
+      }
+      p.tbLeft{
+          width:24%;
+      }
+    }
+  }
+}
+/*首页样式 end*/

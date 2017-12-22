@@ -1,0 +1,14 @@
+.nearCustomPlace{
+	padding-top:5px;
+	span{
+		display:inline-block;
+	}
+	span:nth-child(1){
+		width:80%;
+		white-space: pre-wrap;
+	}
+	span:nth-child(2){
+		width:13%;
+		text-align:right;
+	}
+}
